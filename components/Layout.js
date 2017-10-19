@@ -48,7 +48,7 @@ export default ({ children, title = '主页' }) => (
         <Link href='/search'>
           <Button type="primary" shape="circle" style={{ marginRight: 12 }} icon="search" />
         </Link>
-        <a style={{ verticalAlign: 'sub' }} href="https://github.com" target="_blank">
+        <a style={{ verticalAlign: 'sub' }} href="https://github.com/OrangeXC/gank" target="_blank">
           <Button shape="circle" icon="github" style={{ fontSize: 22 }} />
         </a>
       </div>
@@ -57,7 +57,7 @@ export default ({ children, title = '主页' }) => (
       { children }
     </Content>
     <Footer style={{ textAlign: 'center' }}>
-      Gank ©2016 use gank api Paword by Next <a><Icon type="github" /></a>
+      Gank ©2017 use gank api Paword by Next <a href="https://github.com/OrangeXC/gank" target="_blank"><Icon type="github" /></a>
     </Footer>
     <BackTop />
     <style jsx>{`
