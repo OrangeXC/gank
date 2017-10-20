@@ -40,9 +40,9 @@ class uploadForm extends React.Component {
           message.error(json.msg)
         } else {
           message.success(json.msg)
-
-          this.setState({ submitLoading: false })
         }
+
+        this.setState({ submitLoading: false })
       }
     })
   }

@@ -7,7 +7,7 @@ next.js(react ssr repo) and gank api
 * Use react SSR framework [next.js](https://github.com/zeit/next.js)
 * UI ant design [antd](https://ant.design/)
 * Progress bar [nprogress](http://ricostacruz.com/nprogress/)
-* State management [Mobx](https://mobx.js.org/)
+* State management [mobx](https://mobx.js.org/)
 * Fetch Api instead ajax
 
 ## pages
