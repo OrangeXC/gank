@@ -13,7 +13,17 @@ mobxReact.useStaticRendering(true)
 app.prepare().then(() => {
   createServer((req, res) => {
     const parsedUrl = parse(req.url, true)
-    handle(req, res, parsedUrl)
+    const { pathname, query } = parsedUrl
+
+    const ua = req.headers['user-agent']
+
+    if (/Mobile/i.test(ua) && pathname.indexOf('/m') === -1) {
+      app.render(req, res, `/m${pathname}`, query)
+    } else if (!/Mobile/i.test(ua) && pathname.indexOf('/m') > -1) {
+      app.render(req, res, pathname.slice(2), query)
+    } else {
+      handle(req, res, parsedUrl)
+    }
   }).listen(port, err => {
     if (err) throw err
     console.log(`> Ready on http://localhost:${port}`)
