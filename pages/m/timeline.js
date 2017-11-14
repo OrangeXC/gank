@@ -51,7 +51,7 @@ export default class MobileTimeLinePage extends React.Component {
             >
               时间轴
             </NavBar>
-            <div style={{ height: listHeight, overflow: 'scroll' }}>
+            <div style={{ height: listHeight, overflow: 'scroll', overflowScrolling: "touch", WebkitOverflowScrolling: "touch" }}>
               <Timeline>
                 {
                   timeline.map(item => <Timeline.Item key={item}><Link href={{ pathname: '/m/day', query: { date: item } }}><a>{item}</a></Link></Timeline.Item>)
