@@ -12,7 +12,7 @@ export default class MenuBar extends Component {
   }
 
   async componentDidMount () {
-    const height = document.documentElement.clientHeight
+    const height = `${document.documentElement.clientHeight}px`
 
     this.setState({
       tabHeight: height

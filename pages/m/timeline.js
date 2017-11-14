@@ -1,9 +1,11 @@
 import React from 'react'
 import Link from 'next/link'
 import { Timeline } from 'antd'
-import { NavBar, Icon } from 'antd-mobile'
+import { NavBar, Icon, List, ListView } from 'antd-mobile'
 import Layout from '../../mobileComponents/Layout'
 import MenuBar from '../../mobileComponents/MenuBar'
+
+const { Item } = List
 
 export default class MobileTimeLinePage extends React.Component {
   static async getInitialProps ({ req }) {
@@ -18,7 +20,12 @@ export default class MobileTimeLinePage extends React.Component {
   constructor (props) {
     super(props)
 
+    const dataSource = new ListView.DataSource({
+      rowHasChanged: (row1, row2) => row1 !== row2,
+    }).cloneWithRows(props.timeline)
+
     this.state = {
+      dataSource,
       listHeight: 1000
     }
   }
@@ -33,12 +40,14 @@ export default class MobileTimeLinePage extends React.Component {
 
   render () {
     const {
-      timeline,
       language,
       url: { pathname }
     } = this.props
 
-    const { listHeight } = this.state
+    const {
+      dataSource,
+      listHeight
+    } = this.state
 
     return (
       <div>
@@ -51,13 +60,16 @@ export default class MobileTimeLinePage extends React.Component {
             >
               时间轴
             </NavBar>
-            <div style={{ height: listHeight, overflow: 'scroll', overflowScrolling: "touch", WebkitOverflowScrolling: "touch" }}>
-              <Timeline>
-                {
-                  timeline.map(item => <Timeline.Item key={item}><Link href={{ pathname: '/m/day', query: { date: item } }}><a>{item}</a></Link></Timeline.Item>)
-                }
-              </Timeline>
-            </div>
+            <ListView
+              dataSource={dataSource}
+              renderRow={rowData => (<Link href={{ pathname: '/m/day', query: { date: rowData } }}><Item arrow="horizontal">{rowData}</Item></Link>)}
+              style={{
+                height: listHeight,
+                overflow: 'scroll'
+              }}
+              initialListSize={30}
+              pageSize={30}
+            />
           </MenuBar>
         </Layout>
         <style global jsx>{`
