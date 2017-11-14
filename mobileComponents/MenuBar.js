@@ -3,6 +3,22 @@ import Router from 'next/router'
 import { TabBar, Icon } from 'antd-mobile'
 
 export default class MenuBar extends Component {
+  constructor (props) {
+    super(props)
+
+    this.state = {
+      tabHeight: '100vh'
+    }
+  }
+
+  async componentDidMount () {
+    const height = document.documentElement.clientHeight
+
+    this.setState({
+      tabHeight: height
+    })
+  }
+
   render () {
     const {
       pathname,
@@ -10,20 +26,31 @@ export default class MenuBar extends Component {
     } = this.props
 
     return (
-      <TabBar>
-        {tabBarData.map(({ title, icon, selectedIcon, link, dot, component: Component }) => (
-          <TabBar.Item
-            key={link}
-            title={title}
-            icon={icon}
-            selectedIcon={selectedIcon}
-            selected={pathname === link || pathname === `/m${link}` || pathname === `${link}/`}
-            onPress={() => Router.push(link)}
-          >
-            {children}
-          </TabBar.Item>
-        ))}
-      </TabBar>
+      <div>
+        <TabBar>
+          {tabBarData.map(({ title, icon, selectedIcon, link, dot, component: Component }) => (
+            <TabBar.Item
+              key={link}
+              title={title}
+              icon={icon}
+              selectedIcon={selectedIcon}
+              selected={pathname === link || pathname === `/m${link}` || pathname === `${link}/`}
+              onPress={() => Router.push(link)}
+            >
+              {children}
+            </TabBar.Item>
+          ))}
+        </TabBar>
+        <style jsx global>{`
+          .am-tab-bar {
+            height: ${this.state.tabHeight}
+          }
+
+          .am-tab-bar-item {
+            padding-top: 45px;
+          }
+        `}</style>
+      </div>
     )
   }
 }
