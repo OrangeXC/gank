@@ -42,7 +42,7 @@ export default class MobileFE extends Component {
       <Layout language={language}>
         <div style={{ paddingTop: 45 }}>
           <NavBar
-            mode='dark'
+            mode='light'
             icon={<Icon type="left" />}
             onLeftClick={() => Router.push('/m')}
           >

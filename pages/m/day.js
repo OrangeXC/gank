@@ -65,7 +65,7 @@ export default class MobileDayPage extends React.Component {
       <Layout language={language}>
         <div style={{ marginTop: 45 }}>
           <NavBar
-            mode='dark'
+            mode='light'
             icon={<Icon type="left" />}
             onLeftClick={() => Router.push('/m/timeline')}
           >
