@@ -16,14 +16,6 @@ export default ({ children, language }) => (
       {children}
     </LocaleProvider>
     <style global jsx>{`
-      .am-tab-bar {
-        height: 100vh;
-      }
-
-      .am-tab-bar-item {
-        padding-top: 45px;
-      }
-
       .am-navbar {
         width: 100%;
         position: fixed;
