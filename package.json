@@ -23,5 +23,8 @@
   },
   "devDependencies": {
     "babel-plugin-transform-decorators-legacy": "^1.3.4"
+  },
+  "engines": {
+    "node": "8.7.0"
   }
 }
