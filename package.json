@@ -4,8 +4,7 @@
   "scripts": {
     "dev": "NODE_ENV=dev node server.js",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js",
-    "heroku-postbuild": "npm run build"
+    "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
     "antd": "^2.13.4",
@@ -19,10 +18,9 @@
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "require-hacker": "^3.0.1",
-    "svg-sprite-loader": "0.3",
-    "babel-plugin-transform-decorators-legacy": "^1.3.4"
+    "svg-sprite-loader": "0.3"
   },
-  "engines": {
-    "node": "8.7.0"
+  "devDependencies": {
+    "babel-plugin-transform-decorators-legacy": "^1.3.4"
   }
 }
