@@ -19,8 +19,10 @@ app.prepare().then(() => {
 
     if (/Mobile/i.test(ua) && pathname.indexOf('/m') === -1) {
       app.render(req, res, `/m${pathname}`, query)
-    } else if (!/Mobile/i.test(ua) && pathname.indexOf('/m') > -1) {
+    } else if (!/Mobile/i.test(ua) && pathname.indexOf('/m/') > -1) {
       app.render(req, res, pathname.slice(2), query)
+    } else if (!/Mobile/i.test(ua) && pathname.indexOf('/m') > -1) {
+      app.render(req, res, '/', query)
     } else {
       handle(req, res, parsedUrl)
     }
