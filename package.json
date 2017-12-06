@@ -7,16 +7,16 @@
     "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
-    "antd": "^2.13.4",
-    "antd-mobile": "^2.0.2",
+    "antd": "^3.0.0",
+    "antd-mobile": "^2.1.0",
     "babel-plugin-import": "^1.6.2",
     "isomorphic-fetch": "^2.2.1",
-    "mobx": "^3.3.1",
-    "mobx-react": "^4.3.3",
-    "next": "^4.1.4",
+    "mobx": "^3.4.0",
+    "mobx-react": "^4.3.5",
+    "next": "^4.2.0",
     "nprogress": "^0.2.0",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "require-hacker": "^3.0.1",
     "svg-sprite-loader": "0.3"
   },

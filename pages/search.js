@@ -62,8 +62,8 @@ export default class SearchPage extends React.Component {
         />
         {
           this.state.hasSearch
-            ? (<Card loading bordered={false} style={{ width: '100%' }}></Card>)
-            : (this.state.list.map((item) => <ListItem item={item} key={item._id}></ListItem>))
+            ? (<Card loading bordered={false} style={{ width: '100%' }}>loading card</Card>)
+            : (this.state.list.map((item, index) => <ListItem item={item} key={index}></ListItem>))
         }
       </Layout>
     )

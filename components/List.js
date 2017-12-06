@@ -61,7 +61,7 @@ export default class List extends React.Component {
         )}
         {
           this.state.hasMore
-            ? (<Card loading bordered={false} style={{ width: '100%' }}></Card>)
+            ? (<Card loading bordered={false} style={{ width: '100%' }}>loading card</Card>)
             : (<Alert message="全部列表都在这，没有更多了~" type="info" showIcon />)
         }
       </Layout>

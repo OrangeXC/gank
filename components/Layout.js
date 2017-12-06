@@ -19,8 +19,8 @@ export default ({ children, title = '主页' }) => (
     <Head>
       <title>{ title } - Gank</title>
       <meta charSet='utf-8' />
-      <meta name='viewport' content='initial-scale=1.0, width=device-width' />
-      <link href="https://cdn.bootcss.com/antd/2.13.4/antd.min.css" rel="stylesheet" />
+      <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+      <link href="https://cdn.bootcss.com/antd/3.0.0/antd.min.css" rel="stylesheet" />
       <link href='/static/css/nprogress.css' rel='stylesheet' />
       <link href="/static/logo.png" rel="icon" type="image/x-icon" />
     </Head>
