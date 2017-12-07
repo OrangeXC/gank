@@ -19,6 +19,7 @@ export default ({ children, language }) => (
       <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
       <title>Gank</title>
       <link rel="icon" type="image/x-icon" href="/static/logo.png" />
+      <link rel="apple-touch-icon" href="/static/logo.png" />
       <link rel='stylesheet' type='text/css' href='https://cdn.bootcss.com/antd-mobile/2.1.0/antd-mobile.min.css' />
       <link rel='stylesheet' href='/static/css/nprogress.mobile.css' />
     </Head>
