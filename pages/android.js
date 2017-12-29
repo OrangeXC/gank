@@ -23,7 +23,7 @@ export default class AndroidPage extends React.Component {
   render () {
     return (
       <Provider store={this.store}>
-        <List apiUrl="https://gank.io/api/data/Android/20/"></List>
+        <List title="Android" apiUrl="https://gank.io/api/data/Android/20/"></List>
       </Provider>
     )
   }
