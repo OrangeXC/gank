@@ -25,6 +25,7 @@ export default class List extends React.Component {
 
   componentDidMount () {
     window.addEventListener('scroll', this.handleScroll)
+    this.handleLayoutComplete()
   }
 
   componentWillUnmount () {
@@ -57,7 +58,7 @@ export default class List extends React.Component {
     }
   }
 
-  handleLayoutComplete (laidOutItems) {
+  handleLayoutComplete () {
     this.setState({
       showImages: true
     })
@@ -85,13 +86,11 @@ export default class List extends React.Component {
         {
           this.props.title === '福利'
             ? <div style={{ opacity: this.state.showImages ? '1' : '0', transition: 'opacity 0.5s linear' }}>
-                <Masonry
-                  onLayoutComplete={laidOutItems => this.handleLayoutComplete(laidOutItems)}
-                >
+                <Masonry>
                   {childImageElements}
                 </Masonry>
               </div>
-            : {childNormalElements}
+            : childNormalElements
         }
 
         {
