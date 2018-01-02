@@ -23,7 +23,7 @@ export default class IOSPage extends React.Component {
   render () {
     return (
       <Provider store={this.store}>
-        <List apiUrl="https://gank.io/api/data/iOS/20/"></List>
+        <List title="IOS" apiUrl="https://gank.io/api/data/iOS/20/"></List>
       </Provider>
     )
   }

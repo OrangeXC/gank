@@ -4,6 +4,9 @@ import Layout from './Layout'
 import ListItem from './ListItem'
 import { Card, Alert } from 'antd'
 import { inject, observer } from 'mobx-react'
+import Masonry from 'react-masonry-component'
+
+const Meta = Card.Meta
 
 @inject('store') @observer
 export default class List extends React.Component {
@@ -12,7 +15,8 @@ export default class List extends React.Component {
 
     this.state = {
       currentPage: 1,
-      hasMore: true
+      hasMore: true,
+      showImages: false
     }
 
     this.handleScroll = this.handleScroll.bind(this)
@@ -21,6 +25,7 @@ export default class List extends React.Component {
 
   componentDidMount () {
     window.addEventListener('scroll', this.handleScroll)
+    this.handleLayoutComplete()
   }
 
   componentWillUnmount () {
@@ -53,12 +58,41 @@ export default class List extends React.Component {
     }
   }
 
+  handleLayoutComplete () {
+    this.setState({
+      showImages: true
+    })
+  }
+
   render () {
+    let list = this.props.store.list
+
+    const childNormalElements = list.map(item =>
+      <ListItem item={item} key={item._id}></ListItem>
+    )
+
+    const childImageElements = list.map(element =>
+      <div style={{ width: '25%', boxSizing: 'border-box', padding: 20 }} key={element._id}>
+        <Card cover={<img src={element.url} />}>
+          <Meta
+            title={element.desc}
+          />
+        </Card>
+      </div>
+    )
+
     return (
       <Layout title={this.props.title}>
-        {this.props.store.list.map((item) =>
-          <ListItem item={item} key={item._id}></ListItem>
-        )}
+        {
+          this.props.title === '福利'
+            ? <div style={{ opacity: this.state.showImages ? '1' : '0', transition: 'opacity 0.5s linear' }}>
+                <Masonry>
+                  {childImageElements}
+                </Masonry>
+              </div>
+            : childNormalElements
+        }
+
         {
           this.state.hasMore
             ? (<Card loading bordered={false} style={{ width: '100%' }}>loading card</Card>)

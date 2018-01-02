@@ -23,7 +23,7 @@ export default class AppPage extends React.Component {
   render () {
     return (
       <Provider store={this.store}>
-        <List apiUrl="https://gank.io/api/data/App/20/"></List>
+        <List title="App" apiUrl="https://gank.io/api/data/App/20/"></List>
       </Provider>
     )
   }

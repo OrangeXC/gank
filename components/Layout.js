@@ -24,7 +24,7 @@ export default ({ children, title = '主页' }) => (
       <link href='/static/css/nprogress.css' rel='stylesheet' />
       <link href="/static/logo.png" rel="icon" type="image/x-icon" />
     </Head>
-    <Header style={{ width: '100%', minWidth: 1140 }}>
+    <Header style={{ position: 'fixed', top: '0', left: '0', width: '100%', zIndex: 10 ,minWidth: 1140 }}>
       <div className="logo" />
       <Menu
         theme="dark"
@@ -53,7 +53,7 @@ export default ({ children, title = '主页' }) => (
         </a>
       </div>
     </Header>
-    <Content style={{ width: 1140, padding: '64px 50px', margin: '0 auto' }}>
+    <Content style={{ width: 1140, padding: '128px 50px 64px', margin: '0 auto', minHeight: `calc(100vh - 69px)` }}>
       { children }
     </Content>
     <Footer style={{ textAlign: 'center' }}>

@@ -23,7 +23,7 @@ export default class WelfarePage extends React.Component {
   render () {
     return (
       <Provider store={this.store}>
-        <List apiUrl="https://gank.io/api/data/%e7%a6%8f%e5%88%a9/20/"></List>
+        <List title="福利" apiUrl="https://gank.io/api/data/%e7%a6%8f%e5%88%a9/20/"></List>
       </Provider>
     )
   }
