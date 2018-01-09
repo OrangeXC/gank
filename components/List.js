@@ -73,7 +73,7 @@ export default class List extends React.Component {
 
     const childImageElements = list.map(element =>
       <div style={{ width: '25%', boxSizing: 'border-box', padding: 20 }} key={element._id}>
-        <Card cover={<img src={element.url} />}>
+        <Card cover={<img src={`${element.url}?imageView2/2/w/436`} />}>
           <Meta
             title={element.desc}
           />
