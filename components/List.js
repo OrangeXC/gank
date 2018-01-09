@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 import Layout from './Layout'
 import ListItem from './ListItem'
-import { Card, Alert } from 'antd'
+import { Card, Alert, Modal } from 'antd'
 import { inject, observer } from 'mobx-react'
 import Masonry from 'react-masonry-component'
 
@@ -16,7 +16,9 @@ export default class List extends React.Component {
     this.state = {
       currentPage: 1,
       hasMore: true,
-      showImages: false
+      showImages: false,
+      dialogImageVisible: false,
+      largeImage: ''
     }
 
     this.handleScroll = this.handleScroll.bind(this)
@@ -64,6 +66,19 @@ export default class List extends React.Component {
     })
   }
 
+  handleLargeImageShow (url) {
+    this.setState({
+      dialogImageVisible: true,
+      largeImage: url
+    })
+  }
+
+  handleLargeImageHide () {
+    this.setState({
+      dialogImageVisible: false
+    })
+  }
+
   render () {
     let list = this.props.store.list
 
@@ -72,8 +87,12 @@ export default class List extends React.Component {
     )
 
     const childImageElements = list.map(element =>
-      <div style={{ width: '25%', boxSizing: 'border-box', padding: 20 }} key={element._id}>
-        <Card cover={<img src={`${element.url}?imageView2/2/w/436`} />}>
+      <div
+        style={{ width: '25%', boxSizing: 'border-box', padding: 20 }}
+        key={element._id}
+        onClick={() => this.handleLargeImageShow(element.url)}
+      >
+        <Card cover={<img src={`${element.url}?imageView2/2/w/436`} />} hoverable>
           <Meta
             title={element.desc}
           />
@@ -92,6 +111,16 @@ export default class List extends React.Component {
               </div>
             : childNormalElements
         }
+
+        <Modal
+          title="原图"
+          visible={this.state.dialogImageVisible}
+          wrapClassName="vertical-center-modal"
+          footer={null}
+          onCancel={() => this.handleLargeImageHide()}
+        >
+          <img style={{ maxWidth: '100%' }} src={this.state.largeImage} />
+        </Modal>
 
         {
           this.state.hasMore
