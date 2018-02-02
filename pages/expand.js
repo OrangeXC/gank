@@ -1,5 +1,5 @@
 import React from 'react'
-import List from '../components/List'
+import MainList from '../components/MainList'
 import { Provider } from 'mobx-react'
 import { initStore } from '../store'
 
@@ -23,7 +23,7 @@ export default class ExpandPage extends React.Component {
   render () {
     return (
       <Provider store={this.store}>
-        <List title="拓展资源" apiUrl="https://gank.io/api/data/%e6%8b%93%e5%b1%95%e8%b5%84%e6%ba%90/20/"></List>
+        <MainList title="拓展资源" apiUrl="https://gank.io/api/data/%e6%8b%93%e5%b1%95%e8%b5%84%e6%ba%90/20/"></MainList>
       </Provider>
     )
   }

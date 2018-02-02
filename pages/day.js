@@ -1,6 +1,6 @@
 import React from 'react'
-import ListItem from './../components/ListItem'
 import Layout from './../components/Layout'
+import NormalList from './../components/NormalList'
 import { Tabs } from 'antd'
 
 export default class DayPage extends React.Component {
@@ -29,9 +29,7 @@ export default class DayPage extends React.Component {
           {
             category.map(item =>
               <Tabs.TabPane tab={item} key={item}>
-                {list[item].map(i =>
-                  <ListItem item={i} key={i._id}></ListItem>
-                )}
+                <NormalList list={list[item]}></NormalList>
               </Tabs.TabPane>
             )
           }

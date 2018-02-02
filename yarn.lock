@@ -160,9 +160,9 @@ ansi-styles@^3.1.0:
   dependencies:
     color-convert "^1.9.0"
 
-antd-mobile@^2.1.4:
-  version "2.1.4"
-  resolved "https://registry.yarnpkg.com/antd-mobile/-/antd-mobile-2.1.4.tgz#ed8d5d87a73a2c962c42fcd72cd0a121bcb21542"
+antd-mobile@^2.1.5:
+  version "2.1.5"
+  resolved "https://registry.yarnpkg.com/antd-mobile/-/antd-mobile-2.1.5.tgz#259f4526b7ff4e6dfd4bba0f7b1eebea32f247ea"
   dependencies:
     array-tree-filter "~2.0.0"
     babel-runtime "6.x"
@@ -193,9 +193,9 @@ antd-mobile@^2.1.4:
     rmc-tooltip "~1.0.0"
     rn-topview "^0.1.6"
 
-antd@^3.1.4:
-  version "3.1.4"
-  resolved "https://registry.yarnpkg.com/antd/-/antd-3.1.4.tgz#1e31fce5690df63c53a56349bf7d627074d23c10"
+antd@^3.1.6:
+  version "3.1.6"
+  resolved "https://registry.yarnpkg.com/antd/-/antd-3.1.6.tgz#042e9f4a13e304a25283e59d999d09cb85c0c8d4"
   dependencies:
     array-tree-filter "^2.0.0"
     babel-runtime "6.x"

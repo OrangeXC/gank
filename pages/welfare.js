@@ -1,5 +1,5 @@
 import React from 'react'
-import List from '../components/List'
+import MainList from '../components/MainList'
 import { Provider } from 'mobx-react'
 import { initStore } from '../store'
 
@@ -23,7 +23,7 @@ export default class WelfarePage extends React.Component {
   render () {
     return (
       <Provider store={this.store}>
-        <List title="福利" apiUrl="https://gank.io/api/data/%e7%a6%8f%e5%88%a9/20/"></List>
+        <MainList title="福利" apiUrl="https://gank.io/api/data/%e7%a6%8f%e5%88%a9/20/"></MainList>
       </Provider>
     )
   }

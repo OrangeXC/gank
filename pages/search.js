@@ -1,7 +1,9 @@
 import React from 'react'
-import ListItem from '../components/ListItem'
 import Layout from '../components/Layout'
-import { Input, Alert, Card, message } from 'antd'
+import NormalList from '../components/NormalList'
+import ListSpin from '../components/ListSpin'
+import { Input, message } from 'antd'
+
 const { Search } = Input
 
 export default class SearchPage extends React.Component {
@@ -10,21 +12,21 @@ export default class SearchPage extends React.Component {
 
     this.state = {
       list: [],
-      hasSearch: false
+      searching: false
     }
   }
 
   handleLoadingShow () {
     this.setState((preState) => ({
-      hasSearch: !preState.hasSearch
+      searching: !preState.searching
     }))
   }
 
   async handleSearch (val) {
     if (!val) {
-      this.setState(() => ({
+      this.setState({
         list: []
-      }))
+      })
 
       message.info(`搜索内容不能为空`)
 
@@ -37,13 +39,13 @@ export default class SearchPage extends React.Component {
     const { count, results } = await res.json()
 
     if (count) {
-      this.setState(() => ({
+      this.setState({
         list: results
-      }))
+      })
     } else {
-      this.setState(() => ({
+      this.setState({
         list: []
-      }))
+      })
 
       message.warning(`未找到关键字为（${val}）的数据`)
     }
@@ -60,10 +62,11 @@ export default class SearchPage extends React.Component {
           size="large"
           onSearch={value => this.handleSearch(value)}
         />
+
         {
-          this.state.hasSearch
-            ? (<Card loading bordered={false} style={{ width: '100%' }}>loading card</Card>)
-            : (this.state.list.map((item, index) => <ListItem item={item} key={index}></ListItem>))
+          this.state.searching
+            ? <ListSpin></ListSpin>
+            : <NormalList list={this.state.list}></NormalList>
         }
       </Layout>
     )
