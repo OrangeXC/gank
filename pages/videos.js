@@ -1,5 +1,5 @@
 import React from 'react'
-import List from '../components/List'
+import MainList from '../components/MainList'
 import { Provider } from 'mobx-react'
 import { initStore } from '../store'
 
@@ -23,7 +23,7 @@ export default class VideoPage extends React.Component {
   render () {
     return (
       <Provider store={this.store}>
-        <List title="休息视频" apiUrl="https://gank.io/api/data/%e4%bc%91%e6%81%af%e8%a7%86%e9%a2%91/20/"></List>
+        <MainList title="休息视频" apiUrl="https://gank.io/api/data/%e4%bc%91%e6%81%af%e8%a7%86%e9%a2%91/20/"></MainList>
       </Provider>
     )
   }

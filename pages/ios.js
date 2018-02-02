@@ -1,5 +1,5 @@
 import React from 'react'
-import List from '../components/List'
+import MainList from '../components/MainList'
 import { Provider } from 'mobx-react'
 import { initStore } from '../store'
 
@@ -23,7 +23,7 @@ export default class IOSPage extends React.Component {
   render () {
     return (
       <Provider store={this.store}>
-        <List title="IOS" apiUrl="https://gank.io/api/data/iOS/20/"></List>
+        <MainList title="IOS" apiUrl="https://gank.io/api/data/iOS/20/"></MainList>
       </Provider>
     )
   }
