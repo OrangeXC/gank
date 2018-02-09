@@ -27,7 +27,7 @@ function moduleDir (m) {
   return path.dirname(require.resolve(`${m}/package.json`))
 }
 
-module.exports = withOffline({
+module.exports = {
   webpack: (config, { dev }) => {
     config.resolve.extensions = ['.web.js', '.js', '.json']
 
@@ -81,4 +81,4 @@ module.exports = withOffline({
 
     return config
   }
-})
+}
