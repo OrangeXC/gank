@@ -20,7 +20,6 @@ app.prepare().then(() => {
 
     if (pathname === '/service-worker.js') {
       const filePath = join(__dirname, '.next', pathname)
-      console.log(filePath)
       app.serveStatic(req, res, filePath)
     } else if (/Mobile/i.test(ua) && pathname.indexOf('/m') === -1) {
       app.render(req, res, `/m${pathname}`, query)
