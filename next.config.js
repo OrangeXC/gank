@@ -1,6 +1,7 @@
 const path = require('path')
 const fs = require('fs')
 const requireHacker = require('require-hacker')
+const withOffline = require('next-offline')
 
 function setupRequireHacker () {
   const webjs = '.web.js'
@@ -26,7 +27,7 @@ function moduleDir (m) {
   return path.dirname(require.resolve(`${m}/package.json`))
 }
 
-module.exports = {
+module.exports = withOffline({
   webpack: (config, { dev }) => {
     config.resolve.extensions = ['.web.js', '.js', '.json']
 
@@ -54,4 +55,4 @@ module.exports = {
 
     return config
   }
-}
+})
