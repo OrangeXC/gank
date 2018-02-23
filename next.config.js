@@ -1,6 +1,7 @@
 const path = require('path')
 const fs = require('fs')
 const requireHacker = require('require-hacker')
+const SWPrecacheWebpackPlugin = require('sw-precache-webpack-plugin')
 
 function setupRequireHacker () {
   const webjs = '.web.js'
@@ -51,6 +52,32 @@ module.exports = {
         ]
       }
     )
+
+    config.plugins.push(
+      new SWPrecacheWebpackPlugin({
+        verbose: false,
+        minify: true,
+        staticFileGlobsIgnorePatterns: [/\.next\//],
+        runtimeCaching: [
+          {
+            handler: 'networkFirst',
+            urlPattern: /^https?.*/
+          }
+        ]
+      })
+    )
+
+    const originalEntry = config.entry
+
+    config.entry = async () => {
+      const entries = await originalEntry()
+
+      if (entries['main.js']) {
+        entries['main.js'].unshift(require.resolve('./sw.js'))
+      }
+
+      return entries
+    }
 
     return config
   }
