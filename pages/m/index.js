@@ -8,13 +8,11 @@ import Layout from '../../mobileComponents/Layout'
 import MenuBar from '../../mobileComponents/MenuBar'
 import ScrollList from '../../mobileComponents/ScrollList'
 
-const CustomIcon = ({ type, className = '', size = 'md', ...restProps }) => (
+const CustomIcon = ({ type, className = '', size = 'md' }) => (
   <svg
-    className={`am-icon am-icon-${type.substr(1)} am-icon-${size} ${className}`}
-    {...restProps}
+    className={`am-icon am-icon-${size} ${className}`}
   >
-    <use xlinkHref={type} /> {/* svg-sprite-loader@0.3.x */}
-    {/* <use xlinkHref={#${type.default.id}} /> */} {/* svg-sprite-loader@lastest */}
+    {<use xlinkHref={`#${type.default.id}`} />}
   </svg>
 )
 
