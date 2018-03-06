@@ -7,13 +7,13 @@
     "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
-    "antd": "^3.2.0",
+    "antd": "^3.2.3",
     "antd-mobile": "^2.1.6",
-    "babel-plugin-import": "^1.6.3",
+    "babel-plugin-import": "^1.6.5",
     "isomorphic-fetch": "^2.2.1",
-    "mobx": "^3.4.1",
-    "mobx-react": "^4.3.5",
-    "next": "^5.0.0",
+    "mobx": "^3.6.1",
+    "mobx-react": "^4.4.2",
+    "next": "^5.0.1-canary.10",
     "nprogress": "^0.2.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
