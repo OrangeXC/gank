@@ -2,9 +2,11 @@ const port = parseInt(process.env.PORT, 10) || 3000
 const dev = process.env.NODE_ENV !== 'production'
 
 const { createServer } = require('http')
+const { join } = require('path')
 const { parse } = require('url')
 const next = require('next')
 const mobxReact = require('mobx-react')
+
 const app = next({ dev })
 const handle = app.getRequestHandler()
 
@@ -17,7 +19,11 @@ app.prepare().then(() => {
 
     const ua = req.headers['user-agent']
 
-    if (/Mobile/i.test(ua) && pathname.indexOf('/m') === -1) {
+    if (pathname === '/service-worker.js') {
+      const filePath = join(__dirname, '.next', pathname)
+
+      app.serveStatic(req, res, filePath)
+    } else if (/Mobile/i.test(ua) && pathname.indexOf('/m') === -1) {
       app.render(req, res, `/m${pathname}`, query)
     } else if (!/Mobile/i.test(ua) && pathname.indexOf('/m/') > -1) {
       app.render(req, res, pathname.slice(2), query)
