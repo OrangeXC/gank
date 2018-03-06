@@ -24,7 +24,9 @@ app.prepare().then(() => {
 
       app.serveStatic(req, res, filePath)
     } else if (/Mobile/i.test(ua) && pathname.indexOf('/m') === -1) {
-      app.render(req, res, `/m${pathname}`, query)
+      const mobilePathname = pathname === '/' ? '/m' : `/m${pathname}`
+
+      app.render(req, res, mobilePathname, query)
     } else if (!/Mobile/i.test(ua) && pathname.indexOf('/m/') > -1) {
       app.render(req, res, pathname.slice(2), query)
     } else if (!/Mobile/i.test(ua) && pathname.indexOf('/m') > -1) {
