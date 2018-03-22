@@ -35,7 +35,11 @@ export default class TimeLinePage extends React.Component {
                     this.props.timeline.filter(item => item.indexOf(year) > -1).map(item =>
                       <Col span={6} key={item}>
                         <div style={{marginTop: 8, marginBottom: 8}}>
-                          <Card title={item} extra={<Link href={{ pathname: '/day', query: { date: item } }}><a>More</a></Link>}></Card>
+                          <Card
+                            title={item}
+                            extra={<Link href={{ pathname: '/day', query: { date: item } }}><a>More</a></Link>}
+                            bodyStyle={{ padding: 0 }}>
+                          </Card>
                         </div>
                       </Col>
                     )
