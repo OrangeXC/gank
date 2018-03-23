@@ -29,6 +29,7 @@ export default function NormalList(props) {
                   style={{ maxWidth: '100%', maxHeight: '100%' }}
                   alt="cover"
                   src={`${item.images[0].replace(/^http:\/\//i, 'https://')}?imageView2/0/w/544`}
+                  onError={(e) => e.target.src='/static/icon/image.svg'}
                 />
               </div>
             }
