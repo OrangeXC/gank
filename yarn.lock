@@ -3327,9 +3327,9 @@ nanomatch@^1.2.1:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
-next-offline@^2.2.0:
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/next-offline/-/next-offline-2.2.0.tgz#d4792f827f1f7d5bdf5482f4365d486107af2048"
+next-offline@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/next-offline/-/next-offline-2.2.1.tgz#b415fc0a3d7986519052b07b38632c62dd0da67a"
   dependencies:
     fs-extra "~5.0.0"
     webpack "~3.11.0"
