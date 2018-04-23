@@ -3447,9 +3447,9 @@ next-offline@^2.5.0:
     workbox-build "~3.0.1"
     workbox-webpack-plugin "~3.0.1"
 
-next@^6.0.0-canary.4:
-  version "6.0.0-canary.4"
-  resolved "https://registry.yarnpkg.com/next/-/next-6.0.0-canary.4.tgz#9f6980541f2d1b6686ab9f7a6c3df8593ca44c55"
+next@^6.0.0-canary.5:
+  version "6.0.0-canary.5"
+  resolved "https://registry.yarnpkg.com/next/-/next-6.0.0-canary.5.tgz#bb55e74f2306843384bfd84ecf46b96cd56e1456"
   dependencies:
     "@babel/core" "7.0.0-beta.42"
     "@babel/plugin-proposal-class-properties" "7.0.0-beta.42"
