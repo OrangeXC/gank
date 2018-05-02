@@ -727,9 +727,9 @@ antd-mobile@^2.1.8:
     rmc-tooltip "~1.0.0"
     rn-topview "^0.1.6"
 
-antd@^3.4.3:
-  version "3.4.3"
-  resolved "https://registry.yarnpkg.com/antd/-/antd-3.4.3.tgz#17c6f6d91da8c15c27704a3e38833d67592a3959"
+antd@^3.4.4:
+  version "3.4.4"
+  resolved "http://npm.zhaopin.com/antd/-/antd-3.4.4.tgz#18897edd3182c06cc45310af8fa73e419ea346cb"
   dependencies:
     array-tree-filter "^2.0.0"
     babel-runtime "6.x"
@@ -3234,11 +3234,12 @@ mkdirp-then@1.2.0:
   dependencies:
     minimist "0.0.8"
 
-mobx-react@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/mobx-react/-/mobx-react-5.0.0.tgz#8d5a33be376fa22b184a6f555d40a6a3a8459a16"
+mobx-react@^5.1.2:
+  version "5.1.2"
+  resolved "http://npm.zhaopin.com/mobx-react/-/mobx-react-5.1.2.tgz#ec5c2d29a1df823dbd1b37e214fa36a0907054e2"
   dependencies:
-    hoist-non-react-statics "^2.3.1"
+    hoist-non-react-statics "^2.5.0"
+    react-lifecycles-compat "^3.0.2"
 
 mobx@^4.2.0:
   version "4.2.0"
@@ -3293,9 +3294,9 @@ next-offline@^2.6.0:
     workbox-build "~3.1.0"
     workbox-webpack-plugin "~3.1.0"
 
-next@^6.0.0-canary.7:
-  version "6.0.0-canary.7"
-  resolved "https://registry.yarnpkg.com/next/-/next-6.0.0-canary.7.tgz#9efbcdc6efba1dde4d480e61fbdba5b807e1ff1a"
+next@^6.0.0:
+  version "6.0.0"
+  resolved "http://npm.zhaopin.com/next/-/next-6.0.0.tgz#700489ff9d93c36f3ade0b474d08b9b0dd9ef7b3"
   dependencies:
     "@babel/core" "7.0.0-beta.42"
     "@babel/plugin-proposal-class-properties" "7.0.0-beta.42"
@@ -4334,6 +4335,10 @@ react-lazy-load@^3.0.12:
 react-lifecycles-compat@^2.0.0:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-2.0.2.tgz#00a23160eec17a43b94dd74f95d44a1a2c3c5ec1"
+
+react-lifecycles-compat@^3.0.2:
+  version "3.0.2"
+  resolved "http://npm.zhaopin.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.2.tgz#7279047275bd727a912e25f734c0559527e84eff"
 
 react-masonry-component@^6.2.0:
   version "6.2.0"
