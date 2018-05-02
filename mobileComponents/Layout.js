@@ -20,7 +20,7 @@ export default ({ children, language }) => (
       <title>Gank</title>
       <link rel="icon" type="image/x-icon" href="/static/logo.png" />
       <link rel="apple-touch-icon" href="/static/logo.png" />
-      <link rel='stylesheet' type='text/css' href='https://cdn.bootcss.com/antd-mobile/2.1.0/antd-mobile.min.css' />
+      <link rel='stylesheet' type='text/css' href='https://cdn.bootcss.com/antd-mobile/2.1.8/antd-mobile.min.css' />
       <link rel='stylesheet' href='/static/css/nprogress.mobile.css' />
     </Head>
     <LocaleProvider locale={language.substr(0, 2) === 'en' ? enUS : undefined}>
