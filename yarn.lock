@@ -729,7 +729,7 @@ antd-mobile@^2.1.8:
 
 antd@^3.4.4:
   version "3.4.4"
-  resolved "http://npm.zhaopin.com/antd/-/antd-3.4.4.tgz#18897edd3182c06cc45310af8fa73e419ea346cb"
+  resolved "https://registry.yarnpkg.com/antd/-/antd-3.4.4.tgz#18897edd3182c06cc45310af8fa73e419ea346cb"
   dependencies:
     array-tree-filter "^2.0.0"
     babel-runtime "6.x"
@@ -3236,7 +3236,7 @@ mkdirp-then@1.2.0:
 
 mobx-react@^5.1.2:
   version "5.1.2"
-  resolved "http://npm.zhaopin.com/mobx-react/-/mobx-react-5.1.2.tgz#ec5c2d29a1df823dbd1b37e214fa36a0907054e2"
+  resolved "https://registry.yarnpkg.com/mobx-react/-/mobx-react-5.1.2.tgz#ec5c2d29a1df823dbd1b37e214fa36a0907054e2"
   dependencies:
     hoist-non-react-statics "^2.5.0"
     react-lifecycles-compat "^3.0.2"
@@ -3296,7 +3296,7 @@ next-offline@^2.6.0:
 
 next@^6.0.0:
   version "6.0.0"
-  resolved "http://npm.zhaopin.com/next/-/next-6.0.0.tgz#700489ff9d93c36f3ade0b474d08b9b0dd9ef7b3"
+  resolved "https://registry.yarnpkg.com/next/-/next-6.0.0.tgz#700489ff9d93c36f3ade0b474d08b9b0dd9ef7b3"
   dependencies:
     "@babel/core" "7.0.0-beta.42"
     "@babel/plugin-proposal-class-properties" "7.0.0-beta.42"
@@ -4338,7 +4338,7 @@ react-lifecycles-compat@^2.0.0:
 
 react-lifecycles-compat@^3.0.2:
   version "3.0.2"
-  resolved "http://npm.zhaopin.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.2.tgz#7279047275bd727a912e25f734c0559527e84eff"
+  resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.2.tgz#7279047275bd727a912e25f734c0559527e84eff"
 
 react-masonry-component@^6.2.0:
   version "6.2.0"
