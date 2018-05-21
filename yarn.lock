@@ -727,9 +727,9 @@ antd-mobile@^2.1.8:
     rmc-tooltip "~1.0.0"
     rn-topview "^0.1.6"
 
-antd@^3.5.2:
-  version "3.5.2"
-  resolved "https://registry.yarnpkg.com/antd/-/antd-3.5.2.tgz#f27356289788dbe463103f0ab715345ac7ca8cee"
+antd@^3.5.3:
+  version "3.5.3"
+  resolved "https://registry.yarnpkg.com/antd/-/antd-3.5.3.tgz#92249afbb1d0f90b4ea2832362b371a24cb5e3bd"
   dependencies:
     array-tree-filter "^2.0.0"
     babel-runtime "6.x"
