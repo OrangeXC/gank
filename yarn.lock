@@ -694,17 +694,16 @@ ansi-styles@^3.2.1:
   dependencies:
     color-convert "^1.9.0"
 
-antd-mobile@^2.1.8:
-  version "2.1.8"
-  resolved "https://registry.yarnpkg.com/antd-mobile/-/antd-mobile-2.1.8.tgz#054efda2105d9bf603a0730b8602a8fb21c81c02"
+antd-mobile@^2.1.9:
+  version "2.1.9"
+  resolved "https://registry.yarnpkg.com/antd-mobile/-/antd-mobile-2.1.9.tgz#8ef078fa643b2ccca4678c30a3300751aaaa8879"
   dependencies:
     array-tree-filter "~2.1.0"
     babel-runtime "6.x"
     classnames "^2.2.1"
     normalize.css "^7.0.0"
     rc-checkbox "~2.0.0"
-    rc-collapse "~1.7.0"
-    rc-drawer "~0.4.9"
+    rc-collapse "~1.9.1"
     rc-slider "~8.2.0"
     rc-swipeout "~2.0.0"
     react-native-camera-roll-picker "^1.2.1"
@@ -713,9 +712,10 @@ antd-mobile@^2.1.8:
     react-native-menu "^0.23.0"
     rmc-calendar "^1.0.0"
     rmc-cascader "~5.0.0"
-    rmc-date-picker "~6.0.6"
+    rmc-date-picker "~6.0.7"
     rmc-dialog "^1.0.1"
-    rmc-feedback "^1.0.0"
+    rmc-drawer "^0.4.11"
+    rmc-feedback "^2.0.0"
     rmc-input-number "^1.0.0"
     rmc-list-view "^0.11.0"
     rmc-notification "~1.0.0"
@@ -727,9 +727,9 @@ antd-mobile@^2.1.8:
     rmc-tooltip "~1.0.0"
     rn-topview "^0.1.6"
 
-antd@^3.5.2:
-  version "3.5.2"
-  resolved "https://registry.yarnpkg.com/antd/-/antd-3.5.2.tgz#f27356289788dbe463103f0ab715345ac7ca8cee"
+antd@^3.5.3:
+  version "3.5.3"
+  resolved "https://registry.yarnpkg.com/antd/-/antd-3.5.3.tgz#92249afbb1d0f90b4ea2832362b371a24cb5e3bd"
   dependencies:
     array-tree-filter "^2.0.0"
     babel-runtime "6.x"
@@ -3972,18 +3972,18 @@ rc-checkbox@~2.1.5:
     prop-types "15.x"
     rc-util "^4.0.4"
 
-rc-collapse@~1.7.0:
-  version "1.7.6"
-  resolved "https://registry.yarnpkg.com/rc-collapse/-/rc-collapse-1.7.6.tgz#64433512d921f750df61433e675bb9547ba5ef6b"
+rc-collapse@~1.9.0:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/rc-collapse/-/rc-collapse-1.9.0.tgz#2652e0b6585d95b60770998a5f77d939f11f96be"
   dependencies:
     classnames "2.x"
     css-animation "1.x"
     prop-types "^15.5.6"
     rc-animate "2.x"
 
-rc-collapse@~1.9.0:
-  version "1.9.0"
-  resolved "https://registry.yarnpkg.com/rc-collapse/-/rc-collapse-1.9.0.tgz#2652e0b6585d95b60770998a5f77d939f11f96be"
+rc-collapse@~1.9.1:
+  version "1.9.2"
+  resolved "https://registry.yarnpkg.com/rc-collapse/-/rc-collapse-1.9.2.tgz#baa88a724ebbf444ad1f7776fe912f2f894e4099"
   dependencies:
     classnames "2.x"
     css-animation "1.x"
@@ -3999,14 +3999,6 @@ rc-dialog@~7.1.0:
     object-assign "~4.1.0"
     rc-animate "2.x"
     rc-util "^4.1.0"
-
-rc-drawer@~0.4.9:
-  version "0.4.11"
-  resolved "https://registry.yarnpkg.com/rc-drawer/-/rc-drawer-0.4.11.tgz#94faaec28183ab90f135f0dfe244dca14cfee799"
-  dependencies:
-    babel-runtime "6.x"
-    classnames "^2.2.4"
-    prop-types "^15.5.10"
 
 rc-dropdown@~2.1.0:
   version "2.1.0"
@@ -4673,9 +4665,9 @@ rmc-date-picker@~6.0.0-alpha.10:
     babel-runtime "6.x"
     rmc-picker "~5.0.0"
 
-rmc-date-picker@~6.0.6:
-  version "6.0.6"
-  resolved "https://registry.yarnpkg.com/rmc-date-picker/-/rmc-date-picker-6.0.6.tgz#b18be72ff86f654fea1050ac8d5899f0d23efe00"
+rmc-date-picker@~6.0.7:
+  version "6.0.7"
+  resolved "https://registry.yarnpkg.com/rmc-date-picker/-/rmc-date-picker-6.0.7.tgz#3f3f3718338edfe0d7bf5c42c638d72c2b642c24"
   dependencies:
     babel-runtime "6.x"
     rmc-picker "~5.0.0"
@@ -4687,9 +4679,24 @@ rmc-dialog@^1.0.1:
     babel-runtime "6.x"
     rc-animate "2.x"
 
+rmc-drawer@^0.4.11:
+  version "0.4.11"
+  resolved "https://registry.yarnpkg.com/rmc-drawer/-/rmc-drawer-0.4.11.tgz#9a8c6125a4ccd37b916f32f7e8b477d11d413ee3"
+  dependencies:
+    babel-runtime "6.x"
+    classnames "^2.2.4"
+    prop-types "^15.5.10"
+
 rmc-feedback@^1.0.0:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/rmc-feedback/-/rmc-feedback-1.0.3.tgz#efd9d75c51998857c7a9a495ee507313a81aaee9"
+  dependencies:
+    babel-runtime "6.x"
+    classnames "^2.2.5"
+
+rmc-feedback@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/rmc-feedback/-/rmc-feedback-2.0.0.tgz#cbc6cb3ae63c7a635eef0e25e4fbaf5ac366eeaa"
   dependencies:
     babel-runtime "6.x"
     classnames "^2.2.5"
