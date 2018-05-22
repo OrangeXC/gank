@@ -48,8 +48,7 @@ export default class MasonryList extends React.Component {
                 onClick={() => this.handleLargeImageShow(element.url)}
               >
                 <Card
-                  cover={<img src={`${element.url}?imageView2/2/w/436`}
-                  onError={(e) => e.target.src='/static/icon/image.svg'} />}
+                  cover={<img src={element.url} onError={(e) => e.target.src='/static/icon/image.svg'} />}
                   hoverable
                 >
                   <Card.Meta
