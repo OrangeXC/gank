@@ -38,6 +38,7 @@ export default ({ children, title = '主页' }) => (
         <ActiveLink href='/app'>App</ActiveLink>
         <ActiveLink href='/expand'>拓展资源</ActiveLink>
         <ActiveLink href='/videos'>休息视频</ActiveLink>
+        <ActiveLink href='/blind'>瞎推荐</ActiveLink>
         <ActiveLink href='/welfare'>福利</ActiveLink>
         <ActiveLink href='/timeline'>时间轴</ActiveLink>
       </Menu>

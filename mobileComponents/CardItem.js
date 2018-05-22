@@ -13,7 +13,7 @@ const CardItem = (rowData) => {
                     <Flex.Item style={{ flex: '0 0 auto', width: 100, textAlign: 'center' }}>
                       <img
                         style={{ maxWidth: 100, maxHeight: 100 }}
-                        src={`${rowData.images[0].replace(/^http:\/\//i, 'https://')}?imageView2/0/w/200/h/200`}
+                        src={rowData.images[0]}
                         onError={(e) => e.target.src='/static/icon/image.svg'}
                       />
                     </Flex.Item>
@@ -38,7 +38,7 @@ const CardItem = (rowData) => {
             <Card.Body>
               <img
                 style={{ maxWidth: '100%' }}
-                src={`${rowData.url}?imageView2/2/w/750`}
+                src={rowData.url}
                 onError={(e) => e.target.src='/static/icon/image.svg'}
               />
             </Card.Body>

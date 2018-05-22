@@ -6,7 +6,7 @@ import Router, { withRouter } from 'next/router'
 
 const onClickHandler = (href) => (event) => {
   event.preventDefault()
-  Router.push(href)
+  Router.push(href).then(() => window.scrollTo(0, 0))
 }
 
 const ActiveLink = ({ children, router, href }) => {

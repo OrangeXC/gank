@@ -35,7 +35,7 @@ export default class MenuBar extends Component {
               icon={icon}
               selectedIcon={selectedIcon}
               selected={pathname === link || pathname === `/m${link}` || pathname === `${link}/`}
-              onPress={() => Router.push(link)}
+              onPress={() => Router.push(link).then(() => window.scrollTo(0, 0))}
             >
               {children}
             </TabBar.Item>

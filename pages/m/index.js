@@ -42,6 +42,10 @@ const gridMenu = [
     text: '休息视频',
     link: '/m/videos'
   }, {
+    icon: '../../static/icon/blind.svg',
+    text: '瞎推荐',
+    link: '/m/blind'
+  }, {
     icon: '../../static/icon/welfare.svg',
     text: '福利',
     link: '/m/welfare'
@@ -90,7 +94,7 @@ export default class MobileHome extends Component {
             mode='light'
             leftContent={<CustomIcon type={require('../../static/icon/github.svg')} />}
             onLeftClick={() => window.open('https://github.com/OrangeXC/gank')}
-            rightContent={<Icon onClick={() => Router.push('/m/search')} type='search' />}
+            rightContent={<Icon onClick={() => Router.push('/m/search').then(() => window.scrollTo(0, 0))} type='search' />}
           >
             主页
           </NavBar>
