@@ -3251,7 +3251,7 @@ mobx-react@^5.1.2:
 
 mobx@^4.3.0:
   version "4.3.0"
-  resolved "http://npm.zhaopin.com/mobx/-/mobx-4.3.0.tgz#50a5e63fd0197a83c68166ff83ada45b65c859f8"
+  resolved "https://registry.yarnpkg.com/mobx/-/mobx-4.3.0.tgz#50a5e63fd0197a83c68166ff83ada45b65c859f8"
 
 moment@2.x, moment@^2.11.2, moment@^2.19.3:
   version "2.19.3"
