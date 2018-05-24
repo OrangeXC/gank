@@ -66,9 +66,9 @@ export default function NormalList(props) {
               </div>
             }
           >
-            <List.Item.Meta
-              title={<a href={item.url} target="_blank">{item.desc}</a>}
-            />
+            <h4 className="ant-list-item-meta-title">
+              <a href={item.url} target="_blank">{item.desc}</a>
+            </h4>
           </List.Item>
         )}
       />
