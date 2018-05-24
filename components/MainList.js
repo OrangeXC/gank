@@ -7,7 +7,6 @@ import ListSpin from './ListSpin'
 import { Alert } from 'antd'
 import { inject, observer } from 'mobx-react'
 import Masonry from 'react-masonry-component'
-import { max } from 'moment';
 
 @inject('store') @observer
 
