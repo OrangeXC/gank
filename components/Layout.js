@@ -8,7 +8,6 @@ import ActiveLink from './ActiveLink'
 import 'isomorphic-fetch'
 
 Router.onRouteChangeStart = (url) => {
-  console.log(`Loading: ${url}`)
   NProgress.start()
 }
 Router.onRouteChangeComplete = () => NProgress.done()
@@ -20,7 +19,7 @@ export default ({ children, title = '主页' }) => (
       <title>{ title } - Gank</title>
       <meta charSet='utf-8' />
       <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
-      <link href="https://cdn.bootcss.com/antd/3.5.0/antd.min.css" rel="stylesheet" />
+      <link href="https://cdn.bootcss.com/antd/3.5.2/antd.min.css" rel="stylesheet" />
       <link href='/static/css/nprogress.css' rel='stylesheet' />
       <link href="/static/logo.png" rel="icon" type="image/x-icon" />
     </Head>
