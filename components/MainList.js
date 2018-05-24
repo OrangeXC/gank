@@ -32,7 +32,9 @@ export default class MainList extends React.Component {
   }
 
   handleScroll () {
-    if (document.documentElement.offsetHeight + document.documentElement.scrollTop > document.documentElement.scrollHeight - 50) {
+    const scrollTop = Math.max(document.documentElement.scrollTop, document.body.scrollTop)
+
+    if (document.documentElement.offsetHeight + scrollTop > document.documentElement.scrollHeight - 50) {
       this.handleLoadMore()
     }
   }
