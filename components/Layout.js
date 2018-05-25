@@ -48,8 +48,8 @@ export default ({ children, title = '主页' }) => (
         <Link href='/search'>
           <Button type="primary" shape="circle" style={{ marginRight: 12 }} icon="search" />
         </Link>
-        <a style={{ verticalAlign: 'sub' }} href="https://github.com/OrangeXC/gank" target="_blank">
-          <Button shape="circle" icon="github" style={{ fontSize: 22 }} />
+        <a className="github-btn" href="https://github.com/OrangeXC/gank" target="_blank">
+          <Button shape="circle" icon="github" />
         </a>
       </div>
     </Header>
