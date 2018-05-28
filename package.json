@@ -8,20 +8,20 @@
     "heroku-postbuild": "next build"
   },
   "dependencies": {
-    "antd": "^3.5.3",
+    "antd": "^3.5.4",
     "antd-mobile": "^2.1.10",
     "babel-plugin-import": "^1.7.0",
     "isomorphic-fetch": "^2.2.1",
     "mobx": "^4.3.0",
     "mobx-react": "^5.1.2",
-    "next": "^6.0.4-canary.0",
+    "next": "^6.0.4-canary.1",
     "next-offline": "^2.7.1",
     "nprogress": "^0.2.0",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "react-masonry-component": "^6.2.0",
     "require-hacker": "^3.0.1",
-    "svg-sprite-loader": "^3.7.3"
+    "svg-sprite-loader": "^3.8.0"
   },
   "devDependencies": {
     "babel-plugin-transform-class-properties": "^6.24.1",
