@@ -694,9 +694,9 @@ ansi-styles@^3.2.1:
   dependencies:
     color-convert "^1.9.0"
 
-antd-mobile@^2.1.10:
-  version "2.1.10"
-  resolved "https://registry.yarnpkg.com/antd-mobile/-/antd-mobile-2.1.10.tgz#26ec6457976849a9ff610b2f2f74cd033f281aeb"
+antd-mobile@^2.1.11:
+  version "2.1.11"
+  resolved "https://registry.yarnpkg.com/antd-mobile/-/antd-mobile-2.1.11.tgz#24bf37ab73497d20284088ed629d150691066154"
   dependencies:
     array-tree-filter "~2.1.0"
     babel-runtime "6.x"

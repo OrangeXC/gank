@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "antd": "^3.5.4",
-    "antd-mobile": "^2.1.10",
+    "antd-mobile": "^2.1.11",
     "babel-plugin-import": "^1.7.0",
     "isomorphic-fetch": "^2.2.1",
     "mobx": "^4.3.0",
