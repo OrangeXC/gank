@@ -8,7 +8,7 @@
     "heroku-postbuild": "next build"
   },
   "dependencies": {
-    "antd": "^3.5.4",
+    "antd": "^3.6.1",
     "antd-mobile": "^2.1.11",
     "babel-plugin-import": "^1.7.0",
     "isomorphic-fetch": "^2.2.1",
@@ -19,7 +19,7 @@
     "nprogress": "^0.2.0",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
-    "react-masonry-component": "^6.2.0",
+    "react-masonry-component": "^6.2.1",
     "require-hacker": "^3.0.1",
     "svg-sprite-loader": "^3.8.0"
   },
