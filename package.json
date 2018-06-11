@@ -8,14 +8,14 @@
     "heroku-postbuild": "next build"
   },
   "dependencies": {
-    "antd": "^3.6.1",
+    "antd": "^3.6.2",
     "antd-mobile": "^2.1.11",
     "babel-plugin-import": "^1.7.0",
     "isomorphic-fetch": "^2.2.1",
     "mobx": "^5.0.0",
-    "mobx-react": "^5.2.0",
+    "mobx-react": "^5.2.2",
     "next": "^6.0.4-canary.3",
-    "next-offline": "^2.7.1",
+    "next-offline": "^2.7.2",
     "nprogress": "^0.2.0",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
