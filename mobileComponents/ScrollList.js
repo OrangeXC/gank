@@ -1,9 +1,6 @@
-import React, {Component} from 'react'
+import { Component } from 'react'
 import { ListView, Icon } from 'antd-mobile'
 import CardItem from './CardItem'
-
-const NUM_ROWS = 20
-let pageIndex = 1
 
 export default class ScrollList extends Component {
   constructor (props) {
@@ -16,18 +13,22 @@ export default class ScrollList extends Component {
     this.state = {
       rData: [],
       dataSource,
+      pageIndex: 1,
       isLoading: false
     }
   }
 
-  onEndReached = async (event) => {
+  onEndReached = async () => {
     if (this.state.isLoading && !this.state.hasMore) {
       return
     }
 
-    this.setState({ isLoading: true })
+    this.setState((prevState) => ({
+      isLoading: true,
+      pageIndex: prevState.pageIndex + 1
+    }))
 
-    await this.genData(++pageIndex)
+    await this.getData(this.pageIndex)
 
     this.setState({
       dataSource: this.state.dataSource.cloneWithRows(this.state.rData),
@@ -35,21 +36,21 @@ export default class ScrollList extends Component {
     })
   }
 
-  async genData (pIndex = 0) {
-    const res = await fetch(`https://gank.io/api/data/${this.props.listType}/${NUM_ROWS}/${pIndex}`)
+  async getData (pageIndex = 0) {
+    const res = await fetch(`${this.props.apiUrl}/${pageIndex}`)
     const json = await res.json()
 
     this.setState((prevState) => ({
-      rData: pIndex === 2
+      rData: pageIndex === 2
         ? this.props.initList.concat(prevState.rData).concat(json.results)
         : prevState.rData.concat(json.results)
     }))
   }
 
   render () {
-    const separator = (sectionID, rowID) => (
+    const separator = (sectionId, rowId) => (
       <div
-        key={`${sectionID}-${rowID}`}
+        key={`${sectionId}-${rowId}`}
         style={{
           backgroundColor: '#F5F5F9',
           height: 8,

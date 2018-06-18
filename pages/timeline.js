@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Tabs, Card, Col, Row } from 'antd'
 import Layout from './../components/Layout'
 
-const TabPane = Tabs.TabPane
+const { TabPane } = Tabs
 
 export default class TimeLinePage extends React.Component {
   static async getInitialProps (req) {
@@ -32,17 +32,23 @@ export default class TimeLinePage extends React.Component {
               <TabPane tab={year} key={year}>
                 <Row gutter={16}>
                   {
-                    this.props.timeline.filter(item => item.indexOf(year) > -1).map(item =>
-                      <Col span={6} key={item}>
-                        <div style={{marginTop: 8, marginBottom: 8}}>
-                          <Card
-                            title={item}
-                            extra={<Link href={{ pathname: '/day', query: { date: item } }}><a>More</a></Link>}
-                            bodyStyle={{ padding: 0 }}>
-                          </Card>
-                        </div>
-                      </Col>
-                    )
+                    this.props.timeline
+                      .filter(item => item.indexOf(year) > -1)
+                      .map(item =>
+                        <Col span={6} key={item}>
+                          <div style={{marginTop: 8, marginBottom: 8}}>
+                            <Card
+                              title={item}
+                              extra={
+                                <Link href={{ pathname: '/day', query: { date: item } }}>
+                                  <a>More</a>
+                                </Link>
+                              }
+                              bodyStyle={{ padding: 0 }}>
+                            </Card>
+                          </div>
+                        </Col>
+                      )
                   }
                 </Row>
               </TabPane>

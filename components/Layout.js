@@ -7,11 +7,32 @@ const { Header, Content, Footer } = Layout
 import ActiveLink from './ActiveLink'
 import 'isomorphic-fetch'
 
-Router.onRouteChangeStart = (url) => {
+Router.onRouteChangeStart = () => {
   NProgress.start()
 }
 Router.onRouteChangeComplete = () => NProgress.done()
 Router.onRouteChangeError = () => NProgress.done()
+
+const headerStyle = {
+  position: 'fixed', 
+  top: '0',
+  left: '0',
+  width: '100%',
+  zIndex: 10,
+  minWidth: 1140
+}
+
+const headerMenuStyle = {
+  lineHeight: '64px',
+  float: 'left'
+}
+
+const contentStyle = {
+  width: 1140,
+  padding: '80px 50px 64px',
+  margin: '0 auto',
+  minHeight: `calc(100vh - 69px)`
+}
 
 export default ({ children, title = '主页' }) => (
   <div>
@@ -22,13 +43,14 @@ export default ({ children, title = '主页' }) => (
       <link href="https://cdn.bootcss.com/antd/3.5.2/antd.min.css" rel="stylesheet" />
       <link href='/static/css/nprogress.css' rel='stylesheet' />
       <link href="/static/logo.png" rel="icon" type="image/x-icon" />
+      <link href="/static/logo.png" rel="apple-touch-icon" />
     </Head>
-    <Header style={{ position: 'fixed', top: '0', left: '0', width: '100%', zIndex: 10 ,minWidth: 1140 }}>
+    <Header style={headerStyle}>
       <div className="logo" />
       <Menu
         theme="dark"
         mode="horizontal"
-        style={{ lineHeight: '64px', float: 'left' }}
+        style={headerMenuStyle}
       >
         <ActiveLink href='/'>主页</ActiveLink>
         <ActiveLink href='/fe'>前端</ActiveLink>
@@ -53,7 +75,7 @@ export default ({ children, title = '主页' }) => (
         </a>
       </div>
     </Header>
-    <Content style={{ width: 1140, padding: '128px 50px 64px', margin: '0 auto', minHeight: `calc(100vh - 69px)` }}>
+    <Content style={contentStyle}>
       { children }
     </Content>
     <Footer style={{ textAlign: 'center' }}>

@@ -5,9 +5,7 @@ import Layout from '../../mobileComponents/Layout'
 import CardItem from '../../mobileComponents/CardItem'
 
 export default class MobileDayPage extends React.Component {
-  static async getInitialProps ({ req, query }) {
-    const language = req ? req.headers['accept-language'] : navigator.language
-
+  static async getInitialProps ({ query }) {
     const { date } = query
     const year = date.slice(0, 4)
     const month = date.slice(5, 7)
@@ -25,7 +23,10 @@ export default class MobileDayPage extends React.Component {
       return listItem
     })
 
-    return { date, tabs, language }
+    return {
+      date,
+      tabs
+    }
   }
 
   constructor (props) {

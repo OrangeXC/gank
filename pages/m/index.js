@@ -1,9 +1,10 @@
-import React, { Component } from 'react'
+import { Component } from 'react'
 import ReactDOM from 'react-dom'
 import Router from 'next/router'
 import {
   WhiteSpace, NavBar, Icon, Grid
 } from 'antd-mobile'
+import { getInitList } from '../../utils'
 import Layout from '../../mobileComponents/Layout'
 import MenuBar from '../../mobileComponents/MenuBar'
 import ScrollList from '../../mobileComponents/ScrollList'
@@ -53,13 +54,12 @@ const gridMenu = [
 ]
 
 export default class MobileHome extends Component {
-  static async getInitialProps ({ req }) {
-    const language = req ? req.headers['accept-language'] : navigator.language
+  static async getInitialProps () {
+    const apiUrl = 'https://gank.io/api/data/all/20'
 
-    const res = await fetch('https://gank.io/api/data/all/20/1')
-    const json = await res.json()
+    const initList = await getInitList(apiUrl)
 
-    return { list: json.results, language }
+    return { initList, apiUrl }
   }
 
   constructor (props) {
@@ -70,7 +70,7 @@ export default class MobileHome extends Component {
     }
   }
 
-  async componentDidMount () {
+  componentDidMount () {
     const height = document.documentElement.clientHeight - 113 - ReactDOM.findDOMNode(this.grid).getBoundingClientRect().height
 
     this.setState({
@@ -80,13 +80,13 @@ export default class MobileHome extends Component {
 
   render () {
     const {
-      list,
-      language,
+      initList,
+      apiUrl,
       url: { pathname }
     } = this.props
 
     return (
-      <Layout language={language}>
+      <Layout>
         <MenuBar
           pathname={pathname}
         >
@@ -102,9 +102,9 @@ export default class MobileHome extends Component {
           <Grid ref={el => this.grid = el} data={gridMenu} hasLine={false} onClick={(el) => Router.push(el.link)} />
           <WhiteSpace />
           <ScrollList
-            listType="all"
             listHeight={this.state.listHeight}
-            initList={list}
+            initList={initList}
+            apiUrl={apiUrl}
             listHeaderText="最新列表">
           </ScrollList>
         </MenuBar>

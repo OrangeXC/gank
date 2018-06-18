@@ -6,6 +6,12 @@ import { Input, message } from 'antd'
 
 const { Search } = Input
 
+const searchStyle = {
+  width: 600,
+  margin: '0 auto 50px',
+  display: 'block'
+}
+
 export default class SearchPage extends React.Component {
   constructor (props) {
     super(props)
@@ -58,7 +64,7 @@ export default class SearchPage extends React.Component {
       <Layout title="搜索">
         <Search
           placeholder="input search text"
-          style={{ width: 600, margin: '0 auto 50px', display: 'block' }}
+          style={searchStyle}
           size="large"
           onSearch={value => this.handleSearch(value)}
         />

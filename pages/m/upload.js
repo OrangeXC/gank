@@ -4,18 +4,10 @@ import { createForm } from 'rc-form'
 import MenuBar from '../../mobileComponents/MenuBar'
 import Layout from '../../mobileComponents/Layout'
 
-const Item = List.Item
+const { Item } = List
 
 class MobileUploadForm extends React.Component {
-  static async getInitialProps ({ req }) {
-    const language = req ? req.headers['accept-language'] : navigator.language
-
-    return { language }
-  }
-
-  constructor (props) {
-    super(props)
-
+  constructor () {
     this.state = {
       submitLoading: false
     }
@@ -85,7 +77,6 @@ class MobileUploadForm extends React.Component {
 
   render () {
     const {
-      language,
       url: { pathname }
     } = this.props
     const { getFieldProps, getFieldError } = this.props.form
@@ -118,7 +109,7 @@ class MobileUploadForm extends React.Component {
     ]
 
     return (
-      <Layout language={language}>
+      <Layout>
         <MenuBar
           pathname={pathname}
         >

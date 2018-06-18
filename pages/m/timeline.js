@@ -1,7 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import { Timeline } from 'antd'
-import { NavBar, Icon, List, ListView } from 'antd-mobile'
+import { NavBar, List, ListView } from 'antd-mobile'
 import Layout from '../../mobileComponents/Layout'
 import MenuBar from '../../mobileComponents/MenuBar'
 
@@ -9,12 +8,10 @@ const { Item } = List
 
 export default class MobileTimeLinePage extends React.Component {
   static async getInitialProps ({ req }) {
-    const language = req ? req.headers['accept-language'] : navigator.language
-
     const res = await fetch('https://gank.io/api/day/history')
     const json = await res.json()
 
-    return { timeline: json.results, language }
+    return { timeline: json.results }
   }
 
   constructor (props) {
@@ -40,7 +37,6 @@ export default class MobileTimeLinePage extends React.Component {
 
   render () {
     const {
-      language,
       url: { pathname }
     } = this.props
 
@@ -51,7 +47,7 @@ export default class MobileTimeLinePage extends React.Component {
 
     return (
       <div>
-        <Layout language={language}>
+        <Layout>
           <MenuBar
             pathname={pathname}
           >
