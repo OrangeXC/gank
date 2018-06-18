@@ -1,8 +1,8 @@
-import React from 'react'
-import { Card, Alert, Modal, List, Icon } from 'antd'
+import { Component } from 'react'
+import { Card, Modal } from 'antd'
 import Masonry from 'react-masonry-component'
 
-export default class MasonryList extends React.Component {
+export default class MasonryList extends Component {
   constructor (props) {
     super(props)
 

@@ -1,11 +1,9 @@
 import { action, observable } from 'mobx'
 
-let store = null
-
 class Store {
   @observable list = []
 
-  constructor (isServer, list) {
+  constructor (list) {
     this.list = list
   }
 
@@ -14,14 +12,4 @@ class Store {
   }
 }
 
-export function initStore (isServer, list = []) {
-  if (isServer) {
-    return new Store(isServer, list)
-  } else {
-    if (store === null) {
-      store = new Store(isServer, list)
-    }
-
-    return store
-  }
-}
+export const initStore = (list) => new Store(list)

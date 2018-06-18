@@ -1,16 +1,14 @@
-import React from 'react'
-import Link from 'next/link'
+import { Component } from 'react'
 import Layout from './Layout'
 import NormalList from './NormalList'
 import MasonryList from './MasonryList'
 import ListSpin from './ListSpin'
 import { Alert } from 'antd'
 import { inject, observer } from 'mobx-react'
-import Masonry from 'react-masonry-component'
 
 @inject('store') @observer
 
-export default class MainList extends React.Component {
+export default class MainList extends Component {
   constructor (props) {
     super(props)
 
@@ -47,20 +45,20 @@ export default class MainList extends React.Component {
     const currentPage = this.state.currentPage
     const apiUrl = this.props.apiUrl
 
-    const res = await fetch(`${apiUrl}${currentPage}`)
+    const res = await fetch(`${apiUrl}/${currentPage}`)
     const json = await res.json()
 
-    if (json.results && json.results.length) {
+    if (Array.isArray(json.results) && json.results.length) {
       this.props.store.loadMoreList(json.results)
     } else {
-      this.setState(() => ({
+      this.setState({
         hasMore: false
-      }))
+      })
     }
   }
 
   render () {
-    let list = this.props.store.list
+    const { list } = this.props.store
 
     return (
       <Layout title={this.props.title}>
