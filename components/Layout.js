@@ -14,7 +14,7 @@ Router.onRouteChangeComplete = () => NProgress.done()
 Router.onRouteChangeError = () => NProgress.done()
 
 const headerStyle = {
-  position: 'fixed', 
+  position: 'fixed',
   top: '0',
   left: '0',
   width: '100%',
@@ -40,7 +40,7 @@ export default ({ children, title = '主页' }) => (
       <title>{ title } - Gank</title>
       <meta charSet='utf-8' />
       <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
-      <link href="https://cdn.bootcss.com/antd/3.5.2/antd.min.css" rel="stylesheet" />
+      <link href="https://cdn.bootcss.com/antd/3.6.0/antd.min.css" rel="stylesheet" />
       <link href='/static/css/nprogress.css' rel='stylesheet' />
       <link href="/static/logo.png" rel="icon" type="image/x-icon" />
       <link href="/static/logo.png" rel="apple-touch-icon" />
