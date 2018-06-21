@@ -1,5 +1,6 @@
 import { List, Icon } from 'antd'
 import Router from 'next/router'
+import { getPagePath } from '../utils'
 
 const IconText = ({ type, text, href = '' }) => (
   <span onClick={() => href && Router.push(href).then(() => window.scrollTo(0, 0))}>
@@ -7,29 +8,6 @@ const IconText = ({ type, text, href = '' }) => (
     {text}
   </span>
 )
-
-const translateType = (type) => {
-  switch (type) {
-    case '前端':
-      return 'fe'
-    case 'Android':
-      return 'android'
-    case 'iOS':
-      return 'ios'
-    case 'App':
-      return 'app'
-    case '拓展资源':
-      return 'expand'
-    case '休息视频':
-      return 'videos'
-    case '瞎推荐':
-      return 'blind'
-    case '福利':
-      return 'welfare'
-    default:
-      break
-  }
-}
 
 const listImageWrapStyle = {
   width: 272,
@@ -64,7 +42,7 @@ export default (props) => (
             <IconText
               type="tag-o"
               text={item.type}
-              href={`/${translateType(item.type)}`}
+              href={getPagePath(item.type)}
             />
           ]}
           extra={item.images &&

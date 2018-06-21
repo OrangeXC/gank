@@ -1,9 +1,34 @@
 {
-  "presets": ["next/babel"],
-  "plugins": [
-    "transform-decorators-legacy",
-    "transform-class-properties",
-    ["import", { "libraryName": "antd" }],
-    ["import", { "libraryName": "antd-mobile" }, "ant-mobile"]
-  ]
+  "env": {
+    "dev": {
+      "presets": ["next/babel"],
+      "plugins": [
+        "transform-decorators-legacy",
+        "transform-class-properties",
+        ["import", { "libraryName": "antd" }],
+        ["import", { "libraryName": "antd-mobile" }, "ant-mobile"]
+      ]
+    },
+    "production": {
+      "presets": ["next/babel"],
+      "plugins": [
+        "transform-decorators-legacy",
+        "transform-class-properties",
+        ["import", { "libraryName": "antd" }],
+        ["import", { "libraryName": "antd-mobile" }, "ant-mobile"]
+      ]
+    },
+    "test": {
+      "presets": [[
+        "next/babel",
+        { "preset-env": { "modules": "commonjs" }}
+      ]],
+      "plugins": [
+        "transform-decorators-legacy",
+        "transform-class-properties",
+        ["import", { "libraryName": "antd" }],
+        ["import", { "libraryName": "antd-mobile" }, "ant-mobile"]
+      ]
+    }
+  }
 }
