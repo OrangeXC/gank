@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { Tabs, Card, Col, Row } from 'antd'
-import Layout from './../components/Layout'
+import Layout from '../components/Layout'
 
 const { TabPane } = Tabs
 
