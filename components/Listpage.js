@@ -1,5 +1,5 @@
 import { Component } from 'react'
-import MainList from '../components/MainList'
+import MainList from './MainList'
 import { Provider } from 'mobx-react'
 import { getPageTitle, getInitList } from '../utils'
 

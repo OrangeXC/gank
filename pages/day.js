@@ -1,6 +1,6 @@
 import React from 'react'
-import Layout from './../components/Layout'
-import NormalList from './../components/NormalList'
+import Layout from '../components/Layout'
+import NormalList from '../components/NormalList'
 import { Tabs } from 'antd'
 
 export default class DayPage extends React.Component {
