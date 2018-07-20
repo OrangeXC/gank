@@ -1,78 +1,98 @@
 import React from 'react'
-import { NavBar, NoticeBar, List, InputItem, Picker, Switch, Button, Toast, WingBlank, WhiteSpace } from 'antd-mobile'
+import {
+  NavBar, NoticeBar, List, InputItem, Picker,
+  Switch, Button, Toast, WingBlank, WhiteSpace
+} from 'antd-mobile'
 import { createForm } from 'rc-form'
 import MenuBar from '../../mobileComponents/MenuBar'
 import Layout from '../../mobileComponents/Layout'
 
 const { Item } = List
+const types = [
+  'Android', 'iOS', '休息视频', '福利',
+  '拓展资源', '前端', '瞎推荐', 'App'
+].map(item => ({
+  label: item,
+  value: item
+}))
 
 class MobileUploadForm extends React.Component {
-  constructor () {
+  constructor (props) {
+    super(props)
+
     this.state = {
       submitLoading: false
     }
+
+    this.onSubmit = this.onSubmit.bind(this)
   }
 
-  onSubmit = () => {
+  onSubmit () {
     this.props.form.validateFields({ force: true }, async (error) => {
-      if (!error) {
-        this.setState({ submitLoading: true })
-
-        const values = this.props.form.getFieldsValue()
-
-        let strList = []
-
-        Object.keys(values).forEach(item => {
-          if (item === 'type') {
-            strList.push(`${item}=${values[item][0]}`)
-          } else {
-            strList.push(`${item}=${values[item]}`)
-          }
-        })
-
-        const res = await fetch("https://gank.io/api/add2gank", {
-          method: "POST",
-          headers: {
-            'Content-Type': 'application/x-www-form-urlencoded'
-          },
-          body: strList.join('&')
-        })
-
-        const json = await res.json()
-
-        if (json.error) {
-          Toast.fail(json.msg, 2)
-        } else {
-          Toast.success(json.msg, 2)
-        }
-
-        this.setState({ submitLoading: false })
-      } else {
+      if (error) {
         Toast.fail('验证失败', 2)
+
+        return
       }
+
+      this.setState({
+        submitLoading: true
+      })
+
+      const values = this.props.form.getFieldsValue()
+
+      let strList = []
+
+      Object.keys(values).forEach(item => {
+        if (item === 'type') {
+          strList.push(`${item}=${values[item][0]}`)
+        } else {
+          strList.push(`${item}=${values[item]}`)
+        }
+      })
+
+      const res = await fetch("https://gank.io/api/add2gank", {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        body: strList.join('&')
+      })
+
+      const data = await res.json()
+
+      if (data.error) {
+        Toast.fail(data.msg, 2)
+      } else {
+        Toast.success(data.msg, 2)
+      }
+
+      this.setState({
+        submitLoading: false
+      })
     })
   }
 
-  onReset = () => {
+  onReset () {
     this.props.form.resetFields()
   }
 
-  validateUrl = (rule, value, callback) => {
+  validateUrl (rule, value, callback) {
     if (value && this.testUrl(value)) {
-      callback();
+      callback()
     } else {
-      callback(new Error('请输入正确的链接'));
+      callback(new Error('请输入正确的链接'))
     }
   }
 
   testUrl (str) {
     const pattern = /^(https?:\/\/)?((([a-z\d]([a-z\d-]*[a-z\d])*)\.)+[a-z]{2,}|((\d{1,3}\.){3}\d{1,3}))(\:\d+)?(\/[-a-z\d%_.~+]*)*(\?[;&a-z\d%_.~+=-]*)?(\#[-a-z\d_]*)?$/i
 
-    if(!pattern.test(str)) {
-      return false
-    } else {
+    if (pattern.test(str)) {
       return true
     }
+
+    return false
   }
 
   render () {
@@ -80,33 +100,6 @@ class MobileUploadForm extends React.Component {
       url: { pathname }
     } = this.props
     const { getFieldProps, getFieldError } = this.props.form
-    const types = [
-      {
-        value: 'Android',
-        label: 'Android'
-      }, {
-        value: 'iOS',
-        label: 'iOS'
-      }, {
-        value: '休息视频',
-        label: '休息视频'
-      }, {
-        value: '福利',
-        label: '福利'
-      }, {
-        value: '拓展资源',
-        label: '拓展资源'
-      }, {
-        value: '前端',
-        label: '前端'
-      }, {
-        value: '瞎推荐',
-        label: '瞎推荐'
-      }, {
-        value: 'App',
-        label: 'App'
-      }
-    ]
 
     return (
       <Layout>
@@ -137,7 +130,9 @@ class MobileUploadForm extends React.Component {
                   Toast.fail(getFieldError('url').join('、'), 2)
                 }}
                 placeholder="请输入分享链接"
-              >链接</InputItem>
+              >
+                链接
+              </InputItem>
               <InputItem
                 {...getFieldProps('desc', {
                   rules: [
@@ -150,7 +145,9 @@ class MobileUploadForm extends React.Component {
                   Toast.fail(getFieldError('desc').join('、'), 2)
                 }}
                 placeholder="请输入标题"
-              >标题</InputItem>
+              >
+                标题
+              </InputItem>
               <InputItem
                 {...getFieldProps('who', {
                   rules: [
@@ -163,7 +160,9 @@ class MobileUploadForm extends React.Component {
                   Toast.fail(getFieldError('who').join('、'), 2)
                 }}
                 placeholder="请输入昵称"
-              >昵称</InputItem>
+              >
+                昵称
+              </InputItem>
               <Picker
                 data={types}
                 cols={1}
@@ -171,11 +170,13 @@ class MobileUploadForm extends React.Component {
                   initialValue: ['前端']
                 })}
               >
-                <List.Item arrow="horizontal">类型</List.Item>
+                <Item arrow="horizontal">类型</Item>
               </Picker>
               <Item
                 extra={<Switch {...getFieldProps('debug', { initialValue: true, valuePropName: 'checked' })} />}
-              >测试数据</Item>
+              >
+                测试数据
+              </Item>
               <WhiteSpace />
               <WingBlank>
                 <Button type="primary" loading={this.state.submitLoading} onClick={this.onSubmit}>提交</Button>

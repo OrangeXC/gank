@@ -58,7 +58,13 @@ export default class MobileTimeLinePage extends React.Component {
             </NavBar>
             <ListView
               dataSource={dataSource}
-              renderRow={rowData => (<Link href={{ pathname: '/m/day', query: { date: rowData } }}><Item arrow="horizontal">{rowData}</Item></Link>)}
+              renderRow={rowData => (
+                <Link
+                  href={{ pathname: '/m/day', query: { date: rowData } }}
+                >
+                  <Item arrow="horizontal">{rowData}</Item>
+                </Link>
+              )}
               style={{
                 height: listHeight,
                 overflow: 'scroll'
@@ -68,6 +74,7 @@ export default class MobileTimeLinePage extends React.Component {
             />
           </MenuBar>
         </Layout>
+
         <style global jsx>{`
           .ant-timeline {
             list-style: none;

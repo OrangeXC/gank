@@ -7,9 +7,9 @@ class Store {
     this.list = list
   }
 
-  @action loadMoreList = (more) => {
-    this.list = this.list.concat(more)
+  @action loadMoreList = moreList => {
+    this.list = this.list.concat(moreList)
   }
 }
 
-export const initStore = (list) => new Store(list)
+export const initStore = list => new Store(list)

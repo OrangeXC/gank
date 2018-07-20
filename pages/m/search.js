@@ -1,12 +1,16 @@
 import React from 'react'
 import Router from 'next/router'
-import { NavBar, SearchBar, Button, Icon, WhiteSpace, Toast } from 'antd-mobile'
+import {
+  NavBar, SearchBar, Button, Icon, WhiteSpace, Toast
+} from 'antd-mobile'
 import CardItem from '../../mobileComponents/CardItem'
 import Layout from '../../mobileComponents/Layout'
 
 export default class MobileSearchPage extends React.Component {
   static async getInitialProps ({ req }) {
-    const language = req ? req.headers['accept-language'] : navigator.language
+    const language = req
+      ? req.headers['accept-language']
+      : navigator.language
 
     return { language }
   }
@@ -44,7 +48,8 @@ export default class MobileSearchPage extends React.Component {
 
     Toast.loading('Loading...', 10)
 
-    const res = await fetch(`https://gank.io/api/search/query/${val}/category/all/count/50/page/1`)
+    const url = `https://gank.io/api/search/query/${val}/category/all/count/50/page/1`
+    const res = await fetch(url)
     const { count, results } = await res.json()
 
     if (count) {

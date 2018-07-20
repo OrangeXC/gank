@@ -71,7 +71,8 @@ export default class MobileHome extends Component {
   }
 
   componentDidMount () {
-    const height = document.documentElement.clientHeight - 113 - ReactDOM.findDOMNode(this.grid).getBoundingClientRect().height
+    const height = document.documentElement.clientHeight - 113 -
+      ReactDOM.findDOMNode(this.grid).getBoundingClientRect().height
 
     this.setState({
       listHeight: height
@@ -94,12 +95,23 @@ export default class MobileHome extends Component {
             mode='light'
             leftContent={<CustomIcon type={require('../../static/icon/github.svg')} />}
             onLeftClick={() => window.open('https://github.com/OrangeXC/gank')}
-            rightContent={<Icon onClick={() => Router.push('/m/search').then(() => window.scrollTo(0, 0))} type='search' />}
+            rightContent={<Icon
+              onClick={() =>
+                Router
+                  .push('/m/search')
+                  .then(() => window.scrollTo(0, 0))}
+                type='search'
+            />}
           >
             主页
           </NavBar>
           <WhiteSpace />
-          <Grid ref={el => this.grid = el} data={gridMenu} hasLine={false} onClick={(el) => Router.push(el.link)} />
+          <Grid
+            ref={el => this.grid = el}
+            data={gridMenu}
+            hasLine={false}
+            onClick={(el) => Router.push(el.link)}
+          />
           <WhiteSpace />
           <ScrollList
             listHeight={this.state.listHeight}
