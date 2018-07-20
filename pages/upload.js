@@ -1,8 +1,11 @@
 import React from 'react'
 import Layout from '../components/Layout'
-import { Form, Input, Icon, Select, Switch, Button, message, Alert } from 'antd'
-const FormItem = Form.Item;
-const Option = Select.Option;
+import {
+  Form, Input, Select, Switch, Button, message, Alert
+} from 'antd'
+
+const FormItem = Form.Item
+const Option = Select.Option
 
 class uploadForm extends React.Component {
   constructor (props) {
@@ -11,9 +14,11 @@ class uploadForm extends React.Component {
     this.state = {
       submitLoading: false
     }
+
+    this.handleSubmit = this.handleSubmit.bind(this)
   }
 
-  handleSubmit = (e) => {
+  handleSubmit (e) {
     e.preventDefault()
 
     this.props.form.validateFieldsAndScroll(async (err, values) => {
@@ -47,7 +52,7 @@ class uploadForm extends React.Component {
     })
   }
 
-  checkUrl = (rule, value, callback) => {
+  checkUrl (rule, value, callback) {
     if (value) {
       this.validUrl(value)
       ? callback()
@@ -60,11 +65,11 @@ class uploadForm extends React.Component {
   validUrl (str) {
     const pattern = /^(https?:\/\/)?((([a-z\d]([a-z\d-]*[a-z\d])*)\.)+[a-z]{2,}|((\d{1,3}\.){3}\d{1,3}))(\:\d+)?(\/[-a-z\d%_.~+]*)*(\?[;&a-z\d%_.~+=-]*)?(\#[-a-z\d_]*)?$/i
 
-    if(!pattern.test(str)) {
-      return false
-    } else {
+    if(pattern.test(str)) {
       return true
     }
+
+    return false
   }
 
   render () {
@@ -173,7 +178,13 @@ class uploadForm extends React.Component {
             )}
           </FormItem>
           <FormItem {...tailFormItemLayout}>
-            <Button type="primary" loading={this.state.submitLoading} htmlType="submit">提交干货</Button>
+            <Button
+              type="primary"
+              loading={this.state.submitLoading}
+              htmlType="submit"
+            >
+              提交干货
+            </Button>
           </FormItem>
         </Form>
       </Layout>

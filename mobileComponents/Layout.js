@@ -5,13 +5,11 @@ import { LocaleProvider } from 'antd-mobile'
 import enUS from 'antd-mobile/lib/locale-provider/en_US'
 import 'isomorphic-fetch'
 
-Router.onRouteChangeStart = (url) => {
-  NProgress.start()
-}
+Router.onRouteChangeStart = () => NProgress.start()
 Router.onRouteChangeComplete = () => NProgress.done()
 Router.onRouteChangeError = () => NProgress.done()
 
-export default ({ children, language }) => (
+export default ({ children }) => (
   <div>
     <Head>
       <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />

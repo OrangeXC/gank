@@ -7,7 +7,6 @@ import { Alert } from 'antd'
 import { inject, observer } from 'mobx-react'
 
 @inject('store') @observer
-
 export default class MainList extends Component {
   constructor (props) {
     super(props)
@@ -32,7 +31,10 @@ export default class MainList extends Component {
   handleScroll () {
     const scrollTop = Math.max(document.documentElement.scrollTop, document.body.scrollTop)
 
-    if (document.documentElement.offsetHeight + scrollTop > document.documentElement.scrollHeight - 50) {
+    if (
+      document.documentElement.offsetHeight + scrollTop >
+      document.documentElement.scrollHeight - 50
+    ) {
       this.handleLoadMore()
     }
   }

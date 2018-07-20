@@ -2,6 +2,8 @@ import { List, Icon } from 'antd'
 import Router from 'next/router'
 import { getPagePath } from '../utils'
 
+const { Item } = List
+
 const IconText = ({ type, text, href = '' }) => (
   <span onClick={() => href && Router.push(href).then(() => window.scrollTo(0, 0))}>
     <Icon type={type} style={{ marginRight: 8 }} />
@@ -30,7 +32,7 @@ export default (props) => (
       bordered
       dataSource={props.list}
       renderItem={item => (
-        <List.Item
+        <Item
           key={item._id}
           actions={[
             <IconText type="user" text={item.who ? item.who : '未知'} />,
@@ -59,9 +61,10 @@ export default (props) => (
           <h4 className="ant-list-item-meta-title">
             <a href={item.url} target="_blank">{item.desc}</a>
           </h4>
-        </List.Item>
+        </Item>
       )}
     />
+
     <style global jsx>{`
       .ant-list-vertical .ant-list-item-main {
         display: flex;

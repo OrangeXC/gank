@@ -37,8 +37,13 @@ export default class MasonryList extends Component {
   }
 
   render () {
+    const wrapStyle = {
+      opacity: this.state.showImages ? '1' : '0',
+      transition: 'opacity 0.5s linear'
+    }
+
     return (
-      <div style={{ opacity: this.state.showImages ? '1' : '0', transition: 'opacity 0.5s linear' }}>
+      <div style={wrapStyle}>
         <Masonry>
           {
             this.props.list.map(element =>
