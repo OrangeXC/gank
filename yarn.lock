@@ -849,9 +849,9 @@ antd-mobile@^2.2.2:
     rmc-tabs "~1.2.0"
     rmc-tooltip "~1.0.0"
 
-antd@^3.7.0:
-  version "3.7.0"
-  resolved "https://registry.yarnpkg.com/antd/-/antd-3.7.0.tgz#e7dfa92ccb9e765e3152600dd5ecf8c31a4c0cab"
+antd@^3.7.1:
+  version "3.7.1"
+  resolved "https://registry.yarnpkg.com/antd/-/antd-3.7.1.tgz#e18fee3f54fe1c499cc848223fd3bd581d87ed00"
   dependencies:
     array-tree-filter "^2.0.0"
     babel-runtime "6.x"
@@ -873,12 +873,12 @@ antd@^3.7.0:
     rc-checkbox "~2.1.5"
     rc-collapse "~1.9.0"
     rc-dialog "~7.1.0"
-    rc-drawer "~1.5.3"
+    rc-drawer "~1.5.9"
     rc-dropdown "~2.2.0"
     rc-editor-mention "^1.0.2"
     rc-form "^2.1.0"
     rc-input-number "~4.0.0"
-    rc-menu "~7.2.2"
+    rc-menu "~7.0.2"
     rc-notification "~3.1.1"
     rc-pagination "~1.16.1"
     rc-progress "~2.2.2"
@@ -897,7 +897,7 @@ antd@^3.7.0:
     rc-upload "~2.5.0"
     rc-util "^4.0.4"
     react-lazy-load "^3.0.12"
-    react-lifecycles-compat "^3.0.4"
+    react-lifecycles-compat "^3.0.2"
     react-slick "~0.23.1"
     shallowequal "^1.0.1"
     warning "~4.0.1"
@@ -5234,7 +5234,7 @@ rc-dialog@~7.1.0:
     rc-animate "2.x"
     rc-util "^4.4.0"
 
-rc-drawer@~1.5.3:
+rc-drawer@~1.5.9:
   version "1.5.9"
   resolved "https://registry.yarnpkg.com/rc-drawer/-/rc-drawer-1.5.9.tgz#e75662b2e27211d1401055fb97280591a7668d2d"
   dependencies:
@@ -5325,9 +5325,9 @@ rc-menu@^7.0.2:
     rc-trigger "^2.3.0"
     rc-util "^4.1.0"
 
-rc-menu@~7.2.2:
-  version "7.2.6"
-  resolved "https://registry.yarnpkg.com/rc-menu/-/rc-menu-7.2.6.tgz#b18b8da9d637533145c6bc28cae1f29ae55c8dc7"
+rc-menu@~7.0.2:
+  version "7.0.5"
+  resolved "https://registry.yarnpkg.com/rc-menu/-/rc-menu-7.0.5.tgz#986b65df5ad227aadf399ea374b98d2313802316"
   dependencies:
     babel-runtime "6.x"
     classnames "2.x"
