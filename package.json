@@ -15,10 +15,10 @@
     "mobx": "^5.0.3",
     "mobx-react": "^5.2.3",
     "next": "^6.1.1",
-    "next-offline": "^2.8.0",
+    "next-offline": "^2.9.0",
     "nprogress": "^0.2.0",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
     "react-masonry-component": "^6.2.1",
     "require-hacker": "^3.0.1",
     "svg-sprite-loader": "^3.8.0"
@@ -34,6 +34,6 @@
     "enzyme-adapter-react-16": "^1.1.1",
     "immutable": "^3.8.2",
     "jest": "^23.4.2",
-    "react-test-renderer": "^16.4.1"
+    "react-test-renderer": "^16.4.2"
   }
 }
