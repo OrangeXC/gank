@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "antd": "^3.8.0",
-    "antd-mobile": "^2.2.2",
+    "antd-mobile": "^2.2.3",
     "isomorphic-fetch": "^2.2.1",
     "mobx": "^5.0.3",
     "mobx-react": "^5.2.3",
@@ -24,7 +24,7 @@
     "svg-sprite-loader": "^3.8.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0-beta.56",
+    "@babel/core": "^7.0.0-rc.1",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.4.2",
     "babel-plugin-import": "^1.8.0",
