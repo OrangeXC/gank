@@ -10,7 +10,7 @@
 
 "@babel/code-frame@7.0.0-rc.1":
   version "7.0.0-rc.1"
-  resolved "http://npm.zhaopin.com/@babel%2fcode-frame/-/code-frame-7.0.0-rc.1.tgz#5c2154415d6c09959a71845ef519d11157e95d10"
+  resolved "https://registry.yarnpkg.com/@babel%2fcode-frame/-/code-frame-7.0.0-rc.1.tgz#5c2154415d6c09959a71845ef519d11157e95d10"
   dependencies:
     "@babel/highlight" "7.0.0-rc.1"
 
@@ -42,7 +42,7 @@
 
 "@babel/core@^7.0.0-rc.1":
   version "7.0.0-rc.1"
-  resolved "http://npm.zhaopin.com/@babel%2fcore/-/core-7.0.0-rc.1.tgz#53c84fd562e13325f123d5951184eec97b958204"
+  resolved "https://registry.yarnpkg.com/@babel%2fcore/-/core-7.0.0-rc.1.tgz#53c84fd562e13325f123d5951184eec97b958204"
   dependencies:
     "@babel/code-frame" "7.0.0-rc.1"
     "@babel/generator" "7.0.0-rc.1"
@@ -71,7 +71,7 @@
 
 "@babel/generator@7.0.0-rc.1":
   version "7.0.0-rc.1"
-  resolved "http://npm.zhaopin.com/@babel%2fgenerator/-/generator-7.0.0-rc.1.tgz#739c87d70b31aeed802bd6bc9fd51480065c45e8"
+  resolved "https://registry.yarnpkg.com/@babel%2fgenerator/-/generator-7.0.0-rc.1.tgz#739c87d70b31aeed802bd6bc9fd51480065c45e8"
   dependencies:
     "@babel/types" "7.0.0-rc.1"
     jsesc "^2.5.1"
@@ -132,7 +132,7 @@
 
 "@babel/helper-function-name@7.0.0-rc.1":
   version "7.0.0-rc.1"
-  resolved "http://npm.zhaopin.com/@babel%2fhelper-function-name/-/helper-function-name-7.0.0-rc.1.tgz#20b2cc836a53c669f297c8d309fc553385c5cdde"
+  resolved "https://registry.yarnpkg.com/@babel%2fhelper-function-name/-/helper-function-name-7.0.0-rc.1.tgz#20b2cc836a53c669f297c8d309fc553385c5cdde"
   dependencies:
     "@babel/helper-get-function-arity" "7.0.0-rc.1"
     "@babel/template" "7.0.0-rc.1"
@@ -146,7 +146,7 @@
 
 "@babel/helper-get-function-arity@7.0.0-rc.1":
   version "7.0.0-rc.1"
-  resolved "http://npm.zhaopin.com/@babel%2fhelper-get-function-arity/-/helper-get-function-arity-7.0.0-rc.1.tgz#60185957f72ed73766ce74c836ac574921743c46"
+  resolved "https://registry.yarnpkg.com/@babel%2fhelper-get-function-arity/-/helper-get-function-arity-7.0.0-rc.1.tgz#60185957f72ed73766ce74c836ac574921743c46"
   dependencies:
     "@babel/types" "7.0.0-rc.1"
 
@@ -232,7 +232,7 @@
 
 "@babel/helper-split-export-declaration@7.0.0-rc.1":
   version "7.0.0-rc.1"
-  resolved "http://npm.zhaopin.com/@babel%2fhelper-split-export-declaration/-/helper-split-export-declaration-7.0.0-rc.1.tgz#b00323834343fd0210f1f46c7a53521ad53efa5e"
+  resolved "https://registry.yarnpkg.com/@babel%2fhelper-split-export-declaration/-/helper-split-export-declaration-7.0.0-rc.1.tgz#b00323834343fd0210f1f46c7a53521ad53efa5e"
   dependencies:
     "@babel/types" "7.0.0-rc.1"
 
@@ -255,7 +255,7 @@
 
 "@babel/helpers@7.0.0-rc.1":
   version "7.0.0-rc.1"
-  resolved "http://npm.zhaopin.com/@babel%2fhelpers/-/helpers-7.0.0-rc.1.tgz#e59092cdf4b28026b3fc9d272e27e0ef152b4bee"
+  resolved "https://registry.yarnpkg.com/@babel%2fhelpers/-/helpers-7.0.0-rc.1.tgz#e59092cdf4b28026b3fc9d272e27e0ef152b4bee"
   dependencies:
     "@babel/template" "7.0.0-rc.1"
     "@babel/traverse" "7.0.0-rc.1"
@@ -279,7 +279,7 @@
 
 "@babel/highlight@7.0.0-rc.1":
   version "7.0.0-rc.1"
-  resolved "http://npm.zhaopin.com/@babel%2fhighlight/-/highlight-7.0.0-rc.1.tgz#e0ca4731fa4786f7b9500421d6ff5e5a7753e81e"
+  resolved "https://registry.yarnpkg.com/@babel%2fhighlight/-/highlight-7.0.0-rc.1.tgz#e0ca4731fa4786f7b9500421d6ff5e5a7753e81e"
   dependencies:
     chalk "^2.0.0"
     esutils "^2.0.2"
@@ -287,7 +287,7 @@
 
 "@babel/parser@7.0.0-rc.1":
   version "7.0.0-rc.1"
-  resolved "http://npm.zhaopin.com/@babel%2fparser/-/parser-7.0.0-rc.1.tgz#d009a9bba8175d7b971e30cd03535b278c44082d"
+  resolved "https://registry.yarnpkg.com/@babel%2fparser/-/parser-7.0.0-rc.1.tgz#d009a9bba8175d7b971e30cd03535b278c44082d"
 
 "@babel/plugin-proposal-async-generator-functions@7.0.0-beta.42":
   version "7.0.0-beta.42"
@@ -659,7 +659,7 @@
 
 "@babel/template@7.0.0-rc.1":
   version "7.0.0-rc.1"
-  resolved "http://npm.zhaopin.com/@babel%2ftemplate/-/template-7.0.0-rc.1.tgz#5f9c0a481c9f22ecdb84697b3c3a34eadeeca23c"
+  resolved "https://registry.yarnpkg.com/@babel%2ftemplate/-/template-7.0.0-rc.1.tgz#5f9c0a481c9f22ecdb84697b3c3a34eadeeca23c"
   dependencies:
     "@babel/code-frame" "7.0.0-rc.1"
     "@babel/parser" "7.0.0-rc.1"
@@ -683,7 +683,7 @@
 
 "@babel/traverse@7.0.0-rc.1":
   version "7.0.0-rc.1"
-  resolved "http://npm.zhaopin.com/@babel%2ftraverse/-/traverse-7.0.0-rc.1.tgz#867b4b45ada2d51ae2d0076f1c1d5880f8557158"
+  resolved "https://registry.yarnpkg.com/@babel%2ftraverse/-/traverse-7.0.0-rc.1.tgz#867b4b45ada2d51ae2d0076f1c1d5880f8557158"
   dependencies:
     "@babel/code-frame" "7.0.0-rc.1"
     "@babel/generator" "7.0.0-rc.1"
@@ -713,7 +713,7 @@
 
 "@babel/types@7.0.0-rc.1":
   version "7.0.0-rc.1"
-  resolved "http://npm.zhaopin.com/@babel%2ftypes/-/types-7.0.0-rc.1.tgz#6abf6d14ddd9fc022617e5b62e6b32f4fa6526ad"
+  resolved "https://registry.yarnpkg.com/@babel%2ftypes/-/types-7.0.0-rc.1.tgz#6abf6d14ddd9fc022617e5b62e6b32f4fa6526ad"
   dependencies:
     esutils "^2.0.2"
     lodash "^4.17.10"
@@ -823,7 +823,7 @@ ansi-styles@^3.2.0, ansi-styles@^3.2.1:
 
 antd-mobile@^2.2.3:
   version "2.2.3"
-  resolved "http://npm.zhaopin.com/antd-mobile/-/antd-mobile-2.2.3.tgz#aeeacbb294686930ede93fe817fa21c03102f42d"
+  resolved "https://registry.yarnpkg.com/antd-mobile/-/antd-mobile-2.2.3.tgz#aeeacbb294686930ede93fe817fa21c03102f42d"
   dependencies:
     array-tree-filter "~2.1.0"
     babel-runtime "6.x"
@@ -851,7 +851,7 @@ antd-mobile@^2.2.3:
 
 antd@^3.8.1:
   version "3.8.1"
-  resolved "http://npm.zhaopin.com/antd/-/antd-3.8.1.tgz#1780acd5e9bc6c80dc23b042161418eb88f4d80e"
+  resolved "https://registry.yarnpkg.com/antd/-/antd-3.8.1.tgz#1780acd5e9bc6c80dc23b042161418eb88f4d80e"
   dependencies:
     array-tree-filter "^2.0.0"
     babel-runtime "6.x"
@@ -2481,7 +2481,7 @@ expand-range@^1.8.1:
 
 expect@^23.5.0:
   version "23.5.0"
-  resolved "http://npm.zhaopin.com/expect/-/expect-23.5.0.tgz#18999a0eef8f8acf99023fde766d9c323c2562ed"
+  resolved "https://registry.yarnpkg.com/expect/-/expect-23.5.0.tgz#18999a0eef8f8acf99023fde766d9c323c2562ed"
   dependencies:
     ansi-styles "^3.2.0"
     jest-diff "^23.5.0"
@@ -3502,7 +3502,7 @@ jest-changed-files@^23.4.2:
 
 jest-cli@^23.5.0:
   version "23.5.0"
-  resolved "http://npm.zhaopin.com/jest-cli/-/jest-cli-23.5.0.tgz#d316b8e34a38a610a1efc4f0403d8ef8a55e4492"
+  resolved "https://registry.yarnpkg.com/jest-cli/-/jest-cli-23.5.0.tgz#d316b8e34a38a610a1efc4f0403d8ef8a55e4492"
   dependencies:
     ansi-escapes "^3.0.0"
     chalk "^2.0.1"
@@ -3543,7 +3543,7 @@ jest-cli@^23.5.0:
 
 jest-config@^23.5.0:
   version "23.5.0"
-  resolved "http://npm.zhaopin.com/jest-config/-/jest-config-23.5.0.tgz#3770fba03f7507ee15f3b8867c742e48f31a9773"
+  resolved "https://registry.yarnpkg.com/jest-config/-/jest-config-23.5.0.tgz#3770fba03f7507ee15f3b8867c742e48f31a9773"
   dependencies:
     babel-core "^6.0.0"
     babel-jest "^23.4.2"
@@ -3562,7 +3562,7 @@ jest-config@^23.5.0:
 
 jest-diff@^23.5.0:
   version "23.5.0"
-  resolved "http://npm.zhaopin.com/jest-diff/-/jest-diff-23.5.0.tgz#250651a433dd0050290a07642946cc9baaf06fba"
+  resolved "https://registry.yarnpkg.com/jest-diff/-/jest-diff-23.5.0.tgz#250651a433dd0050290a07642946cc9baaf06fba"
   dependencies:
     chalk "^2.0.1"
     diff "^3.2.0"
@@ -3577,7 +3577,7 @@ jest-docblock@^23.2.0:
 
 jest-each@^23.5.0:
   version "23.5.0"
-  resolved "http://npm.zhaopin.com/jest-each/-/jest-each-23.5.0.tgz#77f7e2afe6132a80954b920006e78239862b10ba"
+  resolved "https://registry.yarnpkg.com/jest-each/-/jest-each-23.5.0.tgz#77f7e2afe6132a80954b920006e78239862b10ba"
   dependencies:
     chalk "^2.0.1"
     pretty-format "^23.5.0"
@@ -3603,7 +3603,7 @@ jest-get-type@^22.1.0:
 
 jest-haste-map@^23.5.0:
   version "23.5.0"
-  resolved "http://npm.zhaopin.com/jest-haste-map/-/jest-haste-map-23.5.0.tgz#d4ca618188bd38caa6cb20349ce6610e194a8065"
+  resolved "https://registry.yarnpkg.com/jest-haste-map/-/jest-haste-map-23.5.0.tgz#d4ca618188bd38caa6cb20349ce6610e194a8065"
   dependencies:
     fb-watchman "^2.0.0"
     graceful-fs "^4.1.11"
@@ -3616,7 +3616,7 @@ jest-haste-map@^23.5.0:
 
 jest-jasmine2@^23.5.0:
   version "23.5.0"
-  resolved "http://npm.zhaopin.com/jest-jasmine2/-/jest-jasmine2-23.5.0.tgz#05fe7f1788e650eeb5a03929e6461ea2e9f3db53"
+  resolved "https://registry.yarnpkg.com/jest-jasmine2/-/jest-jasmine2-23.5.0.tgz#05fe7f1788e650eeb5a03929e6461ea2e9f3db53"
   dependencies:
     babel-traverse "^6.0.0"
     chalk "^2.0.1"
@@ -3633,13 +3633,13 @@ jest-jasmine2@^23.5.0:
 
 jest-leak-detector@^23.5.0:
   version "23.5.0"
-  resolved "http://npm.zhaopin.com/jest-leak-detector/-/jest-leak-detector-23.5.0.tgz#14ac2a785bd625160a2ea968fd5d98b7dcea3e64"
+  resolved "https://registry.yarnpkg.com/jest-leak-detector/-/jest-leak-detector-23.5.0.tgz#14ac2a785bd625160a2ea968fd5d98b7dcea3e64"
   dependencies:
     pretty-format "^23.5.0"
 
 jest-matcher-utils@^23.5.0:
   version "23.5.0"
-  resolved "http://npm.zhaopin.com/jest-matcher-utils/-/jest-matcher-utils-23.5.0.tgz#0e2ea67744cab78c9ab15011c4d888bdd3e49e2a"
+  resolved "https://registry.yarnpkg.com/jest-matcher-utils/-/jest-matcher-utils-23.5.0.tgz#0e2ea67744cab78c9ab15011c4d888bdd3e49e2a"
   dependencies:
     chalk "^2.0.1"
     jest-get-type "^22.1.0"
@@ -3665,14 +3665,14 @@ jest-regex-util@^23.3.0:
 
 jest-resolve-dependencies@^23.5.0:
   version "23.5.0"
-  resolved "http://npm.zhaopin.com/jest-resolve-dependencies/-/jest-resolve-dependencies-23.5.0.tgz#10c4d135beb9d2256de1fedc7094916c3ad74af7"
+  resolved "https://registry.yarnpkg.com/jest-resolve-dependencies/-/jest-resolve-dependencies-23.5.0.tgz#10c4d135beb9d2256de1fedc7094916c3ad74af7"
   dependencies:
     jest-regex-util "^23.3.0"
     jest-snapshot "^23.5.0"
 
 jest-resolve@^23.5.0:
   version "23.5.0"
-  resolved "http://npm.zhaopin.com/jest-resolve/-/jest-resolve-23.5.0.tgz#3b8e7f67e84598f0caf63d1530bd8534a189d0e6"
+  resolved "https://registry.yarnpkg.com/jest-resolve/-/jest-resolve-23.5.0.tgz#3b8e7f67e84598f0caf63d1530bd8534a189d0e6"
   dependencies:
     browser-resolve "^1.11.3"
     chalk "^2.0.1"
@@ -3680,7 +3680,7 @@ jest-resolve@^23.5.0:
 
 jest-runner@^23.5.0:
   version "23.5.0"
-  resolved "http://npm.zhaopin.com/jest-runner/-/jest-runner-23.5.0.tgz#570f7a044da91648b5bb9b6baacdd511076c71d7"
+  resolved "https://registry.yarnpkg.com/jest-runner/-/jest-runner-23.5.0.tgz#570f7a044da91648b5bb9b6baacdd511076c71d7"
   dependencies:
     exit "^0.1.2"
     graceful-fs "^4.1.11"
@@ -3698,7 +3698,7 @@ jest-runner@^23.5.0:
 
 jest-runtime@^23.5.0:
   version "23.5.0"
-  resolved "http://npm.zhaopin.com/jest-runtime/-/jest-runtime-23.5.0.tgz#eb503525a196dc32f2f9974e3482d26bdf7b63ce"
+  resolved "https://registry.yarnpkg.com/jest-runtime/-/jest-runtime-23.5.0.tgz#eb503525a196dc32f2f9974e3482d26bdf7b63ce"
   dependencies:
     babel-core "^6.0.0"
     babel-plugin-istanbul "^4.1.6"
@@ -3728,7 +3728,7 @@ jest-serializer@^23.0.1:
 
 jest-snapshot@^23.5.0:
   version "23.5.0"
-  resolved "http://npm.zhaopin.com/jest-snapshot/-/jest-snapshot-23.5.0.tgz#cc368ebd8513e1175e2a7277f37a801b7358ae79"
+  resolved "https://registry.yarnpkg.com/jest-snapshot/-/jest-snapshot-23.5.0.tgz#cc368ebd8513e1175e2a7277f37a801b7358ae79"
   dependencies:
     babel-types "^6.0.0"
     chalk "^2.0.1"
@@ -3756,7 +3756,7 @@ jest-util@^23.4.0:
 
 jest-validate@^23.5.0:
   version "23.5.0"
-  resolved "http://npm.zhaopin.com/jest-validate/-/jest-validate-23.5.0.tgz#f5df8f761cf43155e1b2e21d6e9de8a2852d0231"
+  resolved "https://registry.yarnpkg.com/jest-validate/-/jest-validate-23.5.0.tgz#f5df8f761cf43155e1b2e21d6e9de8a2852d0231"
   dependencies:
     chalk "^2.0.1"
     jest-get-type "^22.1.0"
@@ -3779,7 +3779,7 @@ jest-worker@^23.2.0:
 
 jest@^23.5.0:
   version "23.5.0"
-  resolved "http://npm.zhaopin.com/jest/-/jest-23.5.0.tgz#80de353d156ea5ea4a7332f7962ac79135fbc62e"
+  resolved "https://registry.yarnpkg.com/jest/-/jest-23.5.0.tgz#80de353d156ea5ea4a7332f7962ac79135fbc62e"
   dependencies:
     import-local "^1.0.0"
     jest-cli "^23.5.0"
@@ -4319,7 +4319,7 @@ mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0:
 
 mobx-react@^5.2.5:
   version "5.2.5"
-  resolved "http://npm.zhaopin.com/mobx-react/-/mobx-react-5.2.5.tgz#fc44ac17e1798f6b590f064b831d8a1d89850ef0"
+  resolved "https://registry.yarnpkg.com/mobx-react/-/mobx-react-5.2.5.tgz#fc44ac17e1798f6b590f064b831d8a1d89850ef0"
   dependencies:
     hoist-non-react-statics "^2.5.0"
     react-lifecycles-compat "^3.0.2"
@@ -4999,7 +4999,7 @@ pretty-bytes@^4.0.2:
 
 pretty-format@^23.5.0:
   version "23.5.0"
-  resolved "http://npm.zhaopin.com/pretty-format/-/pretty-format-23.5.0.tgz#0f9601ad9da70fe690a269cd3efca732c210687c"
+  resolved "https://registry.yarnpkg.com/pretty-format/-/pretty-format-23.5.0.tgz#0f9601ad9da70fe690a269cd3efca732c210687c"
   dependencies:
     ansi-regex "^3.0.0"
     ansi-styles "^3.2.0"
