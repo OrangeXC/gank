@@ -9,11 +9,11 @@
     "heroku-postbuild": "next build"
   },
   "dependencies": {
-    "antd": "^3.8.0",
+    "antd": "^3.8.1",
     "antd-mobile": "^2.2.3",
     "isomorphic-fetch": "^2.2.1",
     "mobx": "^5.0.3",
-    "mobx-react": "^5.2.3",
+    "mobx-react": "^5.2.5",
     "next": "^6.1.1",
     "next-offline": "^2.9.0",
     "nprogress": "^0.2.0",
@@ -33,7 +33,7 @@
     "enzyme": "^3.4.1",
     "enzyme-adapter-react-16": "^1.2.0",
     "immutable": "^3.8.2",
-    "jest": "^23.4.2",
+    "jest": "^23.5.0",
     "react-test-renderer": "^16.4.2"
   }
 }
