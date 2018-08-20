@@ -849,9 +849,9 @@ antd-mobile@^2.2.3:
     rmc-tabs "~1.2.0"
     rmc-tooltip "~1.0.0"
 
-antd@^3.8.1:
-  version "3.8.1"
-  resolved "https://registry.yarnpkg.com/antd/-/antd-3.8.1.tgz#1780acd5e9bc6c80dc23b042161418eb88f4d80e"
+antd@^3.8.2:
+  version "3.8.2"
+  resolved "https://registry.yarnpkg.com/antd/-/antd-3.8.2.tgz#cb2af23243522e75fc09707a52799c01f6230704"
   dependencies:
     array-tree-filter "^2.0.0"
     babel-runtime "6.x"
@@ -873,7 +873,7 @@ antd@^3.8.1:
     rc-checkbox "~2.1.5"
     rc-collapse "~1.9.0"
     rc-dialog "~7.2.0"
-    rc-drawer "~1.6.2"
+    rc-drawer "~1.7.3"
     rc-dropdown "~2.2.0"
     rc-editor-mention "^1.0.2"
     rc-form "^2.1.0"
@@ -891,8 +891,8 @@ antd@^3.8.1:
     rc-tabs "~9.3.3"
     rc-time-picker "~3.3.0"
     rc-tooltip "~3.7.0"
-    rc-tree "~1.13.0"
-    rc-tree-select "~2.0.5"
+    rc-tree "~1.14.3"
+    rc-tree-select "~2.1.0"
     rc-trigger "^2.5.4"
     rc-upload "~2.5.0"
     rc-util "^4.0.4"
@@ -2234,9 +2234,9 @@ enzyme-adapter-utils@^1.5.0:
     object.assign "^4.1.0"
     prop-types "^15.6.2"
 
-enzyme@^3.4.2:
-  version "3.4.2"
-  resolved "https://registry.yarnpkg.com/enzyme/-/enzyme-3.4.2.tgz#17bcbec411b6b874c508d31edb51aaf431e88ae7"
+enzyme@^3.4.4:
+  version "3.4.4"
+  resolved "https://registry.yarnpkg.com/enzyme/-/enzyme-3.4.4.tgz#92c7c6b9e59d4ef0c3d36a75dccc0e41a5c14d21"
   dependencies:
     array.prototype.flat "^1.2.1"
     cheerio "^1.0.0-rc.2"
@@ -5191,9 +5191,22 @@ rc-animate@2.x, rc-animate@^2.3.0, rc-animate@^2.4.1:
     css-animation "^1.3.2"
     prop-types "15.x"
 
-rc-animate@3.0.0-rc.1, rc-animate@^3.0.0-rc.1:
+rc-animate@^3.0.0-rc.1:
   version "3.0.0-rc.1"
   resolved "https://registry.yarnpkg.com/rc-animate/-/rc-animate-3.0.0-rc.1.tgz#39703e5be6d35c0c50ae53126a6c2424e5ec9405"
+  dependencies:
+    babel-runtime "6.x"
+    classnames "^2.2.5"
+    component-classes "^1.2.6"
+    fbjs "^0.8.16"
+    prop-types "15.x"
+    raf "^3.4.0"
+    rc-util "^4.5.0"
+    react-lifecycles-compat "^3.0.4"
+
+rc-animate@^3.0.0-rc.4, rc-animate@^3.0.0-rc.5:
+  version "3.0.0-rc.5"
+  resolved "https://registry.yarnpkg.com/rc-animate/-/rc-animate-3.0.0-rc.5.tgz#802ac2af847d27b24aa89d8a43f89e26e9b3293c"
   dependencies:
     babel-runtime "6.x"
     classnames "^2.2.5"
@@ -5262,9 +5275,9 @@ rc-dialog@~7.2.0:
     rc-animate "2.x"
     rc-util "^4.4.0"
 
-rc-drawer@~1.6.2:
-  version "1.6.2"
-  resolved "https://registry.yarnpkg.com/rc-drawer/-/rc-drawer-1.6.2.tgz#588e819406698c26769bddf271e7de6a2bc3b4e7"
+rc-drawer@~1.7.3:
+  version "1.7.3"
+  resolved "https://registry.yarnpkg.com/rc-drawer/-/rc-drawer-1.7.3.tgz#c18e10f31bba6ce8882cbdb351760fc12fc2b5da"
   dependencies:
     babel-runtime "6.x"
     classnames "^2.2.5"
@@ -5511,41 +5524,30 @@ rc-tooltip@^3.4.2, rc-tooltip@^3.7.0, rc-tooltip@~3.7.0:
     prop-types "^15.5.8"
     rc-trigger "^2.2.2"
 
-rc-tree-select@~2.0.5:
-  version "2.0.11"
-  resolved "https://registry.yarnpkg.com/rc-tree-select/-/rc-tree-select-2.0.11.tgz#4130acccead2623b6735d060981ae29e4b439f07"
+rc-tree-select@~2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/rc-tree-select/-/rc-tree-select-2.1.0.tgz#80fa8161973128e8756673462bc8211610f714f1"
   dependencies:
     babel-runtime "^6.23.0"
     classnames "^2.2.1"
     prop-types "^15.5.8"
     raf "^3.4.0"
-    rc-animate "^3.0.0-rc.1"
-    rc-tree "~1.12.2"
+    rc-animate "^3.0.0-rc.4"
+    rc-tree "~1.14.3"
     rc-trigger "^3.0.0-rc.2"
     rc-util "^4.5.0"
     react-lifecycles-compat "^3.0.4"
     shallowequal "^1.0.2"
     warning "^4.0.1"
 
-rc-tree@~1.12.2:
-  version "1.12.6"
-  resolved "https://registry.yarnpkg.com/rc-tree/-/rc-tree-1.12.6.tgz#53bd6a567b41418a125a6d8c129a8730698f1933"
+rc-tree@~1.14.3:
+  version "1.14.3"
+  resolved "https://registry.yarnpkg.com/rc-tree/-/rc-tree-1.14.3.tgz#dec3fd8d3f3e5571f66350c4011ceb443f8188f7"
   dependencies:
     babel-runtime "^6.23.0"
     classnames "2.x"
     prop-types "^15.5.8"
-    rc-animate "2.x"
-    rc-util "^4.0.4"
-    warning "^3.0.0"
-
-rc-tree@~1.13.0:
-  version "1.13.1"
-  resolved "https://registry.yarnpkg.com/rc-tree/-/rc-tree-1.13.1.tgz#337ca0a85d25324bf52442f93c5e87d0225d504a"
-  dependencies:
-    babel-runtime "^6.23.0"
-    classnames "2.x"
-    prop-types "^15.5.8"
-    rc-animate "3.0.0-rc.1"
+    rc-animate "^3.0.0-rc.5"
     rc-util "^4.5.1"
     react-lifecycles-compat "^3.0.4"
     warning "^3.0.0"
@@ -6608,9 +6610,9 @@ svg-baker@^1.2.0, svg-baker@^1.2.17:
     query-string "^4.3.2"
     traverse "^0.6.6"
 
-svg-sprite-loader@^3.8.0:
-  version "3.8.0"
-  resolved "https://registry.yarnpkg.com/svg-sprite-loader/-/svg-sprite-loader-3.8.0.tgz#22fa52b2ff19b01bdd98f3ff197e9801960faa64"
+svg-sprite-loader@^3.9.2:
+  version "3.9.2"
+  resolved "https://registry.yarnpkg.com/svg-sprite-loader/-/svg-sprite-loader-3.9.2.tgz#9208e58855504767a4cfc66f7fec8acf10b56a37"
   dependencies:
     bluebird "^3.5.0"
     deepmerge "1.3.2"
