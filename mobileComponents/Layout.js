@@ -16,7 +16,7 @@ export default ({ children }) => (
       <title>Gank</title>
       <link rel="icon" type="image/x-icon" href="/static/logo.png" />
       <link rel="apple-touch-icon" href="/static/logo.png" />
-      <link rel='stylesheet' type='text/css' href='https://cdn.bootcss.com/antd-mobile/2.1.8/antd-mobile.min.css' />
+      <link rel='stylesheet' type='text/css' href='https://cdn.bootcss.com/antd-mobile/2.1.10/antd-mobile.min.css' />
       <link rel='stylesheet' href='/static/css/nprogress.mobile.css' />
     </Head>
     <LocaleProvider locale={enUS}>
