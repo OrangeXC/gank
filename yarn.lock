@@ -1772,7 +1772,7 @@ copy-descriptor@^0.1.0:
 
 copy-webpack-plugin@~4.5.2:
   version "4.5.2"
-  resolved "http://npm.zhaopin.com/copy-webpack-plugin/-/copy-webpack-plugin-4.5.2.tgz#d53444a8fea2912d806e78937390ddd7e632ee5c"
+  resolved "https://registry.yarnpkg.com/copy-webpack-plugin/-/copy-webpack-plugin-4.5.2.tgz#d53444a8fea2912d806e78937390ddd7e632ee5c"
   dependencies:
     cacache "^10.0.4"
     find-cache-dir "^1.0.0"
@@ -2066,7 +2066,7 @@ diffie-hellman@^5.0.0:
 
 dir-glob@^2.0.0:
   version "2.0.0"
-  resolved "http://npm.zhaopin.com/dir-glob/-/dir-glob-2.0.0.tgz#0b205d2b6aef98238ca286598a8204d29d0a0034"
+  resolved "https://registry.yarnpkg.com/dir-glob/-/dir-glob-2.0.0.tgz#0b205d2b6aef98238ca286598a8204d29d0a0034"
   dependencies:
     arrify "^1.0.1"
     path-type "^3.0.0"
@@ -2872,7 +2872,7 @@ globby@^6.1.0:
 
 globby@^7.1.1:
   version "7.1.1"
-  resolved "http://npm.zhaopin.com/globby/-/globby-7.1.1.tgz#fb2ccff9401f8600945dfada97440cca972b8680"
+  resolved "https://registry.yarnpkg.com/globby/-/globby-7.1.1.tgz#fb2ccff9401f8600945dfada97440cca972b8680"
   dependencies:
     array-union "^1.0.1"
     dir-glob "^2.0.0"
@@ -3111,7 +3111,7 @@ ignore-walk@^3.0.1:
 
 ignore@^3.3.5:
   version "3.3.10"
-  resolved "http://npm.zhaopin.com/ignore/-/ignore-3.3.10.tgz#0a97fb876986e8081c631160f8f9f389157f0043"
+  resolved "https://registry.yarnpkg.com/ignore/-/ignore-3.3.10.tgz#0a97fb876986e8081c631160f8f9f389157f0043"
 
 image-size@^0.5.1:
   version "0.5.5"
@@ -4433,7 +4433,7 @@ neo-async@^2.5.0:
 
 next-offline@^2.10.1:
   version "2.10.1"
-  resolved "http://npm.zhaopin.com/next-offline/-/next-offline-2.10.1.tgz#561bafd8657a48cda8f65fcb9fa771154f98e95c"
+  resolved "https://registry.yarnpkg.com/next-offline/-/next-offline-2.10.1.tgz#561bafd8657a48cda8f65fcb9fa771154f98e95c"
   dependencies:
     copy-webpack-plugin "~4.5.2"
     fs-extra "~5.0.0"
@@ -4932,7 +4932,7 @@ path-type@^2.0.0:
 
 path-type@^3.0.0:
   version "3.0.0"
-  resolved "http://npm.zhaopin.com/path-type/-/path-type-3.0.0.tgz#cef31dc8e0a1a3bb0d105c0cd97cf3bf47f4e36f"
+  resolved "https://registry.yarnpkg.com/path-type/-/path-type-3.0.0.tgz#cef31dc8e0a1a3bb0d105c0cd97cf3bf47f4e36f"
   dependencies:
     pify "^3.0.0"
 
