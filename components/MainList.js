@@ -6,8 +6,9 @@ import ListSpin from './ListSpin'
 import { Alert } from 'antd'
 import { inject, observer } from 'mobx-react'
 
-@inject('store') @observer
-export default class MainList extends Component {
+@inject('store')
+@observer
+class MainList extends Component {
   constructor (props) {
     super(props)
 
@@ -79,3 +80,5 @@ export default class MainList extends Component {
     )
   }
 }
+
+export default MainList
