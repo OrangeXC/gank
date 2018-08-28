@@ -9,10 +9,10 @@
     "heroku-postbuild": "next build"
   },
   "dependencies": {
-    "antd": "^3.8.3",
+    "antd": "^3.8.4",
     "antd-mobile": "^2.2.3",
     "isomorphic-fetch": "^2.2.1",
-    "mobx": "^5.0.5",
+    "mobx": "^5.1.0",
     "mobx-react": "^5.2.5",
     "next": "^7.0.0-canary.3",
     "next-offline": "^2.11.0",
@@ -24,7 +24,7 @@
     "svg-sprite-loader": "^3.9.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0-rc.3",
+    "@babel/core": "^7.0.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.4.2",
     "babel-plugin-import": "^1.8.0",
