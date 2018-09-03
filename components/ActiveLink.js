@@ -16,6 +16,7 @@ const ActiveLink = ({ children, router, href }) => {
       href="#"
       onClick={onClickHandler(href)}
       className={className}
+      style={{ float: 'left' }}
       role="menuitem"
       aria-selected="false"
     >
