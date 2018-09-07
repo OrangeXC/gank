@@ -10,15 +10,15 @@
   },
   "dependencies": {
     "antd": "^3.9.1",
-    "antd-mobile": "^2.2.3",
+    "antd-mobile": "^2.2.4",
     "isomorphic-fetch": "^2.2.1",
     "mobx": "^5.1.0",
     "mobx-react": "^5.2.6",
     "next": "^7.0.0-canary.9",
     "next-offline": "^2.12.0",
     "nprogress": "^0.2.0",
-    "react": "^16.4.2",
-    "react-dom": "^16.4.2",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
     "react-masonry-component": "^6.2.1",
     "require-hacker": "^3.0.1",
     "svg-sprite-loader": "^3.9.2"
@@ -33,6 +33,6 @@
     "enzyme-adapter-react-16": "^1.5.0",
     "immutable": "^3.8.2",
     "jest": "^23.5.0",
-    "react-test-renderer": "^16.4.2"
+    "react-test-renderer": "^16.5.0"
   }
 }
