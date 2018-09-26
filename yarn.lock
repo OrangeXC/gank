@@ -991,7 +991,7 @@ antd-mobile@^2.2.5:
 
 antd@^3.9.3:
   version "3.9.3"
-  resolved "http://npm.zhaopin.com/antd/-/antd-3.9.3.tgz#bc3e6a93478f4fcfb57f9e7f683c3ce590069ddb"
+  resolved "https://registry.yarnpkg.com/antd/-/antd-3.9.3.tgz#bc3e6a93478f4fcfb57f9e7f683c3ce590069ddb"
   dependencies:
     "@ant-design/icons" "~1.1.5"
     "@ant-design/icons-react" "~1.1.1"
@@ -1802,7 +1802,7 @@ clean-css@4.2.x:
 
 clean-webpack-plugin@^0.1.19:
   version "0.1.19"
-  resolved "http://npm.zhaopin.com/clean-webpack-plugin/-/clean-webpack-plugin-0.1.19.tgz#ceda8bb96b00fe168e9b080272960d20fdcadd6d"
+  resolved "https://registry.yarnpkg.com/clean-webpack-plugin/-/clean-webpack-plugin-0.1.19.tgz#ceda8bb96b00fe168e9b080272960d20fdcadd6d"
   dependencies:
     rimraf "^2.6.1"
 
@@ -2880,7 +2880,7 @@ fs-extra@^4.0.2:
 
 fs-extra@~7.0.0:
   version "7.0.0"
-  resolved "http://npm.zhaopin.com/fs-extra/-/fs-extra-7.0.0.tgz#8cc3f47ce07ef7b3593a11b9fb245f7e34c041d6"
+  resolved "https://registry.yarnpkg.com/fs-extra/-/fs-extra-7.0.0.tgz#8cc3f47ce07ef7b3593a11b9fb245f7e34c041d6"
   dependencies:
     graceful-fs "^4.1.2"
     jsonfile "^4.0.0"
@@ -4738,7 +4738,7 @@ neo-async@^2.5.0:
 
 next-offline@^3.0.1:
   version "3.0.1"
-  resolved "http://npm.zhaopin.com/next-offline/-/next-offline-3.0.1.tgz#c4dd43cb3a30201ee26d4f8be34b0644aab306ec"
+  resolved "https://registry.yarnpkg.com/next-offline/-/next-offline-3.0.1.tgz#c4dd43cb3a30201ee26d4f8be34b0644aab306ec"
   dependencies:
     clean-webpack-plugin "^0.1.19"
     copy-webpack-plugin "~4.5.2"
@@ -7597,7 +7597,7 @@ webpack@4.19.0:
 
 webpack@^4.12.1, webpack@^4.19.1:
   version "4.19.1"
-  resolved "http://npm.zhaopin.com/webpack/-/webpack-4.19.1.tgz#096674bc3b573f8756c762754366e5b333d6576f"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.19.1.tgz#096674bc3b573f8756c762754366e5b333d6576f"
   dependencies:
     "@webassemblyjs/ast" "1.7.6"
     "@webassemblyjs/helper-module-context" "1.7.6"
@@ -7695,19 +7695,19 @@ wordwrap@~1.0.0:
 
 workbox-background-sync@^3.6.1:
   version "3.6.1"
-  resolved "http://npm.zhaopin.com/workbox-background-sync/-/workbox-background-sync-3.6.1.tgz#4d8b91b21e26e94eeb259a156c15ad139edb2584"
+  resolved "https://registry.yarnpkg.com/workbox-background-sync/-/workbox-background-sync-3.6.1.tgz#4d8b91b21e26e94eeb259a156c15ad139edb2584"
   dependencies:
     workbox-core "^3.6.1"
 
 workbox-broadcast-cache-update@^3.6.1:
   version "3.6.1"
-  resolved "http://npm.zhaopin.com/workbox-broadcast-cache-update/-/workbox-broadcast-cache-update-3.6.1.tgz#3069bf159cfa7f948e08df50486b22fae0f901ce"
+  resolved "https://registry.yarnpkg.com/workbox-broadcast-cache-update/-/workbox-broadcast-cache-update-3.6.1.tgz#3069bf159cfa7f948e08df50486b22fae0f901ce"
   dependencies:
     workbox-core "^3.6.1"
 
 workbox-build@^3.6.1:
   version "3.6.1"
-  resolved "http://npm.zhaopin.com/workbox-build/-/workbox-build-3.6.1.tgz#8a6099d443fb43432727ed2020edba4dc6885d16"
+  resolved "https://registry.yarnpkg.com/workbox-build/-/workbox-build-3.6.1.tgz#8a6099d443fb43432727ed2020edba4dc6885d16"
   dependencies:
     babel-runtime "^6.26.0"
     common-tags "^1.4.0"
@@ -7734,23 +7734,23 @@ workbox-build@^3.6.1:
 
 workbox-cache-expiration@^3.6.1:
   version "3.6.1"
-  resolved "http://npm.zhaopin.com/workbox-cache-expiration/-/workbox-cache-expiration-3.6.1.tgz#68f7ae9c0d0df94b74917201ae8b6dc5dd7d431c"
+  resolved "https://registry.yarnpkg.com/workbox-cache-expiration/-/workbox-cache-expiration-3.6.1.tgz#68f7ae9c0d0df94b74917201ae8b6dc5dd7d431c"
   dependencies:
     workbox-core "^3.6.1"
 
 workbox-cacheable-response@^3.6.1:
   version "3.6.1"
-  resolved "http://npm.zhaopin.com/workbox-cacheable-response/-/workbox-cacheable-response-3.6.1.tgz#c3c5bb23363251c4888de89848cf42fb9ebbd3e4"
+  resolved "https://registry.yarnpkg.com/workbox-cacheable-response/-/workbox-cacheable-response-3.6.1.tgz#c3c5bb23363251c4888de89848cf42fb9ebbd3e4"
   dependencies:
     workbox-core "^3.6.1"
 
 workbox-core@^3.6.1:
   version "3.6.1"
-  resolved "http://npm.zhaopin.com/workbox-core/-/workbox-core-3.6.1.tgz#925605589d0d64c4aa6417e3a9ef3211a09c8839"
+  resolved "https://registry.yarnpkg.com/workbox-core/-/workbox-core-3.6.1.tgz#925605589d0d64c4aa6417e3a9ef3211a09c8839"
 
 workbox-google-analytics@^3.6.1:
   version "3.6.1"
-  resolved "http://npm.zhaopin.com/workbox-google-analytics/-/workbox-google-analytics-3.6.1.tgz#5e5dbcecdfc59836a554357ec80358cacace9b94"
+  resolved "https://registry.yarnpkg.com/workbox-google-analytics/-/workbox-google-analytics-3.6.1.tgz#5e5dbcecdfc59836a554357ec80358cacace9b94"
   dependencies:
     workbox-background-sync "^3.6.1"
     workbox-core "^3.6.1"
@@ -7759,47 +7759,47 @@ workbox-google-analytics@^3.6.1:
 
 workbox-navigation-preload@^3.6.1:
   version "3.6.1"
-  resolved "http://npm.zhaopin.com/workbox-navigation-preload/-/workbox-navigation-preload-3.6.1.tgz#c1184f455a502222746a1a15bf5f61b24f9d926d"
+  resolved "https://registry.yarnpkg.com/workbox-navigation-preload/-/workbox-navigation-preload-3.6.1.tgz#c1184f455a502222746a1a15bf5f61b24f9d926d"
   dependencies:
     workbox-core "^3.6.1"
 
 workbox-precaching@^3.6.1:
   version "3.6.1"
-  resolved "http://npm.zhaopin.com/workbox-precaching/-/workbox-precaching-3.6.1.tgz#edfbbca545df74bd30e7dd03f90d695217a2772d"
+  resolved "https://registry.yarnpkg.com/workbox-precaching/-/workbox-precaching-3.6.1.tgz#edfbbca545df74bd30e7dd03f90d695217a2772d"
   dependencies:
     workbox-core "^3.6.1"
 
 workbox-range-requests@^3.6.1:
   version "3.6.1"
-  resolved "http://npm.zhaopin.com/workbox-range-requests/-/workbox-range-requests-3.6.1.tgz#f997e4b946d63bc09cc9f178e287900c17e144fd"
+  resolved "https://registry.yarnpkg.com/workbox-range-requests/-/workbox-range-requests-3.6.1.tgz#f997e4b946d63bc09cc9f178e287900c17e144fd"
   dependencies:
     workbox-core "^3.6.1"
 
 workbox-routing@^3.6.1:
   version "3.6.1"
-  resolved "http://npm.zhaopin.com/workbox-routing/-/workbox-routing-3.6.1.tgz#4cd41e319d0dc9df5db36c7d2054e829855f14e8"
+  resolved "https://registry.yarnpkg.com/workbox-routing/-/workbox-routing-3.6.1.tgz#4cd41e319d0dc9df5db36c7d2054e829855f14e8"
   dependencies:
     workbox-core "^3.6.1"
 
 workbox-strategies@^3.6.1:
   version "3.6.1"
-  resolved "http://npm.zhaopin.com/workbox-strategies/-/workbox-strategies-3.6.1.tgz#a397ea2f14a1a926276a4f3e87b689409cfb8c6e"
+  resolved "https://registry.yarnpkg.com/workbox-strategies/-/workbox-strategies-3.6.1.tgz#a397ea2f14a1a926276a4f3e87b689409cfb8c6e"
   dependencies:
     workbox-core "^3.6.1"
 
 workbox-streams@^3.6.1:
   version "3.6.1"
-  resolved "http://npm.zhaopin.com/workbox-streams/-/workbox-streams-3.6.1.tgz#ca3362c67e94408e72fcbf7bc5f7144a7463eb50"
+  resolved "https://registry.yarnpkg.com/workbox-streams/-/workbox-streams-3.6.1.tgz#ca3362c67e94408e72fcbf7bc5f7144a7463eb50"
   dependencies:
     workbox-core "^3.6.1"
 
 workbox-sw@^3.6.1:
   version "3.6.1"
-  resolved "http://npm.zhaopin.com/workbox-sw/-/workbox-sw-3.6.1.tgz#98d73e27bb1ac65332d71041dce99dcc84c7d2bc"
+  resolved "https://registry.yarnpkg.com/workbox-sw/-/workbox-sw-3.6.1.tgz#98d73e27bb1ac65332d71041dce99dcc84c7d2bc"
 
 workbox-webpack-plugin@^3.6.1:
   version "3.6.1"
-  resolved "http://npm.zhaopin.com/workbox-webpack-plugin/-/workbox-webpack-plugin-3.6.1.tgz#1c353338d1f1d1258a39b8cdcc94467ad2cd3667"
+  resolved "https://registry.yarnpkg.com/workbox-webpack-plugin/-/workbox-webpack-plugin-3.6.1.tgz#1c353338d1f1d1258a39b8cdcc94467ad2cd3667"
   dependencies:
     json-stable-stringify "^1.0.1"
     workbox-build "^3.6.1"
