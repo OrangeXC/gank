@@ -21,12 +21,12 @@
     "react-dom": "^16.5.2",
     "react-masonry-component": "^6.2.1",
     "require-hacker": "^3.0.1",
-    "svg-sprite-loader": "^4.1.1"
+    "svg-sprite-loader": "^4.1.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.1.0",
+    "@babel/core": "^7.1.2",
     "@babel/plugin-proposal-class-properties": "^7.1.0",
-    "@babel/plugin-proposal-decorators": "^7.1.0",
+    "@babel/plugin-proposal-decorators": "^7.1.2",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.6.0",
     "babel-plugin-import": "^1.9.1",
