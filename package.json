@@ -9,11 +9,11 @@
     "heroku-postbuild": "next build"
   },
   "dependencies": {
-    "antd": "^3.10.2",
+    "antd": "^3.10.3",
     "antd-mobile": "^2.2.6",
     "isomorphic-fetch": "^2.2.1",
     "mobx": "^5.5.2",
-    "mobx-react": "^5.3.5",
+    "mobx-react": "^5.3.6",
     "next": "^7.0.2",
     "next-offline": "^3.0.3",
     "nprogress": "^0.2.0",
