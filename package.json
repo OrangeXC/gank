@@ -31,7 +31,7 @@
     "babel-jest": "^23.6.0",
     "babel-plugin-import": "^1.11.0",
     "enzyme": "^3.7.0",
-    "enzyme-adapter-react-16": "^1.6.0",
+    "enzyme-adapter-react-16": "^1.7.0",
     "immutable": "^4.0.0-rc.12",
     "jest": "^23.6.0",
     "react-test-renderer": "^16.6.1"
