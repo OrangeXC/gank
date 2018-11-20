@@ -5559,12 +5559,13 @@ mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0:
   dependencies:
     minimist "0.0.8"
 
-mobx-react@^5.3.6:
-  version "5.3.6"
-  resolved "https://registry.yarnpkg.com/mobx-react/-/mobx-react-5.3.6.tgz#0bead0173aed7d12ace4981b53c28db4d61de9ef"
-  integrity sha512-u0ehjkyMllnt+SQ/G5BACxwi4VkJOqDVauA7cL8UvDi4oLO1ID9Z5c/nudTdIAmtsDDhJSxW85mrgsA2Iv/56Q==
+mobx-react@^5.4.0:
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/mobx-react/-/mobx-react-5.4.0.tgz#25540c57a92b078d0955d08166fcc39c88b0f89e"
+  integrity sha512-IHX/PmHDH4UHHLavIZnL6XxGEafMq9bzDodWSx3dwnZp4WhX0yyhktzieFClKIxCef+jQIpwDk2KrUXg+vW+SQ==
   dependencies:
     hoist-non-react-statics "^3.0.0"
+    react-is "^16.3.2"
     react-lifecycles-compat "^3.0.2"
 
 mobx@^5.6.0:
@@ -5666,10 +5667,10 @@ neo-async@^2.5.0:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.5.2.tgz#489105ce7bc54e709d736b195f82135048c50fcc"
   integrity sha512-vdqTKI9GBIYcAEbFAcpKPErKINfPF5zIuz3/niBfq8WUZjpT2tytLlFVrBgWdOtqI4uaA/Rb6No0hux39XXDuw==
 
-next-offline@^3.1.0:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/next-offline/-/next-offline-3.1.0.tgz#ff9ef847764b5d6fdf97b13aecbf11caa07e07e4"
-  integrity sha512-jOkLlp353n2jegB5S2WmsoJNTzDpBF8GtvTvl+hWNh3D0hsIvYvvgSOfJOkBfFYy9uKlz7+udux2eEIYphVYwQ==
+next-offline@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/next-offline/-/next-offline-3.2.1.tgz#60719fcf5317612b0e98489faa59ef84a428d8de"
+  integrity sha512-1aSA+AoK9nl6UXlyUVo7vCjjhGQ3uRWSqIPDw8XLsqmLHl2p3Br6IWZ1wPCVR9iahHIv9XRGSWcs/Rw6ycIslQ==
   dependencies:
     clean-webpack-plugin "^0.1.19"
     copy-webpack-plugin "~4.5.2"
