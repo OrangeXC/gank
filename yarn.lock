@@ -1357,10 +1357,10 @@ antd-mobile@^2.2.6:
     rmc-tabs "~1.2.0"
     rmc-tooltip "~1.0.0"
 
-antd@^3.10.8:
-  version "3.10.8"
-  resolved "https://registry.yarnpkg.com/antd/-/antd-3.10.8.tgz#416d5095e03addcdf087b7cde72c9b86eb838410"
-  integrity sha512-PGdUodxMPXn2O/qxwm04ZyGpFARHvtcVflQIWk36pjNbAZnyYdqOssNeRoEetmWNe7f/3Nkf/GkSznwVxkaxfw==
+antd@^3.10.9:
+  version "3.10.9"
+  resolved "https://registry.yarnpkg.com/antd/-/antd-3.10.9.tgz#6f9eec6d2b85e04fa97a7d9997b29317a9e5238e"
+  integrity sha512-oF59DVH8sQHOVp4sbh43FYyj0RRVQm4F4jHHQHEl4enWK/qe6qe4t9NDL1uGRMhOd7690J1QKb8DBUp8YyR5HQ==
   dependencies:
     "@ant-design/icons" "~1.1.15"
     "@ant-design/icons-react" "~1.1.2"
@@ -1403,7 +1403,7 @@ antd@^3.10.8:
     rc-time-picker "~3.4.0"
     rc-tooltip "~3.7.3"
     rc-tree "~1.14.6"
-    rc-tree-select "~2.3.1"
+    rc-tree-select "~2.4.0"
     rc-trigger "^2.6.2"
     rc-upload "~2.6.0"
     rc-util "^4.5.1"
@@ -7030,10 +7030,10 @@ rc-tooltip@~3.7.3:
     prop-types "^15.5.8"
     rc-trigger "^2.2.2"
 
-rc-tree-select@~2.3.1:
-  version "2.3.1"
-  resolved "https://registry.yarnpkg.com/rc-tree-select/-/rc-tree-select-2.3.1.tgz#e4c4e611756277737b79b1d77195929695f0e256"
-  integrity sha512-R6uYgPW2pUnac8MhS2Q2/UjF50v9PvXyNTteAkGStNndrF0R6I9z0sCIjeS1i32TDDT+GnlzQEq+codAvQSpSw==
+rc-tree-select@~2.4.0:
+  version "2.4.1"
+  resolved "https://registry.yarnpkg.com/rc-tree-select/-/rc-tree-select-2.4.1.tgz#86a830a291d9ae511611062b68725fb86d8ea078"
+  integrity sha512-GVc6be4gCUaiIO5jZZ+z1G8Q7K/qrlWCp8saoGv1ddnZ7KfIrujrH9UIrBBs+Zi7dVjpBI4M5ZRj+19xe4ZHDw==
   dependencies:
     babel-runtime "^6.23.0"
     classnames "^2.2.1"
