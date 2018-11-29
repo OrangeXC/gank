@@ -1,6 +1,6 @@
 import { Component } from 'react'
-import MainList from './MainList'
 import { Provider } from 'mobx-react'
+import MainList from './MainList'
 import { getPageTitle, getInitList } from '../utils'
 
 export default class ListPage extends Component {
