@@ -10,10 +10,10 @@
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
-    "antd": "^3.10.9",
+    "antd": "^3.11.0",
     "antd-mobile": "^2.2.6",
     "isomorphic-fetch": "^2.2.1",
-    "mobx": "^5.6.0",
+    "mobx": "^5.7.0",
     "mobx-react": "^5.4.2",
     "next": "^7.0.2",
     "next-offline": "^3.2.2",
@@ -23,9 +23,9 @@
     "react-masonry-component": "^6.2.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.1.6",
-    "@babel/plugin-proposal-class-properties": "^7.1.0",
-    "@babel/plugin-proposal-decorators": "^7.1.6",
+    "@babel/core": "^7.2.0",
+    "@babel/plugin-proposal-class-properties": "^7.2.0",
+    "@babel/plugin-proposal-decorators": "^7.2.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^23.6.0",
     "babel-plugin-import": "^1.11.0",
