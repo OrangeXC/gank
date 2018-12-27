@@ -1513,10 +1513,10 @@ antd-mobile@^2.2.6:
     rmc-tabs "~1.2.0"
     rmc-tooltip "~1.0.0"
 
-antd@3.11.5:
-  version "3.11.5"
-  resolved "https://registry.yarnpkg.com/antd/-/antd-3.11.5.tgz#70a22c902fa765293113f4a25f7c8a1c642ab175"
-  integrity sha1-cKIskC+nZSkxE/SiX3yKHGQqsXU=
+antd@3.11.6:
+  version "3.11.6"
+  resolved "https://registry.yarnpkg.com/antd/-/antd-3.11.6.tgz#bc69434c59025edf65ad077ad2d4d3ce646b2a64"
+  integrity sha512-7JrL5IWH6qLLa8u8H9na0DCTkVzbE3Nyg+QC71FJEEO9hJXsAqybcj3GU+HYe/Zsa2ndlN9TMFlPZoYWX1Rz8w==
   dependencies:
     "@ant-design/icons" "~1.1.15"
     "@ant-design/icons-react" "~1.1.2"
