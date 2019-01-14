@@ -1513,10 +1513,10 @@ antd-mobile@^2.2.8:
     rmc-tabs "~1.2.0"
     rmc-tooltip "~1.0.0"
 
-antd@3.12.1:
-  version "3.12.1"
-  resolved "https://registry.yarnpkg.com/antd/-/antd-3.12.1.tgz#d1b3138ee907f7884f9eae2bfdee0b1b714bfe62"
-  integrity sha512-CExkSp+e1GxKYlfI6f9pTf2q+m6zuECvnBJblMiTx/sM29P2uEkJcmt1JysFGMS7MNa/HAel5SvvmB4lEEPMJw==
+antd@3.12.3:
+  version "3.12.3"
+  resolved "https://registry.yarnpkg.com/antd/-/antd-3.12.3.tgz#ffb409c5317e17583bf8493a4726d77ac839c7d2"
+  integrity sha512-fKLqE5rqiAqKwi3nT8lopYZFj/Kbc3UCEkX4EsZOh8ZZHVNGirvZofRxLt4smpHmpj6NLbhR6va/kXLFe35RiQ==
   dependencies:
     "@ant-design/icons" "~1.1.16"
     "@ant-design/icons-react" "~1.1.2"
@@ -1537,7 +1537,7 @@ antd@3.12.1:
     rc-calendar "~9.10.3"
     rc-cascader "~0.17.0"
     rc-checkbox "~2.1.5"
-    rc-collapse "~1.10.0"
+    rc-collapse "~1.10.2"
     rc-dialog "~7.3.0"
     rc-drawer "~1.7.6"
     rc-dropdown "~2.4.1"
@@ -5756,10 +5756,10 @@ neo-async@^2.5.0:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.5.2.tgz#489105ce7bc54e709d736b195f82135048c50fcc"
   integrity sha512-vdqTKI9GBIYcAEbFAcpKPErKINfPF5zIuz3/niBfq8WUZjpT2tytLlFVrBgWdOtqI4uaA/Rb6No0hux39XXDuw==
 
-next-offline@^3.3.2:
-  version "3.3.2"
-  resolved "https://registry.yarnpkg.com/next-offline/-/next-offline-3.3.2.tgz#2e5b43af039986c40adbbffc84fbc8af1c43364f"
-  integrity sha512-SRl/BHGRUd2kjCQGXG4AI6XoqaT3RT7tjRZ1wclFDVzUbpXyUJawVy/RILfJiKZxxUuPx74d4lIVYoYez+5aTQ==
+next-offline@^3.3.3:
+  version "3.3.3"
+  resolved "https://registry.yarnpkg.com/next-offline/-/next-offline-3.3.3.tgz#51e13bcde88c2286822df4bbfaf0dbd4716ad817"
+  integrity sha512-Y9aOFL8rYmJpExt6Qu2brZQowmWjtKXOj411GIvnEHIHGBBngHdATxdDMa/Gx8Pc/UyfbVXhr/7TVrzc1IeurQ==
   dependencies:
     clean-webpack-plugin "^0.1.19"
     copy-webpack-plugin "~4.5.2"
@@ -6807,15 +6807,16 @@ rc-checkbox@~2.1.5:
     prop-types "15.x"
     rc-util "^4.0.4"
 
-rc-collapse@~1.10.0:
-  version "1.10.0"
-  resolved "https://registry.yarnpkg.com/rc-collapse/-/rc-collapse-1.10.0.tgz#b39578633a1e033391597776758763a10d3bc261"
-  integrity sha512-H8cn7yOhSg28anuhZTSbGBTEWYMmEqNHWT2AMCXk6JpYN5RpdJDCWMZitdJYPeKT0axMqQnrNe4upSELmWnTMw==
+rc-collapse@~1.10.2:
+  version "1.10.2"
+  resolved "https://registry.yarnpkg.com/rc-collapse/-/rc-collapse-1.10.2.tgz#2136c9aca8f5f8e2af66d6454adde56693fa0f00"
+  integrity sha512-AtEE4rMXEBT05gScduc+NQf/257wqE0xk4tNX4N1DBq0qTx19xGcwX3EXDD+ZF8KuZ/A25pgmviXad/hthNQSg==
   dependencies:
     classnames "2.x"
     css-animation "1.x"
     prop-types "^15.5.6"
     rc-animate "2.x"
+    react-is "^16.7.0"
 
 rc-collapse@~1.9.1:
   version "1.9.3"
@@ -9017,10 +9018,10 @@ webpack@^4.19.1:
     watchpack "^1.5.0"
     webpack-sources "^1.2.0"
 
-webpack@^4.28.3:
-  version "4.28.3"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.28.3.tgz#8acef6e77fad8a01bfd0c2b25aa3636d46511874"
-  integrity sha512-vLZN9k5I7Nr/XB1IDG9GbZB4yQd1sPuvufMFgJkx0b31fi2LD97KQIjwjxE7xytdruAYfu5S0FLBLjdxmwGJCg==
+webpack@^4.28.4:
+  version "4.28.4"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.28.4.tgz#1ddae6c89887d7efb752adf0c3cd32b9b07eacd0"
+  integrity sha512-NxjD61WsK/a3JIdwWjtIpimmvE6UrRi3yG54/74Hk9rwNj5FPkA4DJCf1z4ByDWLkvZhTZE+P3C/eh6UD5lDcw==
   dependencies:
     "@webassemblyjs/ast" "1.7.11"
     "@webassemblyjs/helper-module-context" "1.7.11"
