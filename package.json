@@ -10,16 +10,16 @@
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
-    "antd": "3.12.4",
+    "antd": "3.13.2",
     "antd-mobile": "^2.2.8",
     "isomorphic-fetch": "^2.2.1",
     "mobx": "^5.9.0",
     "mobx-react": "^5.4.3",
-    "next": "^7.0.2",
+    "next": "^7.0.3",
     "next-offline": "^3.3.5",
     "nprogress": "^0.2.0",
-    "react": "^16.7.0",
-    "react-dom": "^16.7.0",
+    "react": "^16.8.1",
+    "react-dom": "^16.8.1",
     "react-masonry-component": "^6.2.1"
   },
   "devDependencies": {
@@ -27,13 +27,13 @@
     "@babel/plugin-proposal-class-properties": "^7.3.0",
     "@babel/plugin-proposal-decorators": "^7.3.0",
     "babel-core": "^7.0.0-bridge.0",
-    "babel-jest": "^23.6.0",
+    "babel-jest": "^24.1.0",
     "babel-plugin-import": "^1.11.0",
     "enzyme": "^3.8.0",
-    "enzyme-adapter-react-16": "^1.7.1",
+    "enzyme-adapter-react-16": "^1.9.1",
     "immutable": "^4.0.0-rc.12",
-    "jest": "^23.6.0",
-    "react-test-renderer": "^16.7.0",
-    "webpack": "^4.29.0"
+    "jest": "^24.1.0",
+    "react-test-renderer": "^16.8.1",
+    "webpack": "^4.29.3"
   }
 }
