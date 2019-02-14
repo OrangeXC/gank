@@ -15,7 +15,7 @@
     "isomorphic-fetch": "^2.2.1",
     "mobx": "^5.9.0",
     "mobx-react": "^5.4.3",
-    "next": "^8.0.0",
+    "next": "^8.0.1",
     "next-offline": "^3.3.5",
     "nprogress": "^0.2.0",
     "react": "^16.8.1",
