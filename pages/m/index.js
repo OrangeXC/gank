@@ -9,14 +9,6 @@ import Layout from '../../mobileComponents/Layout'
 import MenuBar from '../../mobileComponents/MenuBar'
 import ScrollList from '../../mobileComponents/ScrollList'
 
-const CustomIcon = ({ type, className = '', size = 'md' }) => (
-  <svg
-    className={`am-icon am-icon-${size} ${className}`}
-  >
-    {<use xlinkHref={`#${type.default.id}`} />}
-  </svg>
-)
-
 const gridMenu = [
   {
     icon: '../../static/icon/html.svg',
@@ -93,7 +85,7 @@ export default class MobileHome extends Component {
         >
           <NavBar
             mode='light'
-            leftContent={<CustomIcon type={require('../../static/icon/github.svg')} />}
+            leftContent={<img width="22px" src={require('../../static/icon/github.svg')}/>}
             onLeftClick={() => window.open('https://github.com/OrangeXC/gank')}
             rightContent={<Icon
               onClick={() =>

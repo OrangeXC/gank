@@ -16,6 +16,7 @@
     "mobx": "^5.9.0",
     "mobx-react": "^5.4.3",
     "next": "^8.0.1",
+    "next-images": "^1.0.4",
     "next-offline": "^3.3.5",
     "nprogress": "^0.2.0",
     "react": "^16.8.1",
@@ -34,9 +35,7 @@
     "immutable": "^4.0.0-rc.12",
     "jest": "^24.1.0",
     "react-test-renderer": "^16.8.1",
-    "webpack": "^4.29.3"
-  },
-  "engines": {
-    "node": "10.15.0"
+    "webpack": "^4.29.3",
+    "webpack-filter-warnings-plugin": "^1.2.1"
   }
 }
