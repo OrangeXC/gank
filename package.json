@@ -21,7 +21,8 @@
     "nprogress": "^0.2.0",
     "react": "^16.8.1",
     "react-dom": "^16.8.1",
-    "react-masonry-component": "^6.2.1"
+    "react-masonry-component": "^6.2.1",
+    "webpack-filter-warnings-plugin": "^1.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.2.2",
@@ -35,7 +36,6 @@
     "immutable": "^4.0.0-rc.12",
     "jest": "^24.1.0",
     "react-test-renderer": "^16.8.1",
-    "webpack": "^4.29.3",
-    "webpack-filter-warnings-plugin": "^1.2.1"
+    "webpack": "^4.29.3"
   }
 }
