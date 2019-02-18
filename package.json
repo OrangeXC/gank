@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
-    "antd": "3.13.2",
+    "antd": "3.13.3",
     "antd-mobile": "^2.2.8",
     "isomorphic-fetch": "^2.2.1",
     "mobx": "^5.9.0",
@@ -31,7 +31,7 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^24.1.0",
     "babel-plugin-import": "^1.11.0",
-    "enzyme": "^3.8.0",
+    "enzyme": "^3.9.0",
     "enzyme-adapter-react-16": "^1.9.1",
     "immutable": "^4.0.0-rc.12",
     "jest": "^24.1.0",
