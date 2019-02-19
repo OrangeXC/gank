@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
-    "antd": "3.13.3",
+    "antd": "3.13.4",
     "antd-mobile": "^2.2.8",
     "isomorphic-fetch": "^2.2.1",
     "mobx": "^5.9.0",
@@ -36,6 +36,6 @@
     "immutable": "^4.0.0-rc.12",
     "jest": "^24.1.0",
     "react-test-renderer": "^16.8.2",
-    "webpack": "^4.29.4"
+    "webpack": "^4.29.5"
   }
 }
