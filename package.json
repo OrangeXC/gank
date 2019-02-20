@@ -10,8 +10,8 @@
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
-    "antd": "3.13.4",
-    "antd-mobile": "^2.2.8",
+    "antd": "3.13.5",
+    "antd-mobile": "^2.2.9",
     "isomorphic-fetch": "^2.2.1",
     "mobx": "^5.9.0",
     "mobx-react": "^5.4.3",
