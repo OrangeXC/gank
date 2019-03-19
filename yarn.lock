@@ -64,7 +64,7 @@
 
 "@babel/core@^7.3.4":
   version "7.3.4"
-  resolved "http://npm.zhaopin.com/@babel%2fcore/-/core-7.3.4.tgz#921a5a13746c21e32445bf0798680e9d11a6530b"
+  resolved "https://registry.yarnpkg.com/@babel%2fcore/-/core-7.3.4.tgz#921a5a13746c21e32445bf0798680e9d11a6530b"
   integrity sha1-khpaE3RsIeMkRb8HmGgOnRGmUws=
   dependencies:
     "@babel/code-frame" "^7.0.0"
@@ -95,7 +95,7 @@
 
 "@babel/generator@^7.3.4":
   version "7.3.4"
-  resolved "http://npm.zhaopin.com/@babel%2fgenerator/-/generator-7.3.4.tgz#9aa48c1989257877a9d971296e5b73bfe72e446e"
+  resolved "https://registry.yarnpkg.com/@babel%2fgenerator/-/generator-7.3.4.tgz#9aa48c1989257877a9d971296e5b73bfe72e446e"
   integrity sha1-mqSMGYkleHep2XEpbltzv+cuRG4=
   dependencies:
     "@babel/types" "^7.3.4"
@@ -149,7 +149,7 @@
 
 "@babel/helper-create-class-features-plugin@^7.3.4":
   version "7.3.4"
-  resolved "http://npm.zhaopin.com/@babel%2fhelper-create-class-features-plugin/-/helper-create-class-features-plugin-7.3.4.tgz#092711a7a3ad8ea34de3e541644c2ce6af1f6f0c"
+  resolved "https://registry.yarnpkg.com/@babel%2fhelper-create-class-features-plugin/-/helper-create-class-features-plugin-7.3.4.tgz#092711a7a3ad8ea34de3e541644c2ce6af1f6f0c"
   integrity sha1-CScRp6OtjqNN4+VBZEws5q8fbww=
   dependencies:
     "@babel/helper-function-name" "^7.1.0"
@@ -267,7 +267,7 @@
 
 "@babel/helper-replace-supers@^7.3.4":
   version "7.3.4"
-  resolved "http://npm.zhaopin.com/@babel%2fhelper-replace-supers/-/helper-replace-supers-7.3.4.tgz#a795208e9b911a6eeb08e5891faacf06e7013e13"
+  resolved "https://registry.yarnpkg.com/@babel%2fhelper-replace-supers/-/helper-replace-supers-7.3.4.tgz#a795208e9b911a6eeb08e5891faacf06e7013e13"
   integrity sha1-p5UgjpuRGm7rCOWJH6rPBucBPhM=
   dependencies:
     "@babel/helper-member-expression-to-functions" "^7.0.0"
@@ -325,7 +325,7 @@
 
 "@babel/parser@^7.1.0", "@babel/parser@^7.3.4":
   version "7.3.4"
-  resolved "http://npm.zhaopin.com/@babel%2fparser/-/parser-7.3.4.tgz#a43357e4bbf4b92a437fb9e465c192848287f27c"
+  resolved "https://registry.yarnpkg.com/@babel%2fparser/-/parser-7.3.4.tgz#a43357e4bbf4b92a437fb9e465c192848287f27c"
   integrity sha1-pDNX5Lv0uSpDf7nkZcGShIKH8nw=
 
 "@babel/plugin-proposal-async-generator-functions@^7.1.0":
@@ -351,7 +351,7 @@
 
 "@babel/plugin-proposal-class-properties@^7.3.4":
   version "7.3.4"
-  resolved "http://npm.zhaopin.com/@babel%2fplugin-proposal-class-properties/-/plugin-proposal-class-properties-7.3.4.tgz#410f5173b3dc45939f9ab30ca26684d72901405e"
+  resolved "https://registry.yarnpkg.com/@babel%2fplugin-proposal-class-properties/-/plugin-proposal-class-properties-7.3.4.tgz#410f5173b3dc45939f9ab30ca26684d72901405e"
   integrity sha1-QQ9Rc7PcRZOfmrMMomaE1ykBQF4=
   dependencies:
     "@babel/helper-create-class-features-plugin" "^7.3.4"
@@ -844,7 +844,7 @@
 
 "@babel/traverse@^7.3.4":
   version "7.3.4"
-  resolved "http://npm.zhaopin.com/@babel%2ftraverse/-/traverse-7.3.4.tgz#1330aab72234f8dea091b08c4f8b9d05c7119e06"
+  resolved "https://registry.yarnpkg.com/@babel%2ftraverse/-/traverse-7.3.4.tgz#1330aab72234f8dea091b08c4f8b9d05c7119e06"
   integrity sha1-EzCqtyI0+N6gkbCMT4udBccRngY=
   dependencies:
     "@babel/code-frame" "^7.0.0"
@@ -868,7 +868,7 @@
 
 "@babel/types@^7.3.4":
   version "7.3.4"
-  resolved "http://npm.zhaopin.com/@babel%2ftypes/-/types-7.3.4.tgz#bf482eaeaffb367a28abbf9357a94963235d90ed"
+  resolved "https://registry.yarnpkg.com/@babel%2ftypes/-/types-7.3.4.tgz#bf482eaeaffb367a28abbf9357a94963235d90ed"
   integrity sha1-v0gurq/7Nnooq7+TV6lJYyNdkO0=
   dependencies:
     esutils "^2.0.2"
@@ -1554,7 +1554,7 @@ antd-mobile@^2.2.9:
 
 antd@3.15.1:
   version "3.15.1"
-  resolved "http://npm.zhaopin.com/antd/-/antd-3.15.1.tgz#16ce63a2d84a88906e6ece934423871aa67395c5"
+  resolved "https://registry.yarnpkg.com/antd/-/antd-3.15.1.tgz#16ce63a2d84a88906e6ece934423871aa67395c5"
   integrity sha1-Fs5jothKiJBubs6TRCOHGqZzlcU=
   dependencies:
     "@ant-design/icons" "~1.2.0"
