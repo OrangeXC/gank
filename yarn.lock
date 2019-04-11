@@ -5558,10 +5558,10 @@ next-images@^1.1.1:
     file-loader "^3.0.1"
     url-loader "^1.1.2"
 
-next-offline@^3.3.7:
-  version "3.3.7"
-  resolved "https://registry.yarnpkg.com/next-offline/-/next-offline-3.3.7.tgz#99e57d61c70071ec3241567db574251c988605e8"
-  integrity sha512-Xsfs6Xnu4Vdt9cgDVGv79uMJzqczDEz5gk0lpFbADFNQl7TcZHXcRyUvYguVGxVB3QR13amAkbeVA+1j8iJt3w==
+next-offline@^3.3.8:
+  version "3.3.8"
+  resolved "https://registry.yarnpkg.com/next-offline/-/next-offline-3.3.8.tgz#c921b57257d53d56dbc833e4726dae26a2ac415f"
+  integrity sha512-GZp07L31CvyKmcZXrj/64SFaoOAXabKQOSEuJNy/okaA2YMZ9D6ghT44a+65de8zKpBageC5KSA903xI5lnQcw==
   dependencies:
     clean-webpack-plugin "^0.1.19"
     copy-webpack-plugin "~4.5.2"
