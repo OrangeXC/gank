@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@ant-design/icons-react@~1.1.2":
-  version "1.1.2"
-  resolved "https://registry.yarnpkg.com/@ant-design/icons-react/-/icons-react-1.1.2.tgz#df25c4560864f8a3b687b305c3238daff048ed72"
-  integrity sha512-7Fgt9d8ABgxrhZxsFjHk/VpPcxodQJJhbJO8Lsh7u58pGN4NoxxW++92naeGTXCyqZsbDPBReP+SC0bdBtbsGQ==
+"@ant-design/icons-react@~1.1.5":
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/@ant-design/icons-react/-/icons-react-1.1.5.tgz#1b03da8dcced2a4bb982ef7b25c1d24014c35a68"
+  integrity sha512-p2ybKfO/r2lC1RZu4rDY2VBDZq2zqAaJzf/B1HrKTxGo8/mM1zOOEoob/LRXZphJ9jD5wCcTdcmcB9YMaAWW4Q==
   dependencies:
     ant-design-palettes "^1.1.3"
     babel-runtime "^6.26.0"
@@ -1614,13 +1614,13 @@ antd-mobile@^2.2.11:
     rmc-tabs "~1.2.0"
     rmc-tooltip "~1.0.0"
 
-antd@3.16.2:
-  version "3.16.2"
-  resolved "https://registry.yarnpkg.com/antd/-/antd-3.16.2.tgz#a3b4a844a6de82e6c87c96f88dda2317f4d89075"
-  integrity sha512-VaGvXJePhH4O6KmLNkUTfUFyxy/BTi7Ml9P1Df7N3TCK0A8+YSiMNfrD2QjiMDOj3FLwI4FwaznDPj4DAGn/Uw==
+antd@3.16.3:
+  version "3.16.3"
+  resolved "https://registry.yarnpkg.com/antd/-/antd-3.16.3.tgz#66ecdbd96a31e2a4d239106a106b17629beaa141"
+  integrity sha512-Kg/6n6IRzwslMrSOosczpxcuXiWh7mkUmmcPRmfI/E3P6oa8jR3dXtPiZViH64HxvBCIFL7FjizuVjA21MmPnQ==
   dependencies:
     "@ant-design/icons" "~1.2.0"
-    "@ant-design/icons-react" "~1.1.2"
+    "@ant-design/icons-react" "~1.1.5"
     "@types/react-slick" "^0.23.3"
     array-tree-filter "^2.1.0"
     babel-runtime "6.x"
@@ -8699,10 +8699,10 @@ webpack@^4.19.1:
     watchpack "^1.5.0"
     webpack-sources "^1.3.0"
 
-webpack@^4.29.6:
-  version "4.29.6"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.29.6.tgz#66bf0ec8beee4d469f8b598d3988ff9d8d90e955"
-  integrity sha512-MwBwpiE1BQpMDkbnUUaW6K8RFZjljJHArC6tWQJoFm0oQtfoSebtg4Y7/QHnJ/SddtjYLHaKGX64CFjG5rehJw==
+webpack@^4.30.0:
+  version "4.30.0"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.30.0.tgz#aca76ef75630a22c49fcc235b39b4c57591d33a9"
+  integrity sha512-4hgvO2YbAFUhyTdlR4FNyt2+YaYBYHavyzjCMbZzgglo02rlKi/pcsEzwCuCpsn1ryzIl1cq/u8ArIKu8JBYMg==
   dependencies:
     "@webassemblyjs/ast" "1.8.5"
     "@webassemblyjs/helper-module-context" "1.8.5"
