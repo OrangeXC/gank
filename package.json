@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
-    "antd": "3.18.2",
+    "antd": "3.19.0",
     "antd-mobile": "^2.2.13",
     "isomorphic-fetch": "^2.2.1",
     "mobx": "^5.9.4",
@@ -32,10 +32,10 @@
     "babel-jest": "^24.8.0",
     "babel-plugin-import": "^1.11.2",
     "enzyme": "^3.9.0",
-    "enzyme-adapter-react-16": "^1.13.1",
+    "enzyme-adapter-react-16": "^1.13.2",
     "immutable": "^4.0.0-rc.12",
     "jest": "^24.8.0",
     "react-test-renderer": "^16.8.6",
-    "webpack": "^4.32.1"
+    "webpack": "^4.32.2"
   }
 }
