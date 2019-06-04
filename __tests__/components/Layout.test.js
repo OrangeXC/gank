@@ -13,7 +13,7 @@ describe('Layout', () => {
     const links = wrapper.find(ActiveLink)
 
     expect(links).toHaveLength(10)
-    expect(links.at(0).text()).toEqual('<WithRouteWrapper />')
+    expect(links.at(0).text()).toEqual('<withRouter(ActiveLink) />')
 
     const menu = wrapper.find(Menu)
 
