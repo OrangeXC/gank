@@ -16,7 +16,7 @@
     "mobx": "^5.10.1",
     "mobx-react": "^6.0.3",
     "next": "^8.1.0",
-    "next-images": "^1.1.1",
+    "next-images": "^1.1.2",
     "next-offline": "^4.0.2",
     "nprogress": "^0.2.0",
     "react": "^16.8.6",
