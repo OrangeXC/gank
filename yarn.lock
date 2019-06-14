@@ -1674,10 +1674,10 @@ ansi-styles@^3.2.0, ansi-styles@^3.2.1:
   dependencies:
     color-convert "^1.9.0"
 
-antd-mobile@^2.2.13:
-  version "2.2.13"
-  resolved "https://registry.yarnpkg.com/antd-mobile/-/antd-mobile-2.2.13.tgz#ae9a2b33ed8af52ed92127b50691af401ac4c8ce"
-  integrity sha512-izBPlj5yvjPwzqvpjYYmKp9HOSoeIbqY4Z7gzFpxJXnDvaDoeY3ULr4AHQ1gdeJo6BpqjlcCHHw1IwX8DWN3JQ==
+antd-mobile@^2.2.14:
+  version "2.2.14"
+  resolved "https://registry.yarnpkg.com/antd-mobile/-/antd-mobile-2.2.14.tgz#0c3b4da1ef383799ec33f268786860e9cc4533d7"
+  integrity sha512-qbmVjV4L2z/PCBvkrU7QxTHTsFlxDF2s4V5Wvc5/FPmC50ycQPga2D/9GeAhV6hiijnyS/1sOl8nZ604u99BEw==
   dependencies:
     array-tree-filter "~2.1.0"
     babel-runtime "6.x"
