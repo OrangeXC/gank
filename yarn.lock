@@ -5494,10 +5494,10 @@ mobx-react-lite@1.4.0:
   resolved "https://registry.yarnpkg.com/mobx-react-lite/-/mobx-react-lite-1.4.0.tgz#193beb5fdddf17ae61542f65ff951d84db402351"
   integrity sha512-5xCuus+QITQpzKOjAOIQ/YxNhOl/En+PlNJF+5QU4Qxn9gnNMJBbweAdEW3HnuVQbfqDYEUnkGs5hmkIIStehg==
 
-mobx-react@^6.0.3:
-  version "6.0.3"
-  resolved "https://registry.yarnpkg.com/mobx-react/-/mobx-react-6.0.3.tgz#8a6492ada0bc89988150cc60e718c99be3bbb8dd"
-  integrity sha512-HmbciuddQFxyKnfI9UYBVykLjwiw0045ln175KPQkRxJ/LwERNLUrpX1wj4y5KQZngPEZ9bRkTBUpTwpTwCIZw==
+mobx-react@^6.0.4:
+  version "6.0.4"
+  resolved "https://registry.yarnpkg.com/mobx-react/-/mobx-react-6.0.4.tgz#829697c7a4098567047555e1285cc619f4aa9be7"
+  integrity sha512-sLAMFNkkNp7p8CHOy6jXcFlvGcJeiAq9vusMdsITwwejDjz/1dOGQgWtTijQTWBWOcmZp7xbIRZi61jAlpGY4w==
   dependencies:
     mobx-react-lite "1.4.0"
 
