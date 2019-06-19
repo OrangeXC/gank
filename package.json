@@ -14,7 +14,7 @@
     "antd-mobile": "^2.2.14",
     "isomorphic-fetch": "^2.2.1",
     "mobx": "^5.10.1",
-    "mobx-react": "^6.0.3",
+    "mobx-react": "^6.0.4",
     "next": "^8.1.0",
     "next-images": "^1.1.2",
     "next-offline": "^4.0.2",
