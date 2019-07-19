@@ -5,8 +5,8 @@
       "plugins": [
         ["@babel/plugin-proposal-decorators", { "legacy": true }],
         ["@babel/plugin-proposal-class-properties", { "loose": true }],
-        ["import", { "libraryName": "antd", "style": "css" }],
-        ["import", { "libraryName": "antd-mobile", "style": "css" }, "ant-mobile"]
+        ["import", { "libraryName": "antd" }],
+        ["import", { "libraryName": "antd-mobile" }, "ant-mobile"]
       ]
     },
     "production": {
@@ -14,8 +14,8 @@
       "plugins": [
         ["@babel/plugin-proposal-decorators", { "legacy": true }],
         ["@babel/plugin-proposal-class-properties", { "loose": true }],
-        ["import", { "libraryName": "antd", "style": "css" }],
-        ["import", { "libraryName": "antd-mobile", "style": "css" }, "ant-mobile"]
+        ["import", { "libraryName": "antd" }],
+        ["import", { "libraryName": "antd-mobile" }, "ant-mobile"]
       ]
     },
     "test": {
