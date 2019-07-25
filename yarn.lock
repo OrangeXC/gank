@@ -1899,10 +1899,10 @@ antd-mobile@^2.2.14:
     rmc-tabs "~1.2.0"
     rmc-tooltip "~1.0.0"
 
-antd@3.20.5:
-  version "3.20.5"
-  resolved "https://registry.yarnpkg.com/antd/-/antd-3.20.5.tgz#4456a5cc216d52e7d831e2a91cc37c18b18ee242"
-  integrity sha512-8/UoaZBzEvY2uBTPSPT/ve4MosUV0VGV+yY+rbvvvGSJ8hIKR4fHxdnkqJ7LDrOiJGVpnN/69IjASZAfDltnkQ==
+antd@3.20.6:
+  version "3.20.6"
+  resolved "https://registry.yarnpkg.com/antd/-/antd-3.20.6.tgz#d42f7f444ca7a57deb80759722b653732a3b94da"
+  integrity sha512-NYIn+DhbFBZ6yvZ4t50LpUf1Wkqv7dLX2ix5RlFfNqfxs3bCLK+SlICAHv/S3SZFvUabDr6JtXD89vV1Ks8NPQ==
   dependencies:
     "@ant-design/create-react-context" "^0.2.4"
     "@ant-design/icons" "~2.1.1"
@@ -9154,10 +9154,10 @@ webpack@^4.19.1:
     watchpack "^1.5.0"
     webpack-sources "^1.3.0"
 
-webpack@^4.36.1:
-  version "4.36.1"
-  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.36.1.tgz#f546fda7a403a76faeaaa7196c50d12370ed18a9"
-  integrity sha512-Ej01/N9W8DVyhEpeQnbUdGvOECw0L46FxS12cCOs8gSK7bhUlrbHRnWkjiXckGlHjUrmL89kDpTRIkUk6Y+fKg==
+webpack@^4.37.0:
+  version "4.37.0"
+  resolved "https://registry.yarnpkg.com/webpack/-/webpack-4.37.0.tgz#3508ef10f7996612c2be6026076d89760f776f54"
+  integrity sha512-iJPPvL7XpbcbwOthbzpa2BSPlmGp8lGDokAj/LdWtK80rsPoPOdANSbDBf2GAVLKZD3GhCuQ/gGkgN9HWs0Keg==
   dependencies:
     "@webassemblyjs/ast" "1.8.5"
     "@webassemblyjs/helper-module-context" "1.8.5"
