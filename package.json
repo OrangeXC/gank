@@ -37,6 +37,6 @@
     "immutable": "^4.0.0-rc.12",
     "jest": "^24.8.0",
     "react-test-renderer": "^16.8.6",
-    "webpack": "^4.37.0"
+    "webpack": "^4.38.0"
   }
 }
