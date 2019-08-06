@@ -1927,10 +1927,10 @@ antd-mobile@^2.2.14:
     rmc-tabs "~1.2.0"
     rmc-tooltip "~1.0.0"
 
-antd@3.21.0:
-  version "3.21.0"
-  resolved "https://registry.yarnpkg.com/antd/-/antd-3.21.0.tgz#a3fff023fe32b3c702aac1112770df2559b9d739"
-  integrity sha512-cO1/g31GV5aTbLU+HDkIP03RZVI0DQUkX0IEc9mnyECYt+gvMYEx8vT+rAbCmVSJt8y9jljAKfVWTowB6DBBlQ==
+antd@3.21.2:
+  version "3.21.2"
+  resolved "https://registry.yarnpkg.com/antd/-/antd-3.21.2.tgz#83232e12ea0257bc6103cf5a23a716290c863831"
+  integrity sha512-KwqFhr7UpZGVCB4l7uZj74LgFVGQqdqLULY9QCGgIubiSFcqPl5dzvIz/bIEdqdiYvS72zX+nD0qmQiI5W95kg==
   dependencies:
     "@ant-design/create-react-context" "^0.2.4"
     "@ant-design/icons" "~2.1.1"
