@@ -3361,6 +3361,11 @@ detect-newline@^2.1.0:
   resolved "https://registry.yarnpkg.com/detect-newline/-/detect-newline-2.1.0.tgz#f41f1c10be4b00e87b5f13da680759f2c5bfd3e2"
   integrity sha1-9B8cEL5LAOh7XxPaaAdZ8sW/0+I=
 
+devalue@2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/devalue/-/devalue-2.0.0.tgz#2afa0b7c1bb35bebbef792498150663fdcd33c68"
+  integrity sha512-6H2FBD5DPnQS75UWJtQjoVeKZlmXoa765UgYS5RQnx6Ay9LUhUld0w1/D6cYdrY+wnu6XQNlpEBfnJUZK0YyPQ==
+
 diff-sequences@^24.9.0:
   version "24.9.0"
   resolved "https://registry.yarnpkg.com/diff-sequences/-/diff-sequences-24.9.0.tgz#5715d6244e2aa65f48bba0bc972db0b0b11e95b5"
@@ -5996,10 +6001,10 @@ next-images@^1.1.2:
     file-loader "^4.0.0"
     url-loader "^2.0.0"
 
-next-offline@^4.0.3:
-  version "4.0.3"
-  resolved "https://registry.yarnpkg.com/next-offline/-/next-offline-4.0.3.tgz#a6af7443cf8822a1d4c6d6701563c20fb2b44f49"
-  integrity sha512-GlZsoUxJJEIRY8P73L5Y4qdr5ST9ouNfYU3lg/6oOgZiDnBOuWyQpKf3/E3AoVoABQ4mbP0QOq+1ecgyMkxcjA==
+next-offline@^4.0.5:
+  version "4.0.5"
+  resolved "https://registry.yarnpkg.com/next-offline/-/next-offline-4.0.5.tgz#e77c7d38034bff969fa5ad3b5e1f18ce01d1ab7b"
+  integrity sha512-yoQx2PvtPICuz4NwSDrtNgfw9uSBbK0uh/MG+e59zFXDhA2n38M8+65My2WvXfR1JXQwSnrDlrIlWwc6x7kxsg==
   dependencies:
     clean-webpack-plugin "^0.1.19"
     copy-webpack-plugin "~4.5.2"
@@ -6008,10 +6013,10 @@ next-offline@^4.0.3:
     webpack "^4.19.1"
     workbox-webpack-plugin "^4.3.1"
 
-next-server@9.0.4:
-  version "9.0.4"
-  resolved "https://registry.yarnpkg.com/next-server/-/next-server-9.0.4.tgz#648d6a6fc553cf9daa87a9cc7c879478eacaa0a6"
-  integrity sha512-dnHOBTQSuGukkOPtJDRtcQX75LDNOcXH71hWOICPUtIh91QIt/MSZguIR/Uv8QFBNHoYTUe47rXHjx/+uy872g==
+next-server@9.0.5:
+  version "9.0.5"
+  resolved "https://registry.yarnpkg.com/next-server/-/next-server-9.0.5.tgz#4b7fe976d0900dd865b3c5777287ccd4df200794"
+  integrity sha512-99+2QXbB0WDw0Oec1LQRVMAsnqcPR7UdJgcMMGrxql/o9w/E4i0lQu7ucEU7ageVnyVqzfjfoNJNhyODyRyOJA==
   dependencies:
     "@ampproject/toolbox-optimizer" "1.0.1"
     compression "1.7.4"
@@ -6028,10 +6033,10 @@ next-server@9.0.4:
     styled-jsx "3.2.1"
     url "0.11.0"
 
-next@^9.0.4:
-  version "9.0.4"
-  resolved "https://registry.yarnpkg.com/next/-/next-9.0.4.tgz#d073e26b2b0a706dd502fb090529bdafcd45e504"
-  integrity sha512-lH4Dz9ravRS0y+0iY97Iij7btVSz53tidd0Nx4YiQSU8c2+ZArZlFPBkfOhg6Ai5nSWemUGmzICwIoJ1OMclLA==
+next@^9.0.5:
+  version "9.0.5"
+  resolved "https://registry.yarnpkg.com/next/-/next-9.0.5.tgz#854db5c485d81857f69eb3cfd076fc1bd8ef7fc3"
+  integrity sha512-DpG6SSzZkREPW6pZhuJOXzR6XY5XOfFOiwVBhOXzmlSifJviHpmkGRsMlJxP3WejfKH/Gzhjs2Ar+//EGRQtGA==
   dependencies:
     "@babel/core" "7.4.5"
     "@babel/plugin-proposal-class-properties" "7.4.4"
@@ -6049,16 +6054,18 @@ next@^9.0.4:
     autodll-webpack-plugin "0.4.2"
     babel-core "7.0.0-bridge.0"
     babel-loader "8.0.6"
+    babel-plugin-syntax-jsx "6.18.0"
     babel-plugin-transform-define "1.3.1"
     babel-plugin-transform-react-remove-prop-types "0.4.24"
     chalk "2.4.2"
+    devalue "2.0.0"
     find-up "4.0.0"
     fork-ts-checker-webpack-plugin "1.3.4"
     fresh "0.5.2"
     launch-editor "2.2.1"
     loader-utils "1.2.3"
     mkdirp "0.5.1"
-    next-server "9.0.4"
+    next-server "9.0.5"
     prop-types "15.7.2"
     prop-types-exact "1.2.0"
     react-error-overlay "5.1.6"
