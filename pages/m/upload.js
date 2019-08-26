@@ -51,7 +51,7 @@ class MobileUploadForm extends React.Component {
         }
       })
 
-      const res = await fetch("https://gank.io/api/add2gank", {
+      const res = await fetch("http://gank.io/api/add2gank", {
         method: "POST",
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded'

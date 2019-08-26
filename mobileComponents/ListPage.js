@@ -8,7 +8,7 @@ import ScrollList from './ScrollList'
 export default class MobileListPage extends Component {
   static async getInitialProps ({ pathname }) {
     const title = getPageTitle(pathname.slice(2))
-    const apiUrl = `https://gank.io/api/data/${encodeURIComponent(title)}/20`
+    const apiUrl = `http://gank.io/api/data/${encodeURIComponent(title)}/20`
 
     const initList = await getInitList(apiUrl)
 

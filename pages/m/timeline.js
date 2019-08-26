@@ -8,7 +8,7 @@ const { Item } = List
 
 export default class MobileTimeLinePage extends React.Component {
   static async getInitialProps ({ req }) {
-    const res = await fetch('https://gank.io/api/day/history')
+    const res = await fetch('http://gank.io/api/day/history')
     const json = await res.json()
 
     return { timeline: json.results }
