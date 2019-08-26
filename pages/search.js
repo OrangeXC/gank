@@ -41,7 +41,7 @@ export default class SearchPage extends React.Component {
 
     this.handleLoadingShow()
 
-    const url = `https://gank.io/api/search/query/${val}/category/all/count/50/page/1`
+    const url = `http://gank.io/api/search/query/${val}/category/all/count/50/page/1`
     const res = await fetch(url)
     const { count, results } = await res.json()
 
