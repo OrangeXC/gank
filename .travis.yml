@@ -5,3 +5,5 @@ install:
   - yarn
 script:
   - yarn test
+after_success:
+  - codecov
