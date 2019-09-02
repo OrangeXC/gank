@@ -1,4 +1,12 @@
-# Gank
+<p align="center"><img width="100" src="https://i.loli.net/2019/09/02/Zb6aNhOKjP4UX3c.png" alt="gank logo"></p>
+
+<p align="center">
+  <a href="https://travis-ci.com/OrangeXC/gank"><img src="https://travis-ci.com/OrangeXC/gank.svg?branch=master" alt="Build Status"></a>
+  <a href="https://codecov.io/gh/OrangeXC/gank"><img src="https://img.shields.io/codecov/c/github/OrangeXC/gank/master.svg" alt="Coverage Status"></a>
+  <a href="https://github.com/OrangeXC/gank/blob/master/LICENSE"><img src="https://img.shields.io/github/license/orangexc/gank" alt="GitHub License"></a>
+</p>
+
+## Introduction
 
 next.js(react ssr repo) and gank api
 
@@ -12,7 +20,7 @@ next.js(react ssr repo) and gank api
 * State management [mobx](https://mobx.js.org/)
 * Fetch Api instead ajax
 
-## pages
+## Pages
 
 * Home page (all types list)
 * Front end page
@@ -30,16 +38,16 @@ next.js(react ssr repo) and gank api
 
 ``` bash
 # install dependencies
-$ npm install # Or yarn install*[see note below]
+$ yarn
 
 # serve with hot reload at localhost:3000
-$ npm run dev
+$ yarn dev
 
 # build for production and launch server
-$ npm run build
-$ npm start
+$ yarn build
+$ yarn start
 ```
 
 ## License
 
-Gank is [MIT licensed](https://opensource.org/licenses/MIT).
+Gank is [MIT licensed](https://github.com/OrangeXC/gank/blob/master/LICENSE).
