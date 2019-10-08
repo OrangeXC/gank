@@ -85,7 +85,7 @@ export default class MobileHome extends Component {
         >
           <NavBar
             mode='light'
-            leftContent={<img width="22px" src={require('/icon/github.svg')}/>}
+            leftContent={<img width="22px" src="/icon/github.svg"/>}
             onLeftClick={() => window.open('https://github.com/OrangeXC/gank')}
             rightContent={<Icon
               onClick={() =>
