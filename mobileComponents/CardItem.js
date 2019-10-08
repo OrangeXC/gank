@@ -24,7 +24,7 @@ export default (rowData) => (
                     <img
                       style={flexItemImageStyle}
                       src={rowData.images[0]}
-                      onError={(e) => e.target.src='/static/icon/image.svg'}
+                      onError={(e) => e.target.src='/icon/image.svg'}
                     />
                   </Flex.Item>
               }
@@ -49,7 +49,7 @@ export default (rowData) => (
             <img
               style={{ maxWidth: '100%' }}
               src={rowData.url}
-              onError={(e) => e.target.src='/static/icon/image.svg'}
+              onError={(e) => e.target.src='/icon/image.svg'}
             />
           </Card.Body>
           <Card.Footer content={<div>{rowData.publishedAt.slice(0, 10)}</div>} />
