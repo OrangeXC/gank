@@ -87,7 +87,7 @@ export default ({ children, title = '主页' }) => (
 
     <Footer style={{ textAlign: 'center' }}>
       Gank ©2017 use gank api Paword by Next
-      <a href="https://github.com/OrangeXC/gank" target="_blank">
+      <a href="https://github.com/OrangeXC/gank" style={{ marginLeft: 6 }} target="_blank">
         <Icon type="github" />
       </a>
     </Footer>

@@ -47,7 +47,7 @@ const gridMenu = [
 
 export default class MobileHome extends Component {
   static async getInitialProps () {
-    const apiUrl = 'http://gank.io/api/data/all/20'
+    const apiUrl = 'https://gank.io/api/data/all/20'
 
     const initList = await getInitList(apiUrl)
 

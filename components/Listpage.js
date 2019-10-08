@@ -7,7 +7,7 @@ export default class ListPage extends Component {
   static async getInitialProps ({ pathname }) {
     const title = getPageTitle(pathname)
     const path = title === '首页' ? 'all' : title
-    const apiUrl = `http://gank.io/api/data/${encodeURIComponent(path)}/20`
+    const apiUrl = `https://gank.io/api/data/${encodeURIComponent(path)}/20`
 
     const initList = await getInitList(apiUrl)
 
