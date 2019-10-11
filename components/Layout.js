@@ -48,7 +48,6 @@ export default ({ children, title = '主页' }) => (
       <link href="/static/css/nprogress.css" rel="stylesheet" />
       <link href="/static/logo.png" rel="icon" type="image/x-icon" />
       <link href="/static/logo.png" rel="apple-touch-icon" />
-      <link href='/manifest.json' rel='manifest' />
     </Head>
 
     <Header style={headerStyle}>
