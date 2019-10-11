@@ -11,35 +11,35 @@ import ScrollList from '../../mobileComponents/ScrollList'
 
 const gridMenu = [
   {
-    icon: '../../static/icon/html.svg',
+    icon: '/icon/html.svg',
     text: '前端',
     link: '/m/fe'
   }, {
-    icon: '../../static/icon/android.svg',
+    icon: '/icon/android.svg',
     text: '安卓',
     link: '/m/android'
   }, {
-    icon: '../../static/icon/ios.svg',
+    icon: '/icon/ios.svg',
     text: 'iOS',
     link: '/m/ios'
   }, {
-    icon: '../../static/icon/app.svg',
+    icon: '/icon/app.svg',
     text: 'App',
     link: '/m/app'
   }, {
-    icon: '../../static/icon/expand.svg',
+    icon: '/icon/expand.svg',
     text: '拓展资源',
     link: '/m/expand'
   }, {
-    icon: '../../static/icon/video.svg',
+    icon: '/icon/video.svg',
     text: '休息视频',
     link: '/m/videos'
   }, {
-    icon: '../../static/icon/blind.svg',
+    icon: '/icon/blind.svg',
     text: '瞎推荐',
     link: '/m/blind'
   }, {
-    icon: '../../static/icon/welfare.svg',
+    icon: '/icon/welfare.svg',
     text: '福利',
     link: '/m/welfare'
   }
@@ -47,7 +47,7 @@ const gridMenu = [
 
 export default class MobileHome extends Component {
   static async getInitialProps () {
-    const apiUrl = 'http://gank.io/api/data/all/20'
+    const apiUrl = 'https://gank.io/api/data/all/20'
 
     const initList = await getInitList(apiUrl)
 
@@ -85,7 +85,7 @@ export default class MobileHome extends Component {
         >
           <NavBar
             mode='light'
-            leftContent={<img width="22px" src={require('../../static/icon/github.svg')}/>}
+            leftContent={<img width="22px" src="/icon/github.svg"/>}
             onLeftClick={() => window.open('https://github.com/OrangeXC/gank')}
             rightContent={<Icon
               onClick={() =>

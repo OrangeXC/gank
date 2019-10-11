@@ -18,12 +18,12 @@ const tabData = tabs.map(({ title, name }) => ({
   icon: <div style={{
     width: '22px',
     height: '22px',
-    background: `url(/static/icon/${name}.svg) center center /  21px 21px no-repeat` }}
+    background: `url(/icon/${name}.svg) center center /  21px 21px no-repeat` }}
   />,
   selectedIcon: <div style={{
     width: '22px',
     height: '22px',
-    background: `url(/static/icon/${name}_active.svg) center center /  21px 21px no-repeat` }}
+    background: `url(/icon/${name}_active.svg) center center /  21px 21px no-repeat` }}
   />,
   link: name === 'home' ? '/m' : `/m/${name}`
 }))

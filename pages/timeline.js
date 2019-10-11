@@ -7,7 +7,7 @@ const { TabPane } = Tabs
 
 export default class TimeLinePage extends React.Component {
   static async getInitialProps (req) {
-    const res = await fetch('http://gank.io/api/day/history')
+    const res = await fetch('https://gank.io/api/day/history')
     const json = await res.json()
 
     let years = []
