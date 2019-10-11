@@ -45,9 +45,10 @@ export default ({ children, title = '主页' }) => (
         content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1"
       />
       <link href="https://unpkg.com/antd@3.23.6/dist/antd.min.css" rel='stylesheet' />
-      <link href="/css/nprogress.css" rel="stylesheet" />
-      <link href="/logo.png" rel="icon" type="image/x-icon" />
-      <link href="/logo.png" rel="apple-touch-icon" />
+      <link href="/static/css/nprogress.css" rel="stylesheet" />
+      <link href="/static/logo.png" rel="icon" type="image/x-icon" />
+      <link href="/static/logo.png" rel="apple-touch-icon" />
+      <link href='/manifest.json' rel='manifest' />
     </Head>
 
     <Header style={headerStyle}>
@@ -98,7 +99,7 @@ export default ({ children, title = '主页' }) => (
       .logo {
         width: 30px;
         height: 30px;
-        background-image: url(/logo.png);
+        background-image: url(/static/logo.png);
         background-size: cover;
         border-radius: 6px;
         margin: 16px 24px 16px 0;

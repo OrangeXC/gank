@@ -11,35 +11,35 @@ import ScrollList from '../../mobileComponents/ScrollList'
 
 const gridMenu = [
   {
-    icon: '/icon/html.svg',
+    icon: '/static/icon/html.svg',
     text: '前端',
     link: '/m/fe'
   }, {
-    icon: '/icon/android.svg',
+    icon: '/static/icon/android.svg',
     text: '安卓',
     link: '/m/android'
   }, {
-    icon: '/icon/ios.svg',
+    icon: '/static/icon/ios.svg',
     text: 'iOS',
     link: '/m/ios'
   }, {
-    icon: '/icon/app.svg',
+    icon: '/static/icon/app.svg',
     text: 'App',
     link: '/m/app'
   }, {
-    icon: '/icon/expand.svg',
+    icon: '/static/icon/expand.svg',
     text: '拓展资源',
     link: '/m/expand'
   }, {
-    icon: '/icon/video.svg',
+    icon: '/static/icon/video.svg',
     text: '休息视频',
     link: '/m/videos'
   }, {
-    icon: '/icon/blind.svg',
+    icon: '/static/icon/blind.svg',
     text: '瞎推荐',
     link: '/m/blind'
   }, {
-    icon: '/icon/welfare.svg',
+    icon: '/static/icon/welfare.svg',
     text: '福利',
     link: '/m/welfare'
   }
@@ -85,7 +85,7 @@ export default class MobileHome extends Component {
         >
           <NavBar
             mode='light'
-            leftContent={<img width="22px" src="/icon/github.svg"/>}
+            leftContent={<img width="22px" src="/static/icon/github.svg"/>}
             onLeftClick={() => window.open('https://github.com/OrangeXC/gank')}
             rightContent={<Icon
               onClick={() =>

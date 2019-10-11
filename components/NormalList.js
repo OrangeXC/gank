@@ -53,7 +53,7 @@ export default (props) => (
                 style={listImageStyle}
                 alt="cover"
                 src={item.images[0]}
-                onError={(e) => e.target.src='/icon/image.svg'}
+                onError={(e) => e.target.src='/static/icon/image.svg'}
               />
             </div>
           }
