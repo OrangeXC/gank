@@ -8,7 +8,7 @@ if (typeof require !== 'undefined') {
   require.extensions['.css'] = (file) => {}
 }
 
-module.exports = withOffline(withImages(withCss({
+const nextConfig = {
   cssModules: true,
   webpack: (config) => {
     const newConfig = { ...config }
@@ -22,4 +22,6 @@ module.exports = withOffline(withImages(withCss({
 
     return newConfig
   }
-})))
+}
+
+module.exports = withOffline(withImages(withCss(nextConfig)))
