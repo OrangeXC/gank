@@ -2,6 +2,7 @@ const port = parseInt(process.env.PORT, 10) || 3000
 const dev = process.env.NODE_ENV !== 'production'
 
 const { createServer } = require('http')
+const { join } = require('path')
 const { parse } = require('url')
 const next = require('next')
 const mobxReact = require('mobx-react')
