@@ -28,7 +28,7 @@ export default class ScrollList extends Component {
       pageIndex: prevState.pageIndex + 1
     }))
 
-    await this.getData(this.pageIndex)
+    await this.getData(this.state.pageIndex)
 
     this.setState({
       dataSource: this.state.dataSource.cloneWithRows(this.state.rData),
