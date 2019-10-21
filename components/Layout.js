@@ -5,8 +5,9 @@ import Link from 'next/link'
 import {
   Layout, Menu, Button, Icon, BackTop
 } from 'antd'
-import ActiveLink from './ActiveLink'
 import 'isomorphic-fetch'
+import ActiveLink from './ActiveLink'
+import pkg from '../package.json'
 
 Router.onRouteChangeStart = () => {
   NProgress.start()
@@ -44,7 +45,7 @@ export default ({ children, title = '主页' }) => (
         name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1"
       />
-      <link href="https://unpkg.com/antd@3.24.1/dist/antd.min.css" rel='stylesheet' />
+      <link href={`https://unpkg.com/antd@${pkg.dependencies.antd}/dist/antd.min.css`} rel='stylesheet' />
       <link href="/static/css/nprogress.css" rel="stylesheet" />
       <link href="/static/logo.png" rel="icon" type="image/x-icon" />
       <link href="/static/logo.png" rel="apple-touch-icon" />

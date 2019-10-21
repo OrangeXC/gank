@@ -1,8 +1,9 @@
 import React from 'react'
+import { Input, message } from 'antd'
 import Layout from '../components/Layout'
 import NormalList from '../components/NormalList'
 import ListSpin from '../components/ListSpin'
-import { Input, message } from 'antd'
+import { apiBaseUrl } from '../utils'
 
 const { Search } = Input
 
@@ -41,7 +42,7 @@ export default class SearchPage extends React.Component {
 
     this.handleLoadingShow()
 
-    const url = `https://gank.io/api/search/query/${val}/category/all/count/50/page/1`
+    const url = `${apiBaseUrl}search/query/${val}/category/all/count/50/page/1`
     const res = await fetch(url)
     const { count, results } = await res.json()
 

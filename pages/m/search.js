@@ -1,10 +1,11 @@
 import React from 'react'
 import Router from 'next/router'
 import {
-  NavBar, SearchBar, Button, Icon, WhiteSpace, Toast
+  NavBar, SearchBar, Icon, WhiteSpace, Toast
 } from 'antd-mobile'
-import CardItem from '../../mobileComponents/CardItem'
-import Layout from '../../mobileComponents/Layout'
+import CardItem from '../../components/mobile/CardItem'
+import Layout from '../../components/mobile/Layout'
+import { apiBaseUrl } from '../../utils'
 
 export default class MobileSearchPage extends React.Component {
   static async getInitialProps ({ req }) {
@@ -48,7 +49,7 @@ export default class MobileSearchPage extends React.Component {
 
     Toast.loading('Loading...', 10)
 
-    const url = `https://gank.io/api/search/query/${val}/category/all/count/50/page/1`
+    const url = `${apiBaseUrl}search/query/${val}/category/all/count/50/page/1`
     const res = await fetch(url)
     const { count, results } = await res.json()
 

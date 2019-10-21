@@ -1,3 +1,5 @@
+export const apiBaseUrl = 'http://gank.io/api/'
+
 const category = [{
   title: '首页',
   path: '/'

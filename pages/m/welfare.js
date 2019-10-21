@@ -1,3 +1,3 @@
-import MobileListPage from '../../mobileComponents/ListPage'
+import MobileListPage from '../../components/mobile/ListPage'
 
 export default MobileListPage

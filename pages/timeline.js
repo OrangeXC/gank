@@ -2,12 +2,13 @@ import React from 'react'
 import Link from 'next/link'
 import { Tabs, Card, Col, Row } from 'antd'
 import Layout from '../components/Layout'
+import { apiBaseUrl } from '../utils'
 
 const { TabPane } = Tabs
 
 export default class TimeLinePage extends React.Component {
-  static async getInitialProps (req) {
-    const res = await fetch('https://gank.io/api/day/history')
+  static async getInitialProps () {
+    const res = await fetch(`${apiBaseUrl}day/history`)
     const json = await res.json()
 
     let years = []

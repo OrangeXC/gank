@@ -1,14 +1,15 @@
 import React from 'react'
 import Link from 'next/link'
 import { NavBar, List, ListView } from 'antd-mobile'
-import Layout from '../../mobileComponents/Layout'
-import MenuBar from '../../mobileComponents/MenuBar'
+import Layout from '../../components/mobile/Layout'
+import MenuBar from '../../components/mobile/MenuBar'
+import { apiBaseUrl } from '../../utils'
 
 const { Item } = List
 
 export default class MobileTimeLinePage extends React.Component {
-  static async getInitialProps ({ req }) {
-    const res = await fetch('https://gank.io/api/day/history')
+  static async getInitialProps () {
+    const res = await fetch(`${apiBaseUrl}day/history`)
     const json = await res.json()
 
     return { timeline: json.results }

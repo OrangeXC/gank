@@ -4,8 +4,9 @@ import {
   Switch, Button, Toast, WingBlank, WhiteSpace
 } from 'antd-mobile'
 import { createForm } from 'rc-form'
-import MenuBar from '../../mobileComponents/MenuBar'
-import Layout from '../../mobileComponents/Layout'
+import MenuBar from '../../components/mobile/MenuBar'
+import Layout from '../../components/mobile/Layout'
+import { apiBaseUrl } from '../../utils'
 
 const { Item } = List
 const types = [
@@ -51,7 +52,7 @@ class MobileUploadForm extends React.Component {
         }
       })
 
-      const res = await fetch("https://gank.io/api/add2gank", {
+      const res = await fetch(`${apiBaseUrl}add2gank`, {
         method: "POST",
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded'

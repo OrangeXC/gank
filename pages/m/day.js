@@ -1,8 +1,9 @@
 import React from 'react'
 import Router from 'next/router'
 import { NavBar, Icon, Tabs, WhiteSpace } from 'antd-mobile'
-import Layout from '../../mobileComponents/Layout'
-import CardItem from '../../mobileComponents/CardItem'
+import Layout from '../../components/mobile/Layout'
+import CardItem from '../../components/mobile/CardItem'
+import { apiBaseUrl } from '../utils'
 
 export default class MobileDayPage extends React.Component {
   static async getInitialProps ({ query }) {
@@ -11,7 +12,7 @@ export default class MobileDayPage extends React.Component {
     const month = date.slice(5, 7)
     const day = date.slice(8, 10)
 
-    const res = await fetch(`https://gank.io/api/day/${year}/${month}/${day}`)
+    const res = await fetch(`${apiBaseUrl}day/${year}/${month}/${day}`)
     const json = await res.json()
 
     const tabs = json.category.map(item => {

@@ -4,10 +4,10 @@ import Router from 'next/router'
 import {
   WhiteSpace, NavBar, Icon, Grid
 } from 'antd-mobile'
-import { getInitList } from '../../utils'
-import Layout from '../../mobileComponents/Layout'
-import MenuBar from '../../mobileComponents/MenuBar'
-import ScrollList from '../../mobileComponents/ScrollList'
+import Layout from '../../components/mobile/Layout'
+import MenuBar from '../../components/mobile/MenuBar'
+import ScrollList from '../../components/mobile/ScrollList'
+import { apiBaseUrl, getInitList } from '../../utils'
 
 const gridMenu = [
   {
@@ -47,7 +47,7 @@ const gridMenu = [
 
 export default class MobileHome extends Component {
   static async getInitialProps () {
-    const apiUrl = 'https://gank.io/api/data/all/20'
+    const apiUrl = `${apiBaseUrl}data/all/20`
 
     const initList = await getInitList(apiUrl)
 

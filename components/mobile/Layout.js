@@ -4,6 +4,7 @@ import NProgress from 'nprogress'
 import { LocaleProvider } from 'antd-mobile'
 import enUS from 'antd-mobile/lib/locale-provider/en_US'
 import 'isomorphic-fetch'
+import pkg from '../../package.json'
 
 Router.onRouteChangeStart = () => NProgress.start()
 Router.onRouteChangeComplete = () => NProgress.done()
@@ -14,10 +15,10 @@ export default ({ children }) => (
     <Head>
       <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
       <title>Gank</title>
-      <link rel="icon" type="image/x-icon" href="/static/logo.png" />
-      <link rel="apple-touch-icon" href="/static/logo.png" />
-      <link rel='stylesheet' type='text/css' href='https://unpkg.com/antd-mobile@2.3.1/dist/antd-mobile.min.css' />
-      <link rel='stylesheet' href='/static/css/nprogress.mobile.css' />
+      <link href="/static/logo.png" rel="icon" type="image/x-icon" />
+      <link href="/static/logo.png" rel="apple-touch-icon" />
+      <link href={`https://unpkg.com/antd-mobile@${pkg.dependencies['antd-mobile']}/dist/antd-mobile.min.css`} rel='stylesheet' />
+      <link href='/static/css/nprogress.mobile.css' rel='stylesheet' />
     </Head>
     <LocaleProvider locale={enUS}>
       {children}

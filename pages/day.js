@@ -1,16 +1,17 @@
 import React from 'react'
 import Layout from '../components/Layout'
 import NormalList from '../components/NormalList'
+import { apiBaseUrl } from '../utils'
 import { Tabs } from 'antd'
 
 export default class DayPage extends React.Component {
-  static async getInitialProps ({query}) {
+  static async getInitialProps ({ query }) {
     const { date } = query
     const year = date.slice(0, 4)
     const month = date.slice(5, 7)
     const day = date.slice(8, 10)
 
-    const res = await fetch(`https://gank.io/api/day/${year}/${month}/${day}`)
+    const res = await fetch(`${apiBaseUrl}day/${year}/${month}/${day}`)
     const json = await res.json()
 
     return { list: json.results, category: json.category }
