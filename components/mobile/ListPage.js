@@ -1,14 +1,14 @@
 import { Component } from 'react'
 import Router from 'next/router'
 import { NavBar, Icon } from 'antd-mobile'
-import { getPageTitle, getInitList } from '../utils'
+import { apiBaseUrl, getPageTitle, getInitList } from '../utils'
 import Layout from './Layout'
 import ScrollList from './ScrollList'
 
 export default class MobileListPage extends Component {
   static async getInitialProps ({ pathname }) {
     const title = getPageTitle(pathname.slice(2))
-    const apiUrl = `https://gank.io/api/data/${encodeURIComponent(title)}/20`
+    const apiUrl = `${apiBaseUrl}data/${encodeURIComponent(title)}/20`
 
     const initList = await getInitList(apiUrl)
 

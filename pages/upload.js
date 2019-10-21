@@ -1,8 +1,9 @@
 import React from 'react'
-import Layout from '../components/Layout'
 import {
   Form, Input, Select, Switch, Button, message, Alert
 } from 'antd'
+import Layout from '../components/Layout'
+import { apiBaseUrl } from '../utils'
 
 const FormItem = Form.Item
 const Option = Select.Option
@@ -31,7 +32,7 @@ class uploadForm extends React.Component {
           strList.push(`${item}=${values[item]}`)
         })
 
-        const res = await fetch("https://gank.io/api/add2gank", {
+        const res = await fetch(`${apiBaseUrl}add2gank`, {
           method: "POST",
           headers: {
             'Content-Type': 'application/x-www-form-urlencoded'
