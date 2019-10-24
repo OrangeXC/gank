@@ -20,8 +20,8 @@
     "next-offline": "^4.0.6",
     "nprogress": "^0.2.0",
     "rc-form": "^2.4.9",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
     "react-masonry-component": "^6.2.1",
     "webpack-filter-warnings-plugin": "^1.2.1"
   },
@@ -37,7 +37,7 @@
     "enzyme-adapter-react-16": "^1.15.1",
     "immutable": "^4.0.0-rc.12",
     "jest": "^24.9.0",
-    "react-test-renderer": "^16.10.2",
+    "react-test-renderer": "^16.11.0",
     "webpack": "^4.41.2"
   }
 }
