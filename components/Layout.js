@@ -9,9 +9,7 @@ import 'isomorphic-fetch'
 import ActiveLink from './ActiveLink'
 import pkg from '../package.json'
 
-Router.onRouteChangeStart = () => {
-  NProgress.start()
-}
+Router.onRouteChangeStart = () => NProgress.start()
 Router.onRouteChangeComplete = () => NProgress.done()
 Router.onRouteChangeError = () => NProgress.done()
 
