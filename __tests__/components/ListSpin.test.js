@@ -1,5 +1,4 @@
 import { shallow } from 'enzyme'
-import React from 'react'
 import ListSpin from '../../components/ListSpin'
 
 describe('ListSpin', () => {
