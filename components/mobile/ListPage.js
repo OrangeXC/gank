@@ -1,13 +1,14 @@
 import { Component } from 'react'
 import Router from 'next/router'
 import { NavBar, Icon } from 'antd-mobile'
-import { apiBaseUrl, getPageTitle, getInitList } from '../utils'
+import { apiBaseUrl, getPageTitle, getInitList } from '../../utils'
 import Layout from './Layout'
 import ScrollList from './ScrollList'
 
 export default class MobileListPage extends Component {
-  static async getInitialProps ({ pathname }) {
-    const title = getPageTitle(pathname.slice(2))
+  static async getInitialProps ({ query }) {
+    const topic = query.name || ''
+    const title = getPageTitle(topic)
     const apiUrl = `${apiBaseUrl}data/${encodeURIComponent(title)}/20`
 
     const initList = await getInitList(apiUrl)

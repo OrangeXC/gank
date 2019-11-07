@@ -1,6 +1,6 @@
 import { List, Icon } from 'antd'
 import Router from 'next/router'
-import { getPagePath } from '../utils'
+import { getPageTopic } from '../utils'
 
 const { Item } = List
 
@@ -44,7 +44,7 @@ export default (props) => (
             <IconText
               type="tag-o"
               text={item.type}
-              href={getPagePath(item.type)}
+              href={`/topics/${getPageTopic(item.type)}`}
             />
           ]}
           extra={item.images &&

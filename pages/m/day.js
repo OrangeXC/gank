@@ -3,7 +3,7 @@ import Router from 'next/router'
 import { NavBar, Icon, Tabs, WhiteSpace } from 'antd-mobile'
 import Layout from '../../components/mobile/Layout'
 import CardItem from '../../components/mobile/CardItem'
-import { apiBaseUrl } from '../utils'
+import { apiBaseUrl } from '../../utils'
 
 export default class MobileDayPage extends React.Component {
   static async getInitialProps ({ query }) {

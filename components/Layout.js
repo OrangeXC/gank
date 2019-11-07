@@ -43,7 +43,7 @@ export default ({ children, title = '主页' }) => (
         name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1"
       />
-      <link href={`https://unpkg.com/antd@${pkg.dependencies.antd}/dist/antd.min.css`} rel='stylesheet' />
+      <link href={`https://cdn.jsdelivr.net/npm/antd@${pkg.dependencies.antd}/dist/antd.min.css`} rel='stylesheet' />
       <link href="/static/css/nprogress.css" rel="stylesheet" />
       <link href="/static/logo.png" rel="icon" type="image/x-icon" />
       <link href="/static/logo.png" rel="apple-touch-icon" />
@@ -57,14 +57,14 @@ export default ({ children, title = '主页' }) => (
         style={headerMenuStyle}
       >
         <ActiveLink href='/'>主页</ActiveLink>
-        <ActiveLink href='/fe'>前端</ActiveLink>
-        <ActiveLink href='/android'>Android</ActiveLink>
-        <ActiveLink href='/ios'>iOS</ActiveLink>
-        <ActiveLink href='/app'>App</ActiveLink>
-        <ActiveLink href='/expand'>拓展资源</ActiveLink>
-        <ActiveLink href='/videos'>休息视频</ActiveLink>
-        <ActiveLink href='/blind'>瞎推荐</ActiveLink>
-        <ActiveLink href='/welfare'>福利</ActiveLink>
+        <ActiveLink href='/topics/fe'>前端</ActiveLink>
+        <ActiveLink href='/topics/android'>Android</ActiveLink>
+        <ActiveLink href='/topics/ios'>iOS</ActiveLink>
+        <ActiveLink href='/topics/app'>App</ActiveLink>
+        <ActiveLink href='/topics/expand'>拓展资源</ActiveLink>
+        <ActiveLink href='/topics/videos'>休息视频</ActiveLink>
+        <ActiveLink href='/topics/blind'>瞎推荐</ActiveLink>
+        <ActiveLink href='/topics/welfare'>福利</ActiveLink>
         <ActiveLink href='/timeline'>时间轴</ActiveLink>
       </Menu>
       <div className="icons">

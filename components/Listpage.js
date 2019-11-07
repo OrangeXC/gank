@@ -4,10 +4,11 @@ import MainList from './MainList'
 import { apiBaseUrl, getPageTitle, getInitList } from '../utils'
 
 export default class ListPage extends Component {
-  static async getInitialProps ({ pathname }) {
-    const title = getPageTitle(pathname)
-    const path = title === '首页' ? 'all' : title
-    const apiUrl = `${apiBaseUrl}data/${encodeURIComponent(path)}/20`
+  static async getInitialProps ({ query }) {
+    const topic = query.name || ''
+    const title = getPageTitle(topic)
+    const apiPath = title === '首页' ? 'all' : title
+    const apiUrl = `${apiBaseUrl}data/${encodeURIComponent(apiPath)}/20`
 
     const initList = await getInitList(apiUrl)
 

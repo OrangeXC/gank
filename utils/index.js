@@ -1,32 +1,32 @@
 export const apiBaseUrl = 'http://gank.io/api/'
 
-const category = [{
+const topics = [{
   title: '首页',
-  path: '/'
+  name: ''
 }, {
   title: '前端',
-  path: '/fe'
+  name: 'fe'
 }, {
   title: 'Android',
-  path: '/android'
+  name: 'android'
 }, {
   title: 'iOS',
-  path: '/ios'
+  name: 'ios'
 }, {
   title: 'App',
-  path: '/app'
+  name: 'app'
 }, {
   title: '拓展资源',
-  path: '/expand'
+  name: 'expand'
 }, {
   title: '休息视频',
-  path: '/videos'
+  name: 'videos'
 }, {
   title: '瞎推荐',
-  path: '/blind'
+  name: 'blind'
 }, {
   title: '福利',
-  path: '/welfare'
+  name: 'welfare'
 }]
 
 export const getInitList = async (apiUrl) => {
@@ -36,10 +36,10 @@ export const getInitList = async (apiUrl) => {
   return json.results
 }
 
-export const getPageTitle = (pathname) => {
-  return category.find(({ path }) => path === pathname).title
+export const getPageTitle = (topic) => {
+  return topics.find(({ name }) => name === topic).title
 }
 
-export const getPagePath = (name) => {
-  return category.find(({ title }) => title === name).path
+export const getPageTopic = (name) => {
+  return topics.find(({ title }) => title === name).name
 }
