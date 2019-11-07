@@ -13,35 +13,35 @@ const gridMenu = [
   {
     icon: '/static/icon/html.svg',
     text: '前端',
-    link: '/m/fe'
+    link: '/m/topics/fe'
   }, {
     icon: '/static/icon/android.svg',
     text: '安卓',
-    link: '/m/android'
+    link: '/m/topics/android'
   }, {
     icon: '/static/icon/ios.svg',
     text: 'iOS',
-    link: '/m/ios'
+    link: '/m/topics/ios'
   }, {
     icon: '/static/icon/app.svg',
     text: 'App',
-    link: '/m/app'
+    link: '/m/topics/app'
   }, {
     icon: '/static/icon/expand.svg',
     text: '拓展资源',
-    link: '/m/expand'
+    link: '/m/topics/expand'
   }, {
     icon: '/static/icon/video.svg',
     text: '休息视频',
-    link: '/m/videos'
+    link: '/m/topics/videos'
   }, {
     icon: '/static/icon/blind.svg',
     text: '瞎推荐',
-    link: '/m/blind'
+    link: '/m/topics/blind'
   }, {
     icon: '/static/icon/welfare.svg',
     text: '福利',
-    link: '/m/welfare'
+    link: '/m/topics/welfare'
   }
 ]
 

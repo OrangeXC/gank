@@ -6,7 +6,7 @@ const onClickHandler = href => event => {
 }
 
 const ActiveLink = ({ children, router, href }) => {
-  const active = router.pathname === href
+  const active = router.asPath === href
   const className = active
     ? 'ant-menu-item-selected ant-menu-item'
     : 'ant-menu-item'
