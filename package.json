@@ -22,8 +22,7 @@
     "rc-form": "^2.4.9",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
-    "react-masonry-component": "^6.2.1",
-    "webpack-filter-warnings-plugin": "^1.2.1"
+    "react-masonry-component": "^6.2.1"
   },
   "devDependencies": {
     "@babel/core": "^7.7.2",
