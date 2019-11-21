@@ -19,7 +19,7 @@
     "next-images": "^1.2.0",
     "next-offline": "^4.0.6",
     "nprogress": "^0.2.0",
-    "rc-form": "^2.4.10",
+    "rc-form": "^2.4.11",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-masonry-component": "^6.2.1"
