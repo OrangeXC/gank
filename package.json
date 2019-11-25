@@ -25,9 +25,9 @@
     "react-masonry-component": "^6.2.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.7.2",
-    "@babel/plugin-proposal-class-properties": "^7.7.0",
-    "@babel/plugin-proposal-decorators": "^7.7.0",
+    "@babel/core": "^7.7.4",
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-proposal-decorators": "^7.7.4",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^25.0.0",
     "babel-plugin-import": "^1.12.2",
