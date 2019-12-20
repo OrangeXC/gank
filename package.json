@@ -25,18 +25,18 @@
     "react-masonry-component": "^6.2.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.7.5",
+    "@babel/core": "^7.7.7",
     "@babel/plugin-proposal-class-properties": "^7.7.4",
     "@babel/plugin-proposal-decorators": "^7.7.4",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^25.0.0",
     "babel-plugin-import": "^1.13.0",
     "codecov": "^3.6.1",
-    "enzyme": "^3.10.0",
-    "enzyme-adapter-react-16": "^1.15.1",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
     "immutable": "^4.0.0-rc.12",
     "jest": "^25.0.0",
     "react-test-renderer": "^16.12.0",
-    "webpack": "^4.41.3"
+    "webpack": "^4.41.4"
   }
 }
