@@ -46,6 +46,8 @@ class uploadForm extends React.Component {
           message.error(json.msg)
         } else {
           message.success(json.msg)
+
+          this.props.form.resetFields()
         }
 
         this.setState({ submitLoading: false })
@@ -56,8 +58,8 @@ class uploadForm extends React.Component {
   checkUrl (rule, value, callback) {
     if (value) {
       this.validUrl(value)
-      ? callback()
-      : callback('请输入正确的url地址!')
+        ? callback()
+        : callback('请输入正确的url地址!')
     } else {
       callback()
     }
@@ -66,7 +68,7 @@ class uploadForm extends React.Component {
   validUrl (str) {
     const pattern = /^(https?:\/\/)?((([a-z\d]([a-z\d-]*[a-z\d])*)\.)+[a-z]{2,}|((\d{1,3}\.){3}\d{1,3}))(\:\d+)?(\/[-a-z\d%_.~+]*)*(\?[;&a-z\d%_.~+=-]*)?(\#[-a-z\d_]*)?$/i
 
-    if(pattern.test(str)) {
+    if (pattern.test(str)) {
       return true
     }
 
@@ -121,7 +123,7 @@ class uploadForm extends React.Component {
               rules: [{
                 required: true, message: '请输入想要提交的网页地址!',
               }, {
-                validator: this.checkUrl
+                validator: this.checkUrl.bind(this)
               }]
             })(
               <Input />
@@ -173,9 +175,10 @@ class uploadForm extends React.Component {
             label="测试数据"
           >
             {getFieldDecorator('debug', {
-              initialValue: true
+              initialValue: true,
+              valuePropName: 'checked'
             })(
-              <Switch defaultChecked={true} checkedChildren="是" unCheckedChildren="否" />
+              <Switch checkedChildren="是" unCheckedChildren="否" />
             )}
           </FormItem>
           <FormItem {...tailFormItemLayout}>
