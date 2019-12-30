@@ -66,6 +66,8 @@ class MobileUploadForm extends React.Component {
         Toast.fail(data.msg, 2)
       } else {
         Toast.success(data.msg, 2)
+
+        this.onReset()
       }
 
       this.setState({
@@ -79,14 +81,14 @@ class MobileUploadForm extends React.Component {
   }
 
   validateUrl (rule, value, callback) {
-    if (value && this.testUrl(value)) {
+    if (value && this.checkUrl(value)) {
       callback()
     } else {
       callback(new Error('请输入正确的链接'))
     }
   }
 
-  testUrl (str) {
+  checkUrl (str) {
     const pattern = /^(https?:\/\/)?((([a-z\d]([a-z\d-]*[a-z\d])*)\.)+[a-z]{2,}|((\d{1,3}\.){3}\d{1,3}))(\:\d+)?(\/[-a-z\d%_.~+]*)*(\?[;&a-z\d%_.~+=-]*)?(\#[-a-z\d_]*)?$/i
 
     if (pattern.test(str)) {
@@ -121,8 +123,12 @@ class MobileUploadForm extends React.Component {
               <InputItem
                 {...getFieldProps('url', {
                   rules: [
-                    { required: true, message: '分享链接不能为空' },
-                    { validator: this.validateUrl }
+                    {
+                      required: true,
+                      message: '分享链接不能为空'
+                    }, {
+                      validator: this.validateUrl.bind(this)
+                    }
                   ]
                 })}
                 clear
@@ -137,7 +143,10 @@ class MobileUploadForm extends React.Component {
               <InputItem
                 {...getFieldProps('desc', {
                   rules: [
-                    { required: true, message: '标题不能为空' }
+                    {
+                      required: true,
+                      message: '标题不能为空'
+                    }
                   ]
                 })}
                 clear
@@ -152,7 +161,10 @@ class MobileUploadForm extends React.Component {
               <InputItem
                 {...getFieldProps('who', {
                   rules: [
-                    { required: true, message: '标题不能为空' }
+                    {
+                      required: true,
+                      message: '标题不能为空'
+                    }
                   ]
                 })}
                 clear
@@ -174,7 +186,10 @@ class MobileUploadForm extends React.Component {
                 <Item arrow="horizontal">类型</Item>
               </Picker>
               <Item
-                extra={<Switch {...getFieldProps('debug', { initialValue: true, valuePropName: 'checked' })} />}
+                extra={<Switch {...getFieldProps('debug', {
+                  initialValue: true,
+                  valuePropName: 'checked'
+                })} />}
               >
                 测试数据
               </Item>
