@@ -31,7 +31,7 @@
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^25.0.0",
     "babel-plugin-import": "^1.13.0",
-    "codecov": "^3.6.1",
+    "codecov": "^3.6.5",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "immutable": "^4.0.0-rc.12",
