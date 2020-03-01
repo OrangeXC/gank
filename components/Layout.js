@@ -3,8 +3,11 @@ import NProgress from 'nprogress'
 import Head from 'next/head'
 import Link from 'next/link'
 import {
-  Layout, Menu, Button, Icon, BackTop
+  Layout, Menu, Button, BackTop
 } from 'antd'
+import {
+  GithubOutlined, SearchOutlined, UploadOutlined
+} from '@ant-design/icons'
 import 'isomorphic-fetch'
 import ActiveLink from './ActiveLink'
 import pkg from '../package.json'
@@ -69,13 +72,13 @@ export default ({ children, title = '主页' }) => (
       </Menu>
       <div className="icons">
         <Link href='/upload'>
-          <Button type="primary" shape="circle" style={{ marginRight: 12 }} icon="upload" />
+          <Button type="primary" shape="circle" style={{ marginRight: 12 }} icon={<UploadOutlined />} />
         </Link>
         <Link href='/search'>
-          <Button type="primary" shape="circle" style={{ marginRight: 12 }} icon="search" />
+          <Button type="primary" shape="circle" style={{ marginRight: 12 }} icon={<SearchOutlined />} />
         </Link>
         <a className="github-btn" href="https://github.com/OrangeXC/gank" target="_blank">
-          <Button shape="circle" icon="github" />
+          <Button shape="circle" icon={<GithubOutlined />} />
         </a>
       </div>
     </Header>
@@ -85,9 +88,9 @@ export default ({ children, title = '主页' }) => (
     </Content>
 
     <Footer style={{ textAlign: 'center' }}>
-      Gank ©2017 use gank api Paword by Next
+      Gank ©2017-{ new Date().getFullYear() } use gank api Paword by Next
       <a href="https://github.com/OrangeXC/gank" style={{ marginLeft: 6 }} target="_blank">
-        <Icon type="github" />
+        <GithubOutlined />
       </a>
     </Footer>
 

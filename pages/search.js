@@ -8,9 +8,7 @@ import { apiBaseUrl } from '../utils'
 const { Search } = Input
 
 const searchStyle = {
-  width: 600,
-  margin: '0 auto 50px',
-  display: 'block'
+  marginBottom: '50px'
 }
 
 export default class SearchPage extends React.Component {
