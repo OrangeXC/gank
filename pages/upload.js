@@ -9,76 +9,66 @@ const FormItem = Form.Item
 const Option = Select.Option
 
 class uploadForm extends React.Component {
-  constructor (props) {
-    super(props)
+  constructor () {
+    super()
 
     this.state = {
       submitLoading: false
     }
 
-    this.handleSubmit = this.handleSubmit.bind(this)
+    this.formRef = React.createRef()
+    this.onFinish = this.onFinish.bind(this)
+    this.onFinishFailed = this.onFinishFailed.bind(this)
   }
 
-  handleSubmit (e) {
-    e.preventDefault()
+  async onFinish (values) {
+    this.setState({ submitLoading: true })
 
-    this.props.form.validateFieldsAndScroll(async (err, values) => {
-      if (!err) {
-        this.setState({ submitLoading: true })
+    let strList = []
 
-        let strList = []
-
-        Object.keys(values).forEach(item => {
-          strList.push(`${item}=${values[item]}`)
-        })
-
-        const res = await fetch(`${apiBaseUrl}add2gank`, {
-          method: "POST",
-          headers: {
-            'Content-Type': 'application/x-www-form-urlencoded'
-          },
-          body: strList.join('&')
-        })
-
-        const json = await res.json()
-
-        if (json.error) {
-          message.error(json.msg)
-        } else {
-          message.success(json.msg)
-
-          this.props.form.resetFields()
-        }
-
-        this.setState({ submitLoading: false })
-      }
+    Object.keys(values).forEach(item => {
+      strList.push(`${item}=${values[item]}`)
     })
+
+    const res = await fetch(`${apiBaseUrl}add2gank`, {
+      method: "POST",
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+      },
+      body: strList.join('&')
+    })
+
+    const json = await res.json()
+
+    if (json.error) {
+      message.error(json.msg)
+    } else {
+      message.success(json.msg)
+
+      this.formRef.current.resetFields()
+    }
+
+    this.setState({ submitLoading: false })
   }
 
-  checkUrl (rule, value, callback) {
-    if (value) {
-      this.validUrl(value)
-        ? callback()
-        : callback('请输入正确的url地址!')
-    } else {
-      callback()
+  onFinishFailed = ({ errorFields }) => {
+    this.formRef.current.scrollToField(errorFields[0].name)
+  }
+
+  async checkUrl (rule, value) {
+    if (value && !this.validUrl(value)) {
+      throw new Error('请输入正确的url地址!')
     }
   }
 
   validUrl (str) {
     const pattern = /^(https?:\/\/)?((([a-z\d]([a-z\d-]*[a-z\d])*)\.)+[a-z]{2,}|((\d{1,3}\.){3}\d{1,3}))(\:\d+)?(\/[-a-z\d%_.~+]*)*(\?[;&a-z\d%_.~+=-]*)?(\#[-a-z\d_]*)?$/i
 
-    if (pattern.test(str)) {
-      return true
-    }
-
-    return false
+    return !!pattern.test(str)
   }
 
   render () {
-    const { getFieldDecorator } = this.props.form
-
-    const formItemLayout = {
+    const layout = {
       labelCol: {
         xs: { span: 24 },
         sm: { span: 6 },
@@ -89,7 +79,7 @@ class uploadForm extends React.Component {
       }
     }
 
-    const tailFormItemLayout = {
+    const tailLayout = {
       wrapperCol: {
         xs: {
           span: 24,
@@ -113,75 +103,70 @@ class uploadForm extends React.Component {
           style={{ marginBottom: 30 }}
           showIcon
         />
-        <Form onSubmit={this.handleSubmit}>
+        <Form
+          {...layout}
+          ref={this.formRef}
+          name="upload"
+          initialValues={{
+            type: '前端',
+            debug: true
+          }}
+          onFinish={this.onFinish}
+          onFinishFailed={this.onFinishFailed}>
           <FormItem
-            {...formItemLayout}
             label="链接"
+            name="url"
+            rules={[{
+              required: true,
+              message: '请输入想要提交的网页地址!'
+            }, {
+              validator: this.checkUrl.bind(this)
+            }]}
             hasFeedback
           >
-            {getFieldDecorator('url', {
-              rules: [{
-                required: true, message: '请输入想要提交的网页地址!',
-              }, {
-                validator: this.checkUrl.bind(this)
-              }]
-            })(
-              <Input />
-            )}
+            <Input />
           </FormItem>
           <FormItem
-            {...formItemLayout}
             label="标题"
+            name="desc"
+            rules={[{
+              required: true,
+              message: '请输入标题!'
+            }]}
             hasFeedback
           >
-            {getFieldDecorator('desc', {
-              rules: [{
-                required: true, message: '请输入标题!',
-              }]
-            })(
-              <Input />
-            )}
+            <Input />
           </FormItem>
           <FormItem
-            {...formItemLayout}
             label="昵称"
+            name="who"
+            rules={[{
+              required: true,
+              message: '请输入昵称!'
+            }]}
             hasFeedback
           >
-            {getFieldDecorator('who', {
-              rules: [{
-                required: true, message: '请输入昵称!',
-              }]
-            })(
-              <Input />
-            )}
+            <Input />
           </FormItem>
           <FormItem
-            {...formItemLayout}
             label="类型"
+            name="type"
+            rules={[{
+              required: true
+            }]}
           >
-            {getFieldDecorator('type', {
-              rules: [{
-                required: true
-              }],
-              initialValue: '前端'
-            })(
-              <Select>
-                {types.map(item => <Option value={item} key={item}>{ item }</Option>)}
-              </Select>
-            )}
+            <Select>
+              {types.map(item => <Option value={item} key={item}>{ item }</Option>)}
+            </Select>
           </FormItem>
           <FormItem
-            {...formItemLayout}
             label="测试数据"
+            name="debug"
+            valuePropName="checked"
           >
-            {getFieldDecorator('debug', {
-              initialValue: true,
-              valuePropName: 'checked'
-            })(
-              <Switch checkedChildren="是" unCheckedChildren="否" />
-            )}
+            <Switch checkedChildren="是" unCheckedChildren="否" />
           </FormItem>
-          <FormItem {...tailFormItemLayout}>
+          <FormItem {...tailLayout}>
             <Button
               type="primary"
               loading={this.state.submitLoading}
@@ -196,4 +181,4 @@ class uploadForm extends React.Component {
   }
 }
 
-export default Form.create()(uploadForm)
+export default uploadForm

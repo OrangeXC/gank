@@ -25,6 +25,7 @@ class MobileUploadForm extends React.Component {
       submitLoading: false
     }
 
+    this.onReset = this.onReset.bind(this)
     this.onSubmit = this.onSubmit.bind(this)
   }
 

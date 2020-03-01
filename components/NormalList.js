@@ -1,13 +1,16 @@
-import { List, Icon } from 'antd'
+import { List } from 'antd'
+import { 
+  UserOutlined, ClockCircleOutlined, TagOutlined 
+} from '@ant-design/icons'
 import Router from 'next/router'
 import { getPageTopic } from '../utils'
 
 const { Item } = List
 
-const IconText = ({ type, text, href = '' }) => (
+const IconText = ({ icon, text, href = '' }) => (
   <span onClick={() => href && Router.push(href).then(() => window.scrollTo(0, 0))}>
-    <Icon type={type} style={{ marginRight: 8 }} />
-    {text}
+    {icon}
+    <span style={{ marginLeft: 8 }}>{text}</span>
   </span>
 )
 
@@ -35,14 +38,14 @@ export default (props) => (
         <Item
           key={item._id}
           actions={[
-            <IconText type="user" text={item.who ? item.who : '未知'} />,
+            <IconText icon={<UserOutlined />} text={item.who ? item.who : '未知'} />,
             <IconText
-              type="clock-circle-o"
+              icon={<ClockCircleOutlined />}
               text={item.publishedAt.slice(0, 10)}
               href={`/day?date=${item.publishedAt.slice(0, 10)}`}
             />,
             <IconText
-              type="tag-o"
+              icon={<TagOutlined />}
               text={item.type}
               href={`/topics/${getPageTopic(item.type)}`}
             />
