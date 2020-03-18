@@ -1,4 +1,4 @@
-import React from 'react'
+import { Component, createRef } from 'react'
 import {
   Form, Input, Select, Switch, Button, message, Alert
 } from 'antd'
@@ -8,7 +8,7 @@ import { apiBaseUrl } from '../utils'
 const FormItem = Form.Item
 const Option = Select.Option
 
-class uploadForm extends React.Component {
+class UploadForm extends Component {
   constructor () {
     super()
 
@@ -16,7 +16,7 @@ class uploadForm extends React.Component {
       submitLoading: false
     }
 
-    this.formRef = React.createRef()
+    this.formRef = createRef()
     this.onFinish = this.onFinish.bind(this)
     this.onFinishFailed = this.onFinishFailed.bind(this)
   }
@@ -181,4 +181,4 @@ class uploadForm extends React.Component {
   }
 }
 
-export default uploadForm
+export default UploadForm
