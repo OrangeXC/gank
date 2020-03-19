@@ -2,7 +2,7 @@ import { Component } from 'react'
 import { Card, Modal } from 'antd'
 import Masonry from 'react-masonry-component'
 
-export default class MasonryList extends Component {
+class MasonryList extends Component {
   constructor (props) {
     super(props)
 
@@ -78,3 +78,5 @@ export default class MasonryList extends Component {
     )
   }
 }
+
+export default MasonryList

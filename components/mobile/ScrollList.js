@@ -2,7 +2,7 @@ import { Component } from 'react'
 import { ListView, Icon } from 'antd-mobile'
 import CardItem from './CardItem'
 
-export default class ScrollList extends Component {
+class ScrollList extends Component {
   constructor (props) {
     super(props)
 
@@ -80,3 +80,5 @@ export default class ScrollList extends Component {
     )
   }
 }
+
+export default ScrollList

@@ -11,7 +11,7 @@ const flexItemImageStyle = {
   maxHeight: 100
 }
 
-export default (rowData) => (
+const CardItem = rowData => (
   <div>
     {
       rowData.type !== '福利' ? (
@@ -58,3 +58,5 @@ export default (rowData) => (
     }
   </div>
 )
+
+export default CardItem

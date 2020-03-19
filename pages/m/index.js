@@ -1,6 +1,6 @@
 import { Component } from 'react'
 import ReactDOM from 'react-dom'
-import Router from 'next/router'
+import { withRouter } from 'next/router'
 import {
   WhiteSpace, NavBar, Icon, Grid
 } from 'antd-mobile'
@@ -45,18 +45,11 @@ const gridMenu = [
   }
 ]
 
-export default class MobileHome extends Component {
-  static async getInitialProps () {
-    const apiUrl = `${apiBaseUrl}data/all/20`
-
-    const initList = await getInitList(apiUrl)
-
-    return { initList, apiUrl }
-  }
-
+class MobileHome extends Component {
   constructor (props) {
     super(props)
 
+    this.router = props.router
     this.state = {
       listHeight: 1000
     }
@@ -74,14 +67,13 @@ export default class MobileHome extends Component {
   render () {
     const {
       initList,
-      apiUrl,
-      url: { pathname }
+      apiUrl
     } = this.props
 
     return (
       <Layout>
         <MenuBar
-          pathname={pathname}
+          pathname={this.router.pathname}
         >
           <NavBar
             mode='light'
@@ -89,7 +81,7 @@ export default class MobileHome extends Component {
             onLeftClick={() => window.open('https://github.com/OrangeXC/gank')}
             rightContent={<Icon
               onClick={() =>
-                Router
+                this.router
                   .push('/m/search')
                   .then(() => window.scrollTo(0, 0))}
                 type='search'
@@ -102,7 +94,7 @@ export default class MobileHome extends Component {
             ref={el => this.grid = el}
             data={gridMenu}
             hasLine={false}
-            onClick={(el) => Router.push(el.link)}
+            onClick={(el) => this.router.push(el.link)}
           />
           <WhiteSpace />
           <ScrollList
@@ -116,3 +108,18 @@ export default class MobileHome extends Component {
     )
   }
 }
+
+export async function getServerSideProps () {
+  const apiUrl = `${apiBaseUrl}data/all/20`
+
+  const initList = await getInitList(apiUrl)
+
+  return {
+    props: {
+      apiUrl,
+      initList
+    }
+  }
+}
+
+export default withRouter(MobileHome)

@@ -1,5 +1,6 @@
-import React from 'react'
+import { Component } from 'react'
 import Link from 'next/link'
+import { withRouter } from 'next/router'
 import { NavBar, List, ListView } from 'antd-mobile'
 import Layout from '../../components/mobile/Layout'
 import MenuBar from '../../components/mobile/MenuBar'
@@ -7,14 +8,7 @@ import { apiBaseUrl } from '../../utils'
 
 const { Item } = List
 
-export default class MobileTimeLinePage extends React.Component {
-  static async getInitialProps () {
-    const res = await fetch(`${apiBaseUrl}day/history`)
-    const json = await res.json()
-
-    return { timeline: json.results }
-  }
-
+class MobileTimeLinePage extends Component {
   constructor (props) {
     super(props)
 
@@ -38,7 +32,7 @@ export default class MobileTimeLinePage extends React.Component {
 
   render () {
     const {
-      url: { pathname }
+      router: { pathname }
     } = this.props
 
     const {
@@ -155,3 +149,16 @@ export default class MobileTimeLinePage extends React.Component {
     )
   }
 }
+
+export async function getServerSideProps () {
+  const res = await fetch(`${apiBaseUrl}day/history`)
+  const json = await res.json()
+
+  return {
+    props: {
+      timeline: json.results
+    }
+  }
+}
+
+export default withRouter(MobileTimeLinePage)

@@ -1,20 +1,21 @@
-import Router, { withRouter } from 'next/router'
+import { useRouter } from 'next/router'
 
-const onClickHandler = href => event => {
-  event.preventDefault()
-  Router.push(href).then(() => window.scrollTo(0, 0))
-}
-
-const ActiveLink = ({ children, router, href }) => {
+const ActiveLink = ({ children, href }) => {
+  const router = useRouter()
   const active = router.asPath === href
   const className = active
     ? 'ant-menu-item-selected ant-menu-item'
     : 'ant-menu-item'
 
+  const handleClick = e => {
+    e.preventDefault()
+    router.push(href).then(() => window.scrollTo(0, 0))
+  }
+
   return (
     <li
       href="#"
-      onClick={onClickHandler(href)}
+      onClick={handleClick}
       className={className}
       style={{ float: 'left' }}
       role="menuitem"
@@ -25,4 +26,4 @@ const ActiveLink = ({ children, router, href }) => {
   )
 }
 
-export default withRouter(ActiveLink)
+export default ActiveLink

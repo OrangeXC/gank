@@ -5,7 +5,7 @@ import { apiBaseUrl, getPageTitle, getInitList } from '../../utils'
 import Layout from './Layout'
 import ScrollList from './ScrollList'
 
-export default class MobileListPage extends Component {
+class MobileListPage extends Component {
   static async getInitialProps ({ query }) {
     const topic = query.name || ''
     const title = getPageTitle(topic)
@@ -63,3 +63,5 @@ export default class MobileListPage extends Component {
     )
   }
 }
+
+export default MobileListPage

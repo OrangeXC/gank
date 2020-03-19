@@ -1,4 +1,4 @@
-import React from 'react'
+import { Component } from 'react'
 import Router from 'next/router'
 import {
   NavBar, SearchBar, Icon, WhiteSpace, Toast
@@ -7,15 +7,7 @@ import CardItem from '../../components/mobile/CardItem'
 import Layout from '../../components/mobile/Layout'
 import { apiBaseUrl } from '../../utils'
 
-export default class MobileSearchPage extends React.Component {
-  static async getInitialProps ({ req }) {
-    const language = req
-      ? req.headers['accept-language']
-      : navigator.language
-
-    return { language }
-  }
-
+class MobileSearchPage extends Component {
   constructor (props) {
     super(props)
 
@@ -101,3 +93,17 @@ export default class MobileSearchPage extends React.Component {
     )
   }
 }
+
+export async function getServerSideProps ({ req }) {
+  const language = req
+    ? req.headers['accept-language']
+    : navigator.language
+
+  return {
+    props: {
+      language
+    }
+  }
+}
+
+export default MobileSearchPage
