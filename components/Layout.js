@@ -37,7 +37,7 @@ const contentStyle = {
   minHeight: `calc(100vh - 69px)`
 }
 
-const Layout = ({ children, title = '主页' }) => (
+const LayoutPage = ({ children, title = '主页' }) => (
   <div>
     <Head>
       <title>{title} - Gank</title>
@@ -114,4 +114,4 @@ const Layout = ({ children, title = '主页' }) => (
   </div>
 )
 
-export default Layout
+export default LayoutPage
