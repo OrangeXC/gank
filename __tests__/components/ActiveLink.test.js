@@ -3,17 +3,10 @@ import React from 'react'
 
 describe('ActiveLink', () => {
   const mocks = {
-    nextRouter: {
-      push: jest.fn().mockImplementation((value) => Promise.resolve(value))
-    },
-    withRouter: jest.fn(WrappedComponent => class PP extends React.Component {
-      render() {
-        const newProps = {
-          router: {}
-        }
-        return <WrappedComponent {...this.props} {...newProps}/>
-      }
-    }),
+    useRouter: jest.fn(() => ({
+      push: mocks.push
+    })),
+    push: jest.fn().mockImplementation((value) => Promise.resolve(value)),
     scrollTo: jest.fn()
   }
   let ActiveLink
@@ -23,8 +16,7 @@ describe('ActiveLink', () => {
 
     jest.mock('next/router', () => ({
       __esModule: true,
-      default: mocks.nextRouter,
-      withRouter: mocks.withRouter,
+      useRouter: mocks.useRouter
     }))
 
     ActiveLink = require('../../components/ActiveLink').default
@@ -37,7 +29,7 @@ describe('ActiveLink', () => {
     expect(node.text()).toEqual('home')
     expect(node.hasClass('ant-menu-item')).toBeTruthy()
     expect(node.hasClass('ant-menu-item-selected')).toBeTruthy()
-    expect(mocks.withRouter).toHaveBeenCalled()
+    expect(mocks.useRouter).toHaveBeenCalled()
   })
 
   it('click', (done) => {
@@ -46,7 +38,7 @@ describe('ActiveLink', () => {
 
     wrapper.simulate('click', { preventDefault() {} })
 
-    expect(mocks.nextRouter.push).toHaveBeenCalledWith('/home')
+    expect(mocks.push).toHaveBeenCalledWith('/home')
     expect(node.hasClass('ant-menu-item')).toBeTruthy()
     expect(node.hasClass('ant-menu-item-selected')).toBeFalsy()
 

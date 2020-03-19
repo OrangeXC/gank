@@ -36,7 +36,7 @@ export const getInitList = async (apiUrl) => {
   return json.results
 }
 
-export const getPageTitle = (topic) => {
+export const getPageTitle = (topic = '') => {
   return topics.find(({ name }) => name === topic).title
 }
 

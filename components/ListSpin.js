@@ -6,8 +6,10 @@ const spinStyle = {
   padding: '30px 50px'
 }
 
-export default () => (
+const ListSpin = () => (
   <div style={spinStyle}>
     <Spin size="large" />
   </div>
 )
+
+export default ListSpin

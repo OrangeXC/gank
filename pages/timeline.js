@@ -6,57 +6,63 @@ import { apiBaseUrl } from '../utils'
 
 const { TabPane } = Tabs
 
-export default class TimeLinePage extends React.Component {
-  static async getInitialProps () {
-    const res = await fetch(`${apiBaseUrl}day/history`)
-    const json = await res.json()
+function TimeLinePage ({ timeline, years }) {
+  return (
+    <Layout title="时间轴">
+      <Tabs defaultActiveKey={years[0]}>
+        {
+          years.map(year =>
+            <TabPane tab={year} key={year}>
+              <Row gutter={16}>
+                {
+                  timeline
+                    .filter(item => item.includes(year))
+                    .map(item => cards(item))
+                }
+              </Row>
+            </TabPane>
+          )
+        }
+      </Tabs>
+    </Layout>
+  )
+}
 
-    let years = []
-
-    json.results.forEach(element => {
-      if (years.indexOf(element.slice(0, 4)) === -1) years.push(element.slice(0, 4))
-    })
-
-    return { timeline: json.results, years }
-  }
-
-  constructor (props) {
-    super(props)
-  }
-
-  render () {
-    return (
-      <Layout title="时间轴">
-        <Tabs defaultActiveKey={this.props.years[0]}>
-          {
-            this.props.years.map(year =>
-              <TabPane tab={year} key={year}>
-                <Row gutter={16}>
-                  {
-                    this.props.timeline
-                      .filter(item => item.indexOf(year) > -1)
-                      .map(item =>
-                        <Col span={6} key={item}>
-                          <div style={{marginTop: 8, marginBottom: 8}}>
-                            <Card
-                              title={item}
-                              extra={
-                                <Link href={{ pathname: '/day', query: { date: item } }}>
-                                  <a>More</a>
-                                </Link>
-                              }
-                              bodyStyle={{ padding: 0 }}>
-                            </Card>
-                          </div>
-                        </Col>
-                      )
-                  }
-                </Row>
-              </TabPane>
-            )
+function cards (item) {
+  return (
+    <Col span={6} key={item}>
+      <div style={{marginTop: 8, marginBottom: 8}}>
+        <Card
+          title={item}
+          extra={
+            <Link href={{ pathname: '/day', query: { date: item } }}>
+              <a>More</a>
+            </Link>
           }
-        </Tabs>
-      </Layout>
-    )
+          bodyStyle={{ padding: 0 }}>
+        </Card>
+      </div>
+    </Col>
+  )
+}
+
+
+export async function getServerSideProps () {
+  const res = await fetch(`${apiBaseUrl}day/history`)
+  const { results } = await res.json()
+
+  let years = []
+
+  results.forEach(element => {
+    if (years.indexOf(element.slice(0, 4)) === -1) years.push(element.slice(0, 4))
+  })
+
+  return {
+    props: {
+      timeline: results,
+      years
+    }
   }
 }
+
+export default TimeLinePage

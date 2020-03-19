@@ -28,7 +28,7 @@ const tabData = tabs.map(({ title, name }) => ({
   link: name === 'home' ? '/m' : `/m/${name}`
 }))
 
-export default class MenuBar extends Component {
+class MenuBar extends Component {
   constructor (props) {
     super(props)
 
@@ -82,3 +82,5 @@ export default class MenuBar extends Component {
     )
   }
 }
+
+export default MenuBar

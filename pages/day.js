@@ -1,41 +1,39 @@
-import React from 'react'
 import Layout from '../components/Layout'
 import NormalList from '../components/NormalList'
 import { apiBaseUrl } from '../utils'
 import { Tabs } from 'antd'
 
-export default class DayPage extends React.Component {
-  static async getInitialProps ({ query }) {
-    const { date } = query
-    const year = date.slice(0, 4)
-    const month = date.slice(5, 7)
-    const day = date.slice(8, 10)
+function DayPage ({ list, category }) {
+  return (
+    <Layout title="今日数据">
+      <Tabs defaultActiveKey={category[0]} tabPosition="left">
+        {
+          category.map(item =>
+            <Tabs.TabPane tab={item} key={item}>
+              <NormalList list={list[item]}></NormalList>
+            </Tabs.TabPane>
+          )
+        }
+      </Tabs>
+    </Layout>
+  )
+}
 
-    const res = await fetch(`${apiBaseUrl}day/${year}/${month}/${day}`)
-    const json = await res.json()
+export async function getServerSideProps ({ query }) {
+  const { date } = query
+  const year = date.slice(0, 4)
+  const month = date.slice(5, 7)
+  const day = date.slice(8, 10)
 
-    return { list: json.results, category: json.category }
-  }
+  const res = await fetch(`${apiBaseUrl}day/${year}/${month}/${day}`)
+  const { results, category } = await res.json()
 
-  constructor (props) {
-    super(props)
-  }
-
-  render () {
-    const { list, category } = this.props
-
-    return (
-      <Layout title="今日数据">
-        <Tabs defaultActiveKey={category[0]} tabPosition="left">
-          {
-            category.map(item =>
-              <Tabs.TabPane tab={item} key={item}>
-                <NormalList list={list[item]}></NormalList>
-              </Tabs.TabPane>
-            )
-          }
-        </Tabs>
-      </Layout>
-    )
+  return {
+    props: {
+      list: results,
+      category
+    }
   }
 }
+
+export default DayPage

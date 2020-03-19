@@ -1,4 +1,4 @@
-import React from 'react'
+import { Component } from 'react'
 import { Input, message } from 'antd'
 import Layout from '../components/Layout'
 import NormalList from '../components/NormalList'
@@ -11,9 +11,9 @@ const searchStyle = {
   marginBottom: '50px'
 }
 
-export default class SearchPage extends React.Component {
-  constructor (props) {
-    super(props)
+class SearchPage extends Component {
+  constructor () {
+    super()
 
     this.state = {
       list: [],
@@ -78,3 +78,5 @@ export default class SearchPage extends React.Component {
     )
   }
 }
+
+export default SearchPage

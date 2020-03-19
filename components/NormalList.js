@@ -1,6 +1,6 @@
 import { List } from 'antd'
-import { 
-  UserOutlined, ClockCircleOutlined, TagOutlined 
+import {
+  UserOutlined, ClockCircleOutlined, TagOutlined
 } from '@ant-design/icons'
 import Router from 'next/router'
 import { getPageTopic } from '../utils'
@@ -27,13 +27,13 @@ const listImageStyle = {
   maxHeight: '100%'
 }
 
-export default (props) => (
+const NormalList = ({ list }) => (
   <div>
     <List
       itemLayout="vertical"
       size="large"
       bordered
-      dataSource={props.list}
+      dataSource={list}
       renderItem={item => (
         <Item
           key={item._id}
@@ -81,3 +81,5 @@ export default (props) => (
   `}</style>
   </div>
 )
+
+export default NormalList
