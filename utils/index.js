@@ -1,4 +1,4 @@
-export const apiBaseUrl = 'http://gank.io/api/'
+export const apiBaseUrl = 'https://gank.io/api/'
 
 const topics = [{
   title: '首页',
