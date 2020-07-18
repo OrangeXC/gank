@@ -9,7 +9,7 @@
     "heroku-postbuild": "next build"
   },
   "dependencies": {
-    "antd": "^4.4.1",
+    "antd": "^4.4.2",
     "antd-mobile": "^2.3.3",
     "isomorphic-fetch": "^2.2.1",
     "mobx": "^5.15.4",
@@ -24,13 +24,13 @@
     "react-masonry-component": "^6.2.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.10.4",
+    "@babel/core": "^7.10.5",
     "@babel/plugin-proposal-class-properties": "^7.10.4",
-    "@babel/plugin-proposal-decorators": "^7.10.4",
+    "@babel/plugin-proposal-decorators": "^7.10.5",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^26.1.0",
     "babel-plugin-import": "^1.13.0",
-    "codecov": "^3.7.0",
+    "codecov": "^3.7.1",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "immutable": "^4.0.0-rc.12",
