@@ -1,10 +1,14 @@
-import { shallow } from 'enzyme'
+import { render } from '@testing-library/react'
 import ListSpin from '../../components/ListSpin'
 
 describe('ListSpin', () => {
   it('child', () => {
-    const wrapper = shallow(<ListSpin />)
+    const { container } = render(<ListSpin />)
 
-    expect(wrapper.find('div').text()).toEqual('<Spin />')
+    expect(container.children[0]).toHaveStyle({
+      textAlign: 'center',
+      marginBottom: '20px',
+      padding: '30px 50px'
+    })
   })
 })

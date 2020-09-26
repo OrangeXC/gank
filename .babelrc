@@ -1,26 +1,8 @@
 {
-  "env": {
-    "dev": {
-      "presets": ["next/babel"],
-      "plugins": [
-        ["@babel/plugin-proposal-decorators", { "legacy": true }],
-        ["@babel/plugin-proposal-class-properties", { "loose": true }],
-        ["import", { "libraryName": "antd-mobile" }]
-      ]
-    },
-    "production": {
-      "presets": ["next/babel"],
-      "plugins": [
-        ["@babel/plugin-proposal-decorators", { "legacy": true }],
-        ["@babel/plugin-proposal-class-properties", { "loose": true }],
-        ["import", { "libraryName": "antd-mobile" }]
-      ]
-    },
-    "test": {
-      "presets": [[
-        "next/babel",
-        { "preset-env": { "modules": "commonjs" }}
-      ]]
-    }
-  }
+  "presets": ["next/babel"],
+  "plugins": [
+    ["@babel/plugin-proposal-decorators", { "legacy": true }],
+    ["@babel/plugin-proposal-class-properties", { "loose": true }],
+    ["import", { "libraryName": "antd-mobile" }]
+  ]
 }
