@@ -4,6 +4,6 @@ node_js:
 install:
   - yarn
 script:
-  - yarn test
+  - yarn test:ci
 after_success:
   - codecov
