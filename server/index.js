@@ -10,7 +10,7 @@ const mobxReact = require('mobx-react')
 const app = next({ dev })
 const handle = app.getRequestHandler()
 
-mobxReact.useStaticRendering(true)
+mobxReact.enableStaticRendering(true)
 
 app.prepare().then(() => {
   createServer((req, res) => {
