@@ -10,7 +10,7 @@
     "heroku-postbuild": "next build"
   },
   "dependencies": {
-    "antd": "4.6.6",
+    "antd": "4.7.0",
     "antd-mobile": "2.3.4",
     "isomorphic-fetch": "3.0.0",
     "mobx": "6.0.1",
@@ -35,7 +35,7 @@
     "cross-env": "7.0.2",
     "identity-obj-proxy": "3.0.0",
     "immutable": "4.0.0-rc.12",
-    "jest": "26.5.2",
+    "jest": "26.5.3",
     "react-test-renderer": "16.13.1",
     "webpack": "4.44.2"
   }
