@@ -10,11 +10,11 @@
     "heroku-postbuild": "next build"
   },
   "dependencies": {
-    "antd": "4.8.0",
+    "antd": "4.8.2",
     "antd-mobile": "2.3.4",
     "isomorphic-fetch": "3.0.0",
-    "mobx": "6.0.3",
-    "mobx-react": "7.0.0",
+    "mobx": "6.0.4",
+    "mobx-react": "7.0.5",
     "next": "10.0.1",
     "next-images": "1.6.2",
     "next-offline": "5.0.3",
@@ -27,8 +27,8 @@
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "7.12.1",
     "@babel/plugin-proposal-decorators": "7.12.1",
-    "@testing-library/jest-dom": "5.11.5",
-    "@testing-library/react": "11.1.1",
+    "@testing-library/jest-dom": "5.11.6",
+    "@testing-library/react": "11.1.2",
     "babel-jest": "26.6.3",
     "babel-plugin-import": "1.13.1",
     "codecov": "3.8.1",
