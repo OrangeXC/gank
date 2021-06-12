@@ -10,7 +10,7 @@
     "heroku-postbuild": "next build"
   },
   "dependencies": {
-    "antd": "4.16.0",
+    "antd": "4.16.2",
     "antd-mobile": "2.3.4",
     "isomorphic-fetch": "3.0.0",
     "mobx": "6.3.2",
@@ -25,9 +25,9 @@
     "react-masonry-component": "6.2.1"
   },
   "devDependencies": {
-    "@babel/plugin-proposal-class-properties": "7.13.0",
-    "@babel/plugin-proposal-decorators": "7.14.2",
-    "@testing-library/jest-dom": "5.12.0",
+    "@babel/plugin-proposal-class-properties": "7.14.5",
+    "@babel/plugin-proposal-decorators": "7.14.5",
+    "@testing-library/jest-dom": "5.14.1",
     "@testing-library/react": "11.2.7",
     "babel-jest": "27.0.2",
     "babel-plugin-import": "1.13.3",
@@ -35,7 +35,7 @@
     "cross-env": "7.0.3",
     "identity-obj-proxy": "3.0.0",
     "immutable": "4.0.0-rc.12",
-    "jest": "27.0.3",
+    "jest": "27.0.4",
     "react-test-renderer": "17.0.2"
   }
 }
